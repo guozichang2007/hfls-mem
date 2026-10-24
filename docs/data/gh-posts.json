@@ -1,0 +1,39 @@
+{
+  "generatedAt": "2026-10-24T05:45:25Z",
+  "repo": "guozichang2007/hfls-mem",
+  "count": 2,
+  "posts": [
+    {
+      "id": "gh-2",
+      "number": 2,
+      "section": "prelude",
+      "author": "郭子畅",
+      "login": "guozichang2007",
+      "createdAt": "2026-10-24T05:13:19Z",
+      "title": "可以发帖啦！",
+      "text": "可以发帖啦！",
+      "images": [],
+      "likeCount": 0,
+      "commentCount": 0,
+      "closed": false,
+      "comments": [],
+      "url": "https://github.com/guozichang2007/hfls-mem/issues/2"
+    },
+    {
+      "id": "gh-1",
+      "number": 1,
+      "section": "classmate",
+      "author": "郭子畅",
+      "login": "guozichang2007",
+      "createdAt": "2026-10-24T05:06:05Z",
+      "title": "回忆录网站可以发帖啦！",
+      "text": "回忆录网站可以发帖啦！",
+      "images": [],
+      "likeCount": 0,
+      "commentCount": 0,
+      "closed": false,
+      "comments": [],
+      "url": "https://github.com/guozichang2007/hfls-mem/issues/1"
+    }
+  ]
+}

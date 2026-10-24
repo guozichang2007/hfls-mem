@@ -1,0 +1,79 @@
+name: Sync Issues to static JSON
+
+# 把仓库 Issues 同步成 docs/data/gh-posts.json：
+# 站点读取公共帖时优先读这个静态文件（走 GitHub Pages CDN），
+# 国内网络下浏览器连不上 api.github.com 也能看到大家的帖子。
+#
+# 注意：用 GITHUB_TOKEN 推的 commit 不会再触发 pages.yml，
+# 所以这里同步完自己再部署一次 Pages（否则站点读到的还是旧的 JSON）。
+
+on:
+  issues:
+    types: [opened, edited, reopened, closed, deleted, labeled, unlabeled, transferred, pinned, unpinned]
+  issue_comment:
+    types: [created, edited, deleted]
+  schedule:
+    - cron: '*/10 * * * *'      # 兜底：每 10 分钟对齐一次（漏掉的事件也能补上）
+  workflow_dispatch:
+
+permissions:
+  contents: write               # 需要把同步结果提交回仓库
+  issues: read
+  pages: write                  # 同步完自己部署 Pages
+  id-token: write
+
+concurrency:
+  group: sync-issues
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 生成 docs/data/gh-posts.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python scripts/sync_issues.py
+
+      - id: commit
+        name: 提交变化
+        run: |
+          if git diff --quiet -- docs/data/gh-posts.json; then
+            echo "没有变化，跳过提交"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "hfls-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data/gh-posts.json
+          git commit -m "同步 Issues → docs/data/gh-posts.json"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+  deploy:
+    needs: sync
+    if: needs.sync.outputs.changed == 'true'
+    runs-on: ubuntu-latest
+    concurrency:
+      group: pages
+      cancel-in-progress: true
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - id: deployment
+        uses: actions/deploy-pages@v4
