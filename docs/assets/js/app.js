@@ -560,7 +560,7 @@
           createdAt: c.created_at,
           origin: 'github',
           url: c.html_url || '',
-          replyTo: String(parts.meta.reply || '')
+          replyTo: String(parts.meta.reply || '').replace(/[^\w.-]/g, '').slice(0, 40)
         };
       });
     });
@@ -781,11 +781,17 @@
     var buf = [];
     var quote = [];
 
+    // 引用块后面的空行不该再占一行，否则引用和正文之间会空出一大块
+    function trimBr(v) { return v.replace(/^(?:<br>)+|(?:<br>)+$/g, ''); }
     function flushText() {
-      if (buf.length) { segs.push({ q: false, v: buf.join('<br>') }); buf = []; }
+      var v = trimBr(buf.join('<br>'));
+      buf = [];
+      if (v) segs.push({ q: false, v: v });
     }
     function flushQuote() {
-      if (quote.length) { segs.push({ q: true, v: quote.join('<br>') }); quote = []; }
+      var v = trimBr(quote.join('<br>'));
+      quote = [];
+      if (v) segs.push({ q: true, v: v });
     }
 
     lines.forEach(function (line) {
@@ -800,9 +806,10 @@
     flushText();
     flushQuote();
 
+    // 引用块是块级元素，段落之间不用再插 <br>
     return segs.map(function (s) {
       return s.q ? '<blockquote class="comment-quote">' + s.v + '</blockquote>' : s.v;
-    }).join('<br>');
+    }).join('');
   }
 
   function commentDomId(id) { return 'c-' + String(id || '').replace(/[^\w-]/g, ''); }
@@ -842,13 +849,16 @@
     comments.forEach(function (c) { if (c.id) byId[c.id] = c; });
     var kids = {};
     var roots = [];
+    var earlier = [];
     comments.forEach(function (c) {
-      var parent = c.replyTo ? byId[c.replyTo] : null;
-      if (parent && parent !== c) {
+      // 先认隐藏标记里的 replyTo；没有标记（例如在 GitHub 上点的 Quote reply）就看引用是哪条
+      var parent = (c.replyTo && byId[c.replyTo]) || guessParent(c, earlier);
+      if (parent && parent !== c && parent.id) {
         (kids[parent.id] = kids[parent.id] || []).push(c);
       } else {
         roots.push(c);
       }
+      earlier.push(c);
     });
 
     var seen = {};
@@ -874,6 +884,33 @@
     var list = allCommentsOf(post);
     for (var i = 0; i < list.length; i++) if (String(list[i].id) === String(id)) return list[i];
     return null;
+  }
+
+  /* -------- 楼中楼：没有隐藏标记时，靠开头的引用猜父评论 -------- */
+
+  function normLine(s) {
+    return String(s || '').replace(/\s+/g, ' ').trim().replace(/[…\.]+$/, '').trim().toLowerCase();
+  }
+
+  // 去掉自己开头那几行引用，剩下的是「自己说的话」
+  function ownWords(c) {
+    return normLine(String((c && c.text) || '').split(/\r?\n/)
+      .filter(function (l) { return !/^\s*>/.test(l); }).join(' '));
+  }
+
+  // GitHub 上直接点「Quote reply」只会带一段引用：把引用摘出来，去前面找最早能对上的那条
+  function guessParent(c, earlier) {
+    var m = String((c && c.text) || '').match(/^\s*>\s*([^\n]*)/);
+    if (!m) return null;
+    var q = normLine(m[1]).replace(/^@[^：:]{1,40}[：:]\s*/, '');
+    if (q.length < 6) return null;   // 太短容易认错人
+    var found = null;
+    for (var i = 0; i < earlier.length; i++) {
+      if (earlier[i] === c) continue;
+      var body = ownWords(earlier[i]);
+      if (body && body.indexOf(q) === 0) found = earlier[i];
+    }
+    return found;
   }
 
   // 直连拿到的评论 ∪ 烘焙/本地已有的：按 id 去重，按时间排序
@@ -911,7 +948,7 @@
     var canClamp = !detail && text.length > 320;
     var comments = allCommentsOf(post);
     // 详情页的评论由下面的 comments-box 统一渲染，卡片里不再重复一遍
-    var preview = detail ? [] : comments.slice(0, 2);
+    var previewMax = detail ? 0 : 2;
     var titleHtml = post.title && post.title !== text.trim()
       ? '<h2 class="post-title">' + esc(post.title) + '</h2>' : '';
 
@@ -925,7 +962,7 @@
       '<div class="post-text' + (canClamp ? ' clamp' : '') + '">' + bodyHtml(post) + '</div>' +
       (canClamp ? '<button class="post-more" data-act="detail" data-id="' + post.id + '">展开全文</button>' : '') +
       mediaBlock(post) + audioBlock(post) +
-      (preview.length ? '<div class="comments">' + commentRows(post, preview) + '</div>' : '') +
+      (previewMax ? '<div class="comments">' + commentRows(post, comments, previewMax) + '</div>' : '') +
       '<div class="post-foot">' +
         '<button class="act' + (likedByMe(post) ? ' liked' : '') + '" data-act="like" data-id="' + esc(post.id) + '">' +
           '<svg viewBox="0 0 24 24"><path d="M12 20s-7-4.35-7-9a4 4 0 0 1 7-2.65A4 4 0 0 1 19 11c0 4.65-7 9-7 9z"/></svg>' +
@@ -1709,9 +1746,12 @@
 
     if (post.origin === 'github' && ghEnabled()) {
       if (!state.token) {
-        copyText(full);
+        // 手动粘贴路线也带上隐藏标记，同步后才挂得到父评论下面
+        copyText(replyTo
+          ? '<!-- hfls:' + JSON.stringify({ name: name, reply: replyTo }) + ' -->\n\n' + full
+          : full);
         if (post.url) window.open(post.url, '_blank', 'noopener');
-        toast('内容已复制；登录 GitHub 后在 Issue 下粘贴评论');
+        toast(replyTo ? '回复已复制；登录 GitHub 后在 Issue 下粘贴即可' : '内容已复制；登录 GitHub 后在 Issue 下粘贴评论');
         return;
       }
       ghSend('POST', 'https://api.github.com/repos/' + state.config.repo + '/issues/' +
