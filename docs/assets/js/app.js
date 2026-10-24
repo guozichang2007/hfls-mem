@@ -1241,8 +1241,11 @@
     if (picHint) {
       picHint.hidden = mode !== 'github';
       picHint.innerHTML = mode === 'github'
-        ? '📷 图片：点「发布」后会在新窗口打开 GitHub 的新建 Issue 页面，把图片<b>直接拖进正文</b>即可（GitHub 自动托管）。' +
-          '同步完成后本站会把图下载到自己的服务器，墙内也能正常显示。'
+        ? (state.token
+          ? '📷 图片：连接令牌时只能填下面的 https 直链（API 不能上传文件）；' +
+            '想<b>直接把图拖进正文</b>，就手动去 GitHub 建一条 Issue，本页会自动同步回来。'
+          : '📷 图片：点「发布」后会在新窗口打开 GitHub 的新建 Issue 页面，把图片<b>直接拖进正文</b>即可（GitHub 自动托管）。' +
+            '同步完成后本站会把图下载到自己的服务器，墙内也能正常显示。')
         : '';
     }
     if (mode === 'github' && pendingImages.length) {
