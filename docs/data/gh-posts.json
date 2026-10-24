@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T07:19:30Z",
+  "generatedAt": "2026-10-24T07:22:44Z",
   "repo": "guozichang2007/hfls-mem",
   "count": 3,
   "imageCount": 4,
@@ -61,9 +61,18 @@
       "text": "可以发帖啦！",
       "images": [],
       "likeCount": 0,
-      "commentCount": 0,
+      "commentCount": 1,
       "closed": false,
-      "comments": [],
+      "comments": [
+        {
+          "id": "ghc-6381398557",
+          "author": "guozichang2007",
+          "text": "目前网站的管理员是我哦",
+          "createdAt": "2026-10-24T07:22:29Z",
+          "origin": "github",
+          "url": "https://github.com/guozichang2007/hfls-mem/issues/2#issuecomment-6381398557"
+        }
+      ],
       "url": "https://github.com/guozichang2007/hfls-mem/issues/2"
     },
     {
