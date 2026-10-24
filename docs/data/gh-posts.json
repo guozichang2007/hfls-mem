@@ -1,10 +1,26 @@
 {
-  "generatedAt": "2026-10-24T07:39:47Z",
+  "generatedAt": "2026-10-24T17:38:03Z",
   "repo": "guozichang2007/hfls-mem",
-  "count": 3,
+  "count": 4,
   "imageCount": 4,
-  "imageBytes": 853191,
+  "imageBytes": 853190,
   "posts": [
+    {
+      "id": "gh-4",
+      "number": 4,
+      "section": "classmate",
+      "author": "匿名同学",
+      "login": "lorenzy219",
+      "createdAt": "2026-10-24T17:37:47Z",
+      "title": "表白czk czk真是太可爱了",
+      "text": "表白czk czk真是太可爱了",
+      "images": [],
+      "likeCount": 0,
+      "commentCount": 0,
+      "closed": false,
+      "comments": [],
+      "url": "https://github.com/guozichang2007/hfls-mem/issues/4"
+    },
     {
       "id": "gh-3",
       "number": 3,
