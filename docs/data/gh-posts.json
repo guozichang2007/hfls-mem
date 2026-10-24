@@ -1,10 +1,55 @@
 {
-  "generatedAt": "2026-10-24T06:22:13Z",
+  "generatedAt": "2026-10-24T07:19:30Z",
   "repo": "guozichang2007/hfls-mem",
-  "count": 2,
-  "imageCount": 0,
-  "imageBytes": 0,
+  "count": 3,
+  "imageCount": 4,
+  "imageBytes": 853190,
   "posts": [
+    {
+      "id": "gh-3",
+      "number": 3,
+      "section": "classmate",
+      "author": "郭子畅",
+      "login": "guozichang2007",
+      "createdAt": "2026-10-24T07:19:17Z",
+      "title": "666666班的合照！",
+      "text": "/>\n\n />\n\n />\n\n />\n\n@",
+      "images": [
+        {
+          "src": "assets/img/gh/b1e7efceae9d.jpg",
+          "thumb": "assets/img/gh/thumbs/b1e7efceae9d.jpg",
+          "w": 0,
+          "h": 0,
+          "remote": false
+        },
+        {
+          "src": "assets/img/gh/95ba4b9662ac.jpg",
+          "thumb": "assets/img/gh/thumbs/95ba4b9662ac.jpg",
+          "w": 0,
+          "h": 0,
+          "remote": false
+        },
+        {
+          "src": "assets/img/gh/985249bef735.jpg",
+          "thumb": "assets/img/gh/thumbs/985249bef735.jpg",
+          "w": 0,
+          "h": 0,
+          "remote": false
+        },
+        {
+          "src": "assets/img/gh/e9c7ee06f8f0.jpg",
+          "thumb": "assets/img/gh/thumbs/e9c7ee06f8f0.jpg",
+          "w": 0,
+          "h": 0,
+          "remote": false
+        }
+      ],
+      "likeCount": 0,
+      "commentCount": 0,
+      "closed": false,
+      "comments": [],
+      "url": "https://github.com/guozichang2007/hfls-mem/issues/3"
+    },
     {
       "id": "gh-2",
       "number": 2,
