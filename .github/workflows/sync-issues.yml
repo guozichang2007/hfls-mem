@@ -38,7 +38,10 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: 生成 docs/data/gh-posts.json
+      - name: 准备 Pillow（压缩图片用；装不上就退回原始 JPEG）
+        run: python -m pip install --quiet --disable-pip-version-check pillow || echo "pillow 不可用，图片将按原图保存"
+
+      - name: 生成 docs/data/gh-posts.json 并搬运图片
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
@@ -47,15 +50,17 @@ jobs:
       - id: commit
         name: 提交变化
         run: |
-          if git diff --quiet -- docs/data/gh-posts.json; then
+          if git diff --quiet -- docs/data/gh-posts.json docs/assets/img/gh && \
+             [ -z "$(git status --porcelain -- docs/assets/img/gh)" ]; then
             echo "没有变化，跳过提交"
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
+          new_imgs=$(git status --porcelain -- docs/assets/img/gh | grep -c '^??' || true)
           git config user.name "hfls-bot"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/data/gh-posts.json
-          git commit -m "同步 Issues → docs/data/gh-posts.json"
+          git add docs/data/gh-posts.json docs/assets/img/gh
+          git commit -m "同步 Issues → docs/data/gh-posts.json（新增 ${new_imgs} 张图片）"
           git push
           echo "changed=true" >> "$GITHUB_OUTPUT"
 

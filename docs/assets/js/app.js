@@ -281,12 +281,18 @@
     return found;
   }
 
-  var MD_IMG_RE = /!\[[^\]]*\]\((https?:\/\/[^\s)]+)\)/g;
+  // markdown 图片 + GitHub 拖图时插入的 <img width="…" src="…">，一次遍历保证顺序
+  var IMG_ANY_RE = /!\[[^\]]*\]\((https?:\/\/[^\s)]+)\)|<img\b[^>]*\bsrc=["'](https?:\/\/[^"']+)["']/gi;
+  // base64 图（data:）在公共帖里既传不上去也没法显示，丢掉，别把正文撑爆
+  var DATA_IMG_RE = /!\[[^\]]*\]\(\s*data:[^)\s]*\)|<img\b[^>]*\bsrc=["']data:[^"']*["'][^>]*>/gi;
 
   function extractImages(text) {
     var images = [];
-    var clean = String(text || '').replace(MD_IMG_RE, function (all, src) {
-      images.push({ src: src, thumb: src, w: 0, h: 0, remote: true });
+    var clean = String(text || '').replace(DATA_IMG_RE, '').replace(IMG_ANY_RE, function (all, md, html) {
+      var src = md || html || '';
+      if (src && !images.some(function (im) { return im.src === src; })) {
+        images.push({ src: src, thumb: src, w: 0, h: 0, remote: true });
+      }
       return '';
     });
     return { text: clean.replace(/\n{3,}/g, '\n\n').trim(), images: images };
@@ -1181,9 +1187,10 @@
       '<input id="cpFiles" type="file" accept="image/*" multiple>' +
       '<div class="media-grid n3" id="cpPreview" style="margin-top:10px"></div>' +
       '<p class="hint">会在浏览器里压缩到长边 1280px 再保存。</p></div>' +
+      '<p class="hint" id="cpPicHint" hidden></p>' +
       '<div class="field"><label for="cpUrls">图片直链（可选）</label>' +
       '<input id="cpUrls" name="imageUrls" type="text" placeholder="https://… 多个用空格分隔">' +
-      '<p class="hint">GitHub 模式下用图床直链最省事。</p></div>' +
+      '<p class="hint">站外的直链不会被搬到本站，墙内能不能打开要看那个图床。</p></div>' +
       '<div class="field"><label for="cpTarget">保存到</label>' +
       '<select id="cpTarget" name="target">' +
       '<option value="local"' + (mode === 'local' ? ' selected' : '') + '>本机浏览器（只有我可见）</option>' +
@@ -1228,6 +1235,21 @@
         (ghEnabled() ? '<br>想让所有人看见，请在「设置」里连接 GitHub 令牌。' : '') + '</div>';
     var fileWrap = $('#cpFileWrap');
     if (fileWrap) fileWrap.style.display = mode === 'github' ? 'none' : '';
+
+    // GitHub 模式：本地图片是 base64，塞不进 Issue，改成「在 GitHub 页面里拖图」
+    var picHint = $('#cpPicHint');
+    if (picHint) {
+      picHint.hidden = mode !== 'github';
+      picHint.innerHTML = mode === 'github'
+        ? '📷 图片：点「发布」后会在新窗口打开 GitHub 的新建 Issue 页面，把图片<b>直接拖进正文</b>即可（GitHub 自动托管）。' +
+          '同步完成后本站会把图下载到自己的服务器，墙内也能正常显示。'
+        : '';
+    }
+    if (mode === 'github' && pendingImages.length) {
+      pendingImages = [];
+      renderComposePreviews();
+      toast('本地图片不会上传到 GitHub，已清空（请在 GitHub 页面里拖图）');
+    }
   }
 
 
@@ -1368,7 +1390,16 @@
   }
 
   function publishToGitHub(payload) {
-    var body = issueBody(payload.name, payload.text, payload.images, payload.section);
+    // base64 的本地图片塞不进 Issue（data: URL 会被 GitHub 丢掉，正文也有长度上限）
+    var kept = (payload.images || []).filter(function (im) {
+      return im && /^https?:\/\//i.test(String(im.src || ''));
+    });
+    var dropped = (payload.images || []).length - kept.length;
+    var publicPayload = {
+      name: payload.name, text: payload.text, title: payload.title,
+      section: payload.section, images: kept
+    };
+    var body = issueBody(payload.name, payload.text, kept, payload.section);
     var title = issueTitle(payload.title, payload.text);
     var labels = [state.config.postsLabel || 'post',
       (state.config.sectionLabelPrefix || 'sec-') + payload.section];
@@ -1379,11 +1410,12 @@
         '&labels=' + encodeURIComponent(labels.join(','));
       copyText(body);
       // 先在本机显示成「同步中」，这样发完立刻能看见自己的帖子
-      var pend = addPendingPost(payload, title);
+      var pend = addPendingPost(publicPayload, title);
       lastPendingId = pend.id;
       rebuildIndex();
       window.open(url, '_blank', 'noopener');
-      toast('内容已复制并打开 GitHub：登录后粘贴提交，约 1 分钟后这里会自动出现');
+      toast('内容已复制并打开 GitHub：登录后粘贴提交，约 1 分钟后这里会自动出现' +
+        (dropped ? '（本地图片没带上，记得在 GitHub 页面里拖图）' : ''));
       return Promise.resolve('pending');
     }
 
@@ -1394,6 +1426,7 @@
       state.ghPosts = state.ghPosts.filter(function (p) { return p.id !== post.id; });
       state.ghPosts.unshift(post);
       rebuildIndex();
+      if (dropped) toast('本地图片不会上传到 GitHub，已跳过 ' + dropped + ' 张');
       navigate('#/p/' + post.id);
       return true;
     });
