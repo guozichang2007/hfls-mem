@@ -1,0 +1,8092 @@
+{
+ "site": {
+  "title": "海弗拉斯26届回忆录——hw也有回忆录😋",
+  "tagline": "秉持着相信光的人不能输的原则！迅速搓出回忆录（笑）",
+  "school": "杭州外国语学校",
+  "cohort": "2026 届",
+  "generatedAt": "2026-10-24T10:51:44+08:00"
+ },
+ "sections": [
+  {
+   "id": "prelude",
+   "name": "序 · Prelude",
+   "short": "序",
+   "emoji": "🌱",
+   "desc": "写于 2026.10.22，by Marguerite。关于为什么要留下这本回忆录。"
+  },
+  {
+   "id": "scene",
+   "name": "浮光掠影 · 忆景",
+   "short": "忆景",
+   "emoji": "🌸",
+   "desc": "我们回到杭外的樱花树下，不要被命运找到。猫猫、花、天台与晚霞。"
+  },
+  {
+   "id": "story",
+   "name": "似水流年 · 忆事",
+   "short": "忆事",
+   "emoji": "📖",
+   "desc": "二班十四人略事、1306、寝室夜聊、白板、雪天与白月光。"
+  },
+  {
+   "id": "food",
+   "name": "民以食为天 · 食堂",
+   "short": "食堂",
+   "emoji": "🍜",
+   "desc": "二楼拌面、泡泡鸡、铁板饭、免费汤，以及全世界最讨厌的香菜。"
+  },
+  {
+   "id": "love",
+   "name": "璀璨如歌 · 表白/展望",
+   "short": "表白",
+   "emoji": "💌",
+   "desc": "好久不见，但我们来日方长。把喜欢的人和照片都放在这里。"
+  },
+  {
+   "id": "rant",
+   "name": "苦涩如歌 · 吐槽",
+   "short": "吐槽",
+   "emoji": "🌧️",
+   "desc": "大学、天气、midterm 与香菜。以及“我想回杭外”。"
+  },
+  {
+   "id": "teacher",
+   "name": "老师萌 · 老师",
+   "short": "老师",
+   "emoji": "🍎",
+   "desc": "许奕、潘俊、蕾丽、Sylvia、Ms Lu……和我们想再说一次的话。"
+  },
+  {
+   "id": "classmate",
+   "name": "同学们 · 同学",
+   "short": "同学",
+   "emoji": "🤝",
+   "desc": "接着盖楼。傻狗、wyt，还有所有在列表里的杭外人。"
+  }
+ ],
+ "posts": [
+  {
+   "id": "doc-001",
+   "section": "prelude",
+   "origin": "docx",
+   "floor": 1,
+   "author": "Marguerite.",
+   "createdAt": "2026-10-23T19:01:00+08:00",
+   "text": "在上海转凉的时候，在行走在落叶之间的时候，在朋友圈看到各大中学的回忆录像雨后春笋一样冒出，于是不禁想起陪伴了自己六年的母校。\n\n今日打开年级群，看到有同学提议撰写属于我们自己的回忆录，我随即想起福禄寿的那首歌《我用什么把你留住》：你说别爱啊，却依依不舍，所以生命啊，它璀璨如歌。我们吐槽着，我们惋惜着; 我们流连着，我们眷恋着——或许因为这六年给了我们无法抛却的东西。\n\n我开玩笑说相信光的人怎么会输，当然也不完全是玩笑。我们笃信，于是我们笃行; 我们相信，于是我们坚守。在这个迷失的时代，不忘却来时路、执着信仰是难能可贵的事。只要知道总有一个地方会灯火通明，知道总有一个地方供我们触碰彼此的呼唤，这或许就足够了。",
+   "images": [],
+   "audio": [],
+   "comments": [],
+   "title": "Prelude · 写在前面"
+  },
+  {
+   "id": "doc-002",
+   "section": "scene",
+   "origin": "docx",
+   "floor": 2,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:04:00+08:00",
+   "text": "我们回到杭外的樱花树下，不要被命运找到",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-003",
+   "section": "scene",
+   "origin": "docx",
+   "floor": 3,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:05:00+08:00",
+   "text": "我想小猫们了😋想闪击杭外看看desudesu",
+   "images": [
+    {
+     "src": "assets/img/hw-1.jpg",
+     "thumb": "assets/img/thumbs/hw-1.jpg",
+     "w": 1200,
+     "h": 1600
+    },
+    {
+     "src": "assets/img/hw-2.jpg",
+     "thumb": "assets/img/thumbs/hw-2.jpg",
+     "w": 1200,
+     "h": 1600
+    },
+    {
+     "src": "assets/img/hw-3.jpg",
+     "thumb": "assets/img/thumbs/hw-3.jpg",
+     "w": 1200,
+     "h": 1600
+    },
+    {
+     "src": "assets/img/hw-4.jpg",
+     "thumb": "assets/img/thumbs/hw-4.jpg",
+     "w": 1200,
+     "h": 1600
+    },
+    {
+     "src": "assets/img/hw-5.jpg",
+     "thumb": "assets/img/thumbs/hw-5.jpg",
+     "w": 1200,
+     "h": 1600
+    },
+    {
+     "src": "assets/img/hw-6.jpg",
+     "thumb": "assets/img/thumbs/hw-6.jpg",
+     "w": 1200,
+     "h": 1600
+    }
+   ],
+   "audio": [],
+   "comments": [],
+   "group": "猫猫们"
+  },
+  {
+   "id": "doc-004",
+   "section": "scene",
+   "origin": "docx",
+   "floor": 4,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:06:00+08:00",
+   "text": "（一言不发放出hw的小猫然后离开，好想念小八）",
+   "images": [],
+   "audio": [],
+   "comments": [],
+   "group": "猫猫们"
+  },
+  {
+   "id": "doc-005",
+   "section": "scene",
+   "origin": "docx",
+   "floor": 5,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:07:00+08:00",
+   "text": "好高清呀😋老大我贴贴你，然后云摸小猫咪呀！",
+   "images": [],
+   "audio": [],
+   "comments": [],
+   "group": "猫猫们"
+  },
+  {
+   "id": "doc-006",
+   "section": "scene",
+   "origin": "docx",
+   "floor": 6,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:08:00+08:00",
+   "text": "想猫猫们(*≧ω≦)",
+   "images": [],
+   "audio": [],
+   "comments": [],
+   "group": "猫猫们"
+  },
+  {
+   "id": "doc-007",
+   "section": "scene",
+   "origin": "docx",
+   "floor": 7,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:09:00+08:00",
+   "text": "",
+   "images": [
+    {
+     "src": "assets/img/hw-7.jpg",
+     "thumb": "assets/img/thumbs/hw-7.jpg",
+     "w": 1600,
+     "h": 1200
+    },
+    {
+     "src": "assets/img/hw-8.jpg",
+     "thumb": "assets/img/thumbs/hw-8.jpg",
+     "w": 1600,
+     "h": 1200
+    },
+    {
+     "src": "assets/img/hw-9.jpg",
+     "thumb": "assets/img/thumbs/hw-9.jpg",
+     "w": 1600,
+     "h": 1200
+    },
+    {
+     "src": "assets/img/hw-10.jpg",
+     "thumb": "assets/img/thumbs/hw-10.jpg",
+     "w": 1600,
+     "h": 1200
+    }
+   ],
+   "audio": [],
+   "comments": [],
+   "group": "花和风景"
+  },
+  {
+   "id": "doc-008",
+   "section": "scene",
+   "origin": "docx",
+   "floor": 8,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:10:00+08:00",
+   "text": "（原地放置一些珍藏已久的照片）——🥬",
+   "images": [
+    {
+     "src": "assets/img/hw-11.jpg",
+     "thumb": "assets/img/thumbs/hw-11.jpg",
+     "w": 1600,
+     "h": 1197
+    },
+    {
+     "src": "assets/img/hw-12.jpg",
+     "thumb": "assets/img/thumbs/hw-12.jpg",
+     "w": 1600,
+     "h": 1197
+    },
+    {
+     "src": "assets/img/hw-13.jpg",
+     "thumb": "assets/img/thumbs/hw-13.jpg",
+     "w": 1600,
+     "h": 1197
+    },
+    {
+     "src": "assets/img/hw-14.jpg",
+     "thumb": "assets/img/thumbs/hw-14.jpg",
+     "w": 1338,
+     "h": 1022
+    }
+   ],
+   "audio": [],
+   "comments": [],
+   "group": "花和风景"
+  },
+  {
+   "id": "doc-009",
+   "section": "scene",
+   "origin": "docx",
+   "floor": 9,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:11:00+08:00",
+   "text": "这是鸟屎（误入中） po一张应该是高二学考前一晚的天",
+   "images": [],
+   "audio": [],
+   "comments": [],
+   "group": "花和风景"
+  },
+  {
+   "id": "doc-010",
+   "section": "scene",
+   "origin": "docx",
+   "floor": 10,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:12:00+08:00",
+   "text": "23年 杭外的秋",
+   "images": [
+    {
+     "src": "assets/img/hw-15.jpg",
+     "thumb": "assets/img/thumbs/hw-15.jpg",
+     "w": 1600,
+     "h": 1200
+    },
+    {
+     "src": "assets/img/hw-16.jpg",
+     "thumb": "assets/img/thumbs/hw-16.jpg",
+     "w": 1600,
+     "h": 1200
+    },
+    {
+     "src": "assets/img/hw-17.jpg",
+     "thumb": "assets/img/thumbs/hw-17.jpg",
+     "w": 1200,
+     "h": 1600
+    },
+    {
+     "src": "assets/img/hw-18.jpg",
+     "thumb": "assets/img/thumbs/hw-18.jpg",
+     "w": 1200,
+     "h": 1600
+    },
+    {
+     "src": "assets/img/hw-19.jpg",
+     "thumb": "assets/img/thumbs/hw-19.jpg",
+     "w": 1600,
+     "h": 1200
+    },
+    {
+     "src": "assets/img/hw-20.jpg",
+     "thumb": "assets/img/thumbs/hw-20.jpg",
+     "w": 1080,
+     "h": 1236
+    }
+   ],
+   "audio": [],
+   "comments": [],
+   "group": "花和风景"
+  },
+  {
+   "id": "doc-011",
+   "section": "scene",
+   "origin": "docx",
+   "floor": 11,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:13:00+08:00",
+   "text": "总有那么一个下午你溜到一号楼找到那个没被安全锁锁上的窗户翻到天台上然后吹着风看下雨后的云边被燃烧着的日落染色（图明天补了",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "然后可能还有概率碰到smoke完的lgp",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "一号楼六楼是个神奇的地方",
+     "depth": 0
+    }
+   ],
+   "group": "花和风景"
+  },
+  {
+   "id": "doc-012",
+   "section": "scene",
+   "origin": "docx",
+   "floor": 12,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:14:00+08:00",
+   "text": "po一张杭外樱花🌸…摄于二六年三月",
+   "images": [
+    {
+     "src": "assets/img/hw-21.jpg",
+     "thumb": "assets/img/thumbs/hw-21.jpg",
+     "w": 1600,
+     "h": 900
+    }
+   ],
+   "audio": [],
+   "comments": [],
+   "group": "花和风景"
+  },
+  {
+   "id": "doc-013",
+   "section": "scene",
+   "origin": "docx",
+   "floor": 13,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:15:00+08:00",
+   "text": "hw的各种花和风景",
+   "images": [
+    {
+     "src": "assets/img/hw-22.jpg",
+     "thumb": "assets/img/thumbs/hw-22.jpg",
+     "w": 1200,
+     "h": 1600
+    },
+    {
+     "src": "assets/img/hw-23.jpg",
+     "thumb": "assets/img/thumbs/hw-23.jpg",
+     "w": 1064,
+     "h": 1600
+    },
+    {
+     "src": "assets/img/hw-24.jpg",
+     "thumb": "assets/img/thumbs/hw-24.jpg",
+     "w": 1064,
+     "h": 1600
+    },
+    {
+     "src": "assets/img/hw-25.jpg",
+     "thumb": "assets/img/thumbs/hw-25.jpg",
+     "w": 1064,
+     "h": 1600
+    },
+    {
+     "src": "assets/img/hw-26.jpg",
+     "thumb": "assets/img/thumbs/hw-26.jpg",
+     "w": 1600,
+     "h": 1064
+    },
+    {
+     "src": "assets/img/hw-27.jpg",
+     "thumb": "assets/img/thumbs/hw-27.jpg",
+     "w": 1600,
+     "h": 1067
+    },
+    {
+     "src": "assets/img/hw-28.jpg",
+     "thumb": "assets/img/thumbs/hw-28.jpg",
+     "w": 1600,
+     "h": 1067
+    },
+    {
+     "src": "assets/img/hw-29.jpg",
+     "thumb": "assets/img/thumbs/hw-29.jpg",
+     "w": 1600,
+     "h": 1067
+    },
+    {
+     "src": "assets/img/hw-30.jpg",
+     "thumb": "assets/img/thumbs/hw-30.jpg",
+     "w": 1600,
+     "h": 1067
+    }
+   ],
+   "audio": [],
+   "comments": [],
+   "group": "花和风景"
+  },
+  {
+   "id": "doc-014",
+   "section": "story",
+   "origin": "docx",
+   "floor": 14,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:16:00+08:00",
+   "text": "二班十四人略事",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-015",
+   "section": "story",
+   "origin": "docx",
+   "floor": 15,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:17:00+08:00",
+   "text": "序",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-016",
+   "section": "story",
+   "origin": "docx",
+   "floor": 16,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:18:00+08:00",
+   "text": "初，高中二班初成，而人类彼此不熟。雪莉曰：“要有随便聊天群，可发疯，可推文。”于是14人群初成。",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-017",
+   "section": "story",
+   "origin": "docx",
+   "floor": 17,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:19:00+08:00",
+   "text": "十四人之精神，非一日之事也，抽象之物塑造之，猎奇之好同化之，小说、狼人杀、各类团建齐之，然后十四人成。",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-018",
+   "section": "story",
+   "origin": "docx",
+   "floor": 18,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:20:00+08:00",
+   "text": "余幸而为十四人之一，与诸同好戏游三年，而今散步于天涯各处，虽日日联系，然不如昨日可双手相握，可促膝相谈之境也。",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-019",
+   "section": "story",
+   "origin": "docx",
+   "floor": 19,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:21:00+08:00",
+   "text": "故著此小文以记之，以使莫忘。",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-020",
+   "section": "story",
+   "origin": "docx",
+   "floor": 20,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:22:00+08:00",
+   "text": "十四人者，雪莉，苏西，安妮，卢娜，侯哥，佳佳，小董，思予，CQ，睿，乐迪，仪，芯羽，阿娴是也。",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-021",
+   "section": "story",
+   "origin": "docx",
+   "floor": 21,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:23:00+08:00",
+   "text": "（孩子们要写的太多了不占用这里的篇幅了我滚去单开）",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-022",
+   "section": "story",
+   "origin": "docx",
+   "floor": 22,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:24:00+08:00",
+   "text": "初一闻读之兄“你们一点书不读吗”之言顿觉振聋发聩于是开始了痛苦而曼妙的读书时代（伟大之）",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-023",
+   "section": "story",
+   "origin": "docx",
+   "floor": 23,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:25:00+08:00",
+   "text": "恋书癖艺术癖音乐剧癖都怪杭外我只能说，都大一了还在大搞特搞吗真的有意思😋谁不想初二晚自习急头白脸地抛下一切写小说写诗看杂书，谁不想在各大考试前来一场酣畅淋漓的音乐剧（但是还是建议不要学我！尖锐爆鸣ing）",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-024",
+   "section": "story",
+   "origin": "docx",
+   "floor": 24,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:26:00+08:00",
+   "text": "这边好像已经写了篇古文阅读题出来",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-025",
+   "section": "story",
+   "origin": "docx",
+   "floor": 25,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:27:00+08:00",
+   "text": "hw那一堆活动谁能不怀念我哭了，每年的艺术节外文节都好幸福，尤其是最后演音乐剧几个月跟做梦一样我好怀念。",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-026",
+   "section": "story",
+   "origin": "docx",
+   "floor": 26,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:28:00+08:00",
+   "text": "以及一楼我们十四人的漂流本真的好搞笑谁敢看，谁不想在自习课酣畅淋漓地一堆人畅聊拉拉给给。",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-027",
+   "section": "story",
+   "origin": "docx",
+   "floor": 27,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:29:00+08:00",
+   "text": "甚至想回到那个金光灿灿小和山跑阳光长跑了",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "无体育 不杭外(doge",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-028",
+   "section": "story",
+   "origin": "docx",
+   "floor": 28,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:30:00+08:00",
+   "text": "杭外的平安夜月色如水",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-029",
+   "section": "story",
+   "origin": "docx",
+   "floor": 29,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:31:00+08:00",
+   "text": "星河斟得太满",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-030",
+   "section": "story",
+   "origin": "docx",
+   "floor": 30,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:32:00+08:00",
+   "text": "晚风为你低吟十四行诗",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-031",
+   "section": "story",
+   "origin": "docx",
+   "floor": 31,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:33:00+08:00",
+   "text": "我去6楼我想和你们畅聊拉拉给给",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-032",
+   "section": "story",
+   "origin": "docx",
+   "floor": 32,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:34:00+08:00",
+   "text": "8楼怎么把大神情书放上来了我笑得（二编：蛙趣还有一个颜色的改）",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "大神自己要求的",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "蛙趣大神很深情了",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "蛙趣到底谁翻到我这条给我re了我笑得",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-033",
+   "section": "story",
+   "origin": "docx",
+   "floor": 33,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:35:00+08:00",
+   "text": "谁不想每天下午五点吃完饭就急头白脸地去操场踢球呢",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-034",
+   "section": "story",
+   "origin": "docx",
+   "floor": 34,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:36:00+08:00",
+   "text": "我好想……在晚自习课间的时候……一群人吵吵闹闹去找老头……😭🤚",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-035",
+   "section": "story",
+   "origin": "docx",
+   "floor": 35,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:37:00+08:00",
+   "text": "我去六楼好想和你们畅聊拉拉给给。我的拉拉给给朋友好想你们。",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-036",
+   "section": "story",
+   "origin": "docx",
+   "floor": 36,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:38:00+08:00",
+   "text": "我也想聊拉拉给给 hw这波有点刻板印象了",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-037",
+   "section": "story",
+   "origin": "docx",
+   "floor": 37,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:39:00+08:00",
+   "text": "都怪这一届全是拉拉给给（）和朋友统计出来这一届有拉拉给给倾向的竟然高达30＋人次。",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-038",
+   "section": "story",
+   "origin": "docx",
+   "floor": 38,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:40:00+08:00",
+   "text": "没那么少！！",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-039",
+   "section": "story",
+   "origin": "docx",
+   "floor": 39,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:41:00+08:00",
+   "text": "没那么少！！！",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-040",
+   "section": "story",
+   "origin": "docx",
+   "floor": 40,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:42:00+08:00",
+   "text": "我真的爆笑啊，这几层怎么都是畅聊拉拉给给（目移）女孩想捞捞（我是9楼）【欢迎来和我们聊拉拉给给嗬嗬嗬】🥹喔喔喔喔喔（猿人状）",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-041",
+   "section": "story",
+   "origin": "docx",
+   "floor": 41,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:43:00+08:00",
+   "text": "我去这么这么多人想和我们畅聊拉拉给给我笑死了（我是6楼）离开hw根本没那么多拉拉给给",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-042",
+   "section": "story",
+   "origin": "docx",
+   "floor": 42,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:44:00+08:00",
+   "text": "所有人都在崆峒",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-043",
+   "section": "story",
+   "origin": "docx",
+   "floor": 43,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:45:00+08:00",
+   "text": "离开hw根本没有那么多拉拉给给",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-044",
+   "section": "story",
+   "origin": "docx",
+   "floor": 44,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:46:00+08:00",
+   "text": "我去好香啊！",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-045",
+   "section": "story",
+   "origin": "docx",
+   "floor": 45,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:47:00+08:00",
+   "text": "谁能来1306找我玩 学妹很想你们",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-046",
+   "section": "story",
+   "origin": "docx",
+   "floor": 46,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:48:00+08:00",
+   "text": "怀念这个没有手机的群居生活了",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-047",
+   "section": "story",
+   "origin": "docx",
+   "floor": 47,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:49:00+08:00",
+   "text": "好想回到高一急头白脸的买一堆健达奇趣蛋放在课桌上摆阵",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-048",
+   "section": "story",
+   "origin": "docx",
+   "floor": 48,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:50:00+08:00",
+   "text": "还是回1306线下五排有感觉",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "点了 离了hw哪里还有人五排😭我们还能一直一起玩游戏吗😭",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我们还可以一起玩别的游戏吗",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我们还能一直一起玩游戏吗😭",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-049",
+   "section": "story",
+   "origin": "docx",
+   "floor": 49,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:51:00+08:00",
+   "text": "网上说说算了 现实谁不想去超市买一堆丑的要命的屁桃果冻摆桌上",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "我服了呀现在看到屁桃心中出现别样的情感",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "怀念张师",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "谁有屁桃叠罗汉照片😭求🥺",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "屁桃我神圣的屁桃",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "怀念松玲",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "谁还有隐藏款会变色的屁桃",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-050",
+   "section": "story",
+   "origin": "docx",
+   "floor": 50,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:52:00+08:00",
+   "text": "谁还记得窗台的瓶子们",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "这太猎奇了所以究竟是谁发起的",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "学期结束的时候保洁阿姨开上保时捷了",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "保时洁",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-051",
+   "section": "story",
+   "origin": "docx",
+   "floor": 51,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:53:00+08:00",
+   "text": "瓶子神",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-052",
+   "section": "story",
+   "origin": "docx",
+   "floor": 52,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:54:00+08:00",
+   "text": "瓶子中间还贴了个丁将军（）",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-053",
+   "section": "story",
+   "origin": "docx",
+   "floor": 53,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:55:00+08:00",
+   "text": "青铜时代金银花，佛洛伦萨荒原狼",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-054",
+   "section": "story",
+   "origin": "docx",
+   "floor": 54,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:56:00+08:00",
+   "text": "图来了，金银花露大军来袭……：",
+   "images": [
+    {
+     "src": "assets/img/hw-31.jpg",
+     "thumb": "assets/img/thumbs/hw-31.jpg",
+     "w": 1600,
+     "h": 1200
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-055",
+   "section": "story",
+   "origin": "docx",
+   "floor": 55,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:57:00+08:00",
+   "text": "离开hw甚至也有不少拉拉但确实没hw多吧！",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "是也。而且开出空心人的概率好大。",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-056",
+   "section": "story",
+   "origin": "docx",
+   "floor": 56,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:58:00+08:00",
+   "text": "我服了呀，，每次经过这里都很担心它们会倒掉…",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-057",
+   "section": "story",
+   "origin": "docx",
+   "floor": 57,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T19:59:00+08:00",
+   "text": "金银花露神了。每次经过顺手扶一把。",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-058",
+   "section": "story",
+   "origin": "docx",
+   "floor": 58,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:00:00+08:00",
+   "text": "谁不想带一堆难吃的东西去教室分，然后没手机晚上就偷偷聊天或者熬夜看小说。",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "我还记得那个维他菊花茶，完全就是互相哄骗着买的，然后每个人一喝一个不 吱声，并且转头就去坑害下一个人了",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-059",
+   "section": "story",
+   "origin": "docx",
+   "floor": 59,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:01:00+08:00",
+   "text": "铭记cwf在首考动员大会上的“人工智能赋能教育，让我们有请伟大的诗人豆包”",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "恭喜cwf荣获首考动员最乐趣奖（）",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-060",
+   "section": "story",
+   "origin": "docx",
+   "floor": 60,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:02:00+08:00",
+   "text": "难忘高考前在小教室，爽看猫和老鼠，爽玩getaway",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "getaway是对的",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-061",
+   "section": "story",
+   "origin": "docx",
+   "floor": 61,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:03:00+08:00",
+   "text": "想念在技术课上玩四排的局域网cs",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-062",
+   "section": "story",
+   "origin": "docx",
+   "floor": 62,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:04:00+08:00",
+   "text": "教学楼电脑网络纪念楼🖐🏻😭🖐🏻我想念周日下午的教室电脑网络😭",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-063",
+   "section": "story",
+   "origin": "docx",
+   "floor": 63,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:05:00+08:00",
+   "text": "还有断网了依旧不妨碍我们打游戏呀略略略😜",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "想念一排人杂交之时",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "二班高一学考甚至一整个班看着希沃玩杂交",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "想玩杂交，孟德尔的花园。",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "没有人记得crazygames的basketball random和台球了嘛",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-064",
+   "section": "story",
+   "origin": "docx",
+   "floor": 64,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:06:00+08:00",
+   "text": "我去我要哭了呀我好怀念。。",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-065",
+   "section": "story",
+   "origin": "docx",
+   "floor": 65,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:07:00+08:00",
+   "text": "我会想你的",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-066",
+   "section": "story",
+   "origin": "docx",
+   "floor": 66,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:08:00+08:00",
+   "text": "我永远怀念你们。。。你们咋只能生活在我的记忆里了呀",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-067",
+   "section": "story",
+   "origin": "docx",
+   "floor": 67,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:09:00+08:00",
+   "text": "好想你们...",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-068",
+   "section": "story",
+   "origin": "docx",
+   "floor": 68,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:10:00+08:00",
+   "text": "真的不知道为什么大学生活甚至不如hw生活光彩夺目，想念在hw的每一天，每一次寝室的夜聊，每一次在操场上的散步，每一次趴在3号楼栏杆上，甚至坐在窗台上聊天的日子",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-069",
+   "section": "story",
+   "origin": "docx",
+   "floor": 69,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:11:00+08:00",
+   "text": "想回去在熄灯以后窝在一块聊一些乱七八糟的话题",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-070",
+   "section": "story",
+   "origin": "docx",
+   "floor": 70,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:12:00+08:00",
+   "text": "还记得当时在1306像家长一样催57结婚……",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "不好意思，结了哈哈哈",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-071",
+   "section": "story",
+   "origin": "docx",
+   "floor": 71,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:13:00+08:00",
+   "text": "想念在寝室的夜聊了呃啊 现在的寝室根本不存在夜聊啊啊（哭）谁来找我聊天啊啊",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-072",
+   "section": "story",
+   "origin": "docx",
+   "floor": 72,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:14:00+08:00",
+   "text": "这是zzc的15岁生日蛋糕，谁要吃👇🏻",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "怎么还有这么古早的东西我都没有 已收藏🥵 另外我是真的想吃。",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "好年轻的zzc",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "好古早好至尊猎奇，喂我嘴里好吗。",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "远古文物zzc的蛋糕",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-073",
+   "section": "story",
+   "origin": "docx",
+   "floor": 73,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:15:00+08:00",
+   "text": "",
+   "images": [
+    {
+     "src": "assets/img/hw-32.jpg",
+     "thumb": "assets/img/thumbs/hw-32.jpg",
+     "w": 1600,
+     "h": 1197
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-074",
+   "section": "story",
+   "origin": "docx",
+   "floor": 74,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:16:00+08:00",
+   "text": "贴楼上这条是想念在hw寝室过生日的日子了www",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-075",
+   "section": "story",
+   "origin": "docx",
+   "floor": 75,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:17:00+08:00",
+   "text": "都在说大学生活自由美好难忘，我看未必有hw幸福",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-076",
+   "section": "story",
+   "origin": "docx",
+   "floor": 76,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:18:00+08:00",
+   "text": "写作业吗孩子们",
+   "images": [
+    {
+     "src": "assets/img/hw-33.jpg",
+     "thumb": "assets/img/thumbs/hw-33.jpg",
+     "w": 1600,
+     "h": 1197
+    }
+   ],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "天呐好怀念这个白板↑",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "目前还能认出谁写了哪些字😏",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-077",
+   "section": "story",
+   "origin": "docx",
+   "floor": 77,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:19:00+08:00",
+   "text": "请输入文本",
+   "images": [
+    {
+     "src": "assets/img/hw-34.jpg",
+     "thumb": "assets/img/thumbs/hw-34.jpg",
+     "w": 1200,
+     "h": 1600
+    }
+   ],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "陪一张",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-078",
+   "section": "story",
+   "origin": "docx",
+   "floor": 78,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:20:00+08:00",
+   "text": "",
+   "images": [
+    {
+     "src": "assets/img/hw-35.jpg",
+     "thumb": "assets/img/thumbs/hw-35.jpg",
+     "w": 1600,
+     "h": 900
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-079",
+   "section": "story",
+   "origin": "docx",
+   "floor": 79,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:21:00+08:00",
+   "text": "谁懂这草台班子的毕业典礼",
+   "images": [
+    {
+     "src": "assets/img/hw-36.jpg",
+     "thumb": "assets/img/thumbs/hw-36.jpg",
+     "w": 1600,
+     "h": 1200
+    },
+    {
+     "src": "assets/img/hw-37.jpg",
+     "thumb": "assets/img/thumbs/hw-37.jpg",
+     "w": 786,
+     "h": 424
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-080",
+   "section": "story",
+   "origin": "docx",
+   "floor": 80,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:22:00+08:00",
+   "text": "还有人记得这个东西吗，在2班击鼓传花来的",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "哭了……好喜欢2班",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-081",
+   "section": "story",
+   "origin": "docx",
+   "floor": 81,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:23:00+08:00",
+   "text": "还有这个令人难忘的雷雨",
+   "images": [
+    {
+     "src": "assets/img/hw-38.jpg",
+     "thumb": "assets/img/thumbs/hw-38.jpg",
+     "w": 1572,
+     "h": 930
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-082",
+   "section": "story",
+   "origin": "docx",
+   "floor": 82,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:24:00+08:00",
+   "text": "想再去运动会上放xy的好久不见。谁懂许奕迅这个梗，xswl",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "谁看到过粉毛xy？据说只存在了一个下午就被校领导赶走了是🤣🤣",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "求一个录音",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "楼主有，但是楼主mp3离楼主1200km。ok楼主翻出来了并且请人贴这儿了↓",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-083",
+   "section": "story",
+   "origin": "docx",
+   "floor": 83,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:25:00+08:00",
+   "text": "re 就是那个吐槽的曲。大赞特赞",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-084",
+   "section": "story",
+   "origin": "docx",
+   "floor": 84,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:26:00+08:00",
+   "text": "我去谁在抢我格子",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "我的妈呀什么是粉毛xy求解",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-085",
+   "section": "story",
+   "origin": "docx",
+   "floor": 85,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:27:00+08:00",
+   "text": "",
+   "images": [],
+   "audio": [
+    {
+     "src": "assets/audio/sports-song.wav",
+     "title": "运动会神曲 · 许奕老师的歌"
+    }
+   ],
+   "comments": []
+  },
+  {
+   "id": "doc-086",
+   "section": "story",
+   "origin": "docx",
+   "floor": 86,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:28:00+08:00",
+   "text": "初三一班我想你们了 我太想回去上初中了 到了大学最好的朋友还是你们...",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "我也想你们了",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我也想你们了",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我也想你们了",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我也想你们了",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我也想你们了",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我也想你们了",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我也想你们了",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我也想你们了",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-087",
+   "section": "story",
+   "origin": "docx",
+   "floor": 87,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:29:00+08:00",
+   "text": "想念高三月考后玩第五人格海龟汤的我们，大学根本没有人玩第五人格！",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "我们学校被第五人格包围了还有救吗？网易来宣讲，说到第五人格就是一阵浪潮",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-088",
+   "section": "story",
+   "origin": "docx",
+   "floor": 88,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:30:00+08:00",
+   "text": "居然没有人放糖图吗",
+   "images": [
+    {
+     "src": "assets/img/hw-39.jpg",
+     "thumb": "assets/img/thumbs/hw-39.jpg",
+     "w": 1600,
+     "h": 1200
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-089",
+   "section": "story",
+   "origin": "docx",
+   "floor": 89,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:31:00+08:00",
+   "text": "谁还记得保送考那天的晚霞\nre.没想到人生见过最美的晚霞是保送考的",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-090",
+   "section": "story",
+   "origin": "docx",
+   "floor": 90,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:32:00+08:00",
+   "text": "we are invincible！",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-091",
+   "section": "story",
+   "origin": "docx",
+   "floor": 91,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:33:00+08:00",
+   "text": "re 我记得。真的好美。",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-092",
+   "section": "story",
+   "origin": "docx",
+   "floor": 92,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:34:00+08:00",
+   "text": "谁懂高考之前溜去看dramanight，往周围一看发现许多高考生的救赎感…回去在电梯门口碰到何老师她还跟我们说hflsers never graduate",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "hflsers never graduate😭",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "草啊泪失禁体质看不得这些",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-093",
+   "section": "story",
+   "origin": "docx",
+   "floor": 93,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:35:00+08:00",
+   "text": "哎呀有一年冬天下大雪晚自习取消了...好想念那个时候在温暖的寝室里五个人分一碗泡面 在床上偷偷打牌呀",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "完全是😭 再也不会有这么好的冬天了 我记得当时外面全是大雪 寝室五个人打了一晚上的牌完全沉浸在取消晚自习的快感中 还有一次是初三分流考体测前夕 记得那是周五晚上我们寝唯一一次全员留校了 一起吃外卖点过来的披萨好幸福……😭😭😭",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "被赶回寝室前爽打雪仗，幸福之...",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我还记得我在雪地里跳wadada，你们都围着我笑我。。。还记得我们一个寝室只有一部手机，一直在打phigros",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-094",
+   "section": "story",
+   "origin": "docx",
+   "floor": 94,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:36:00+08:00",
+   "text": "",
+   "images": [
+    {
+     "src": "assets/img/hw-40.jpg",
+     "thumb": "assets/img/thumbs/hw-40.jpg",
+     "w": 1170,
+     "h": 714
+    },
+    {
+     "src": "assets/img/hw-41.jpg",
+     "thumb": "assets/img/thumbs/hw-41.jpg",
+     "w": 1440,
+     "h": 1080
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-095",
+   "section": "story",
+   "origin": "docx",
+   "floor": 95,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:37:00+08:00",
+   "text": "陪一张",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "zqy挠头",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "zqy可爱捏",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-096",
+   "section": "story",
+   "origin": "docx",
+   "floor": 96,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:38:00+08:00",
+   "text": "怀念最好的一班 我们不要聊什么综测 学分 绩点 分流 考研 奖学金 志愿时长了 我们一起回到2020～2023 一起给大家写圣诞贺卡 一起过生日 一起聊八卦 一起在晚自习哈哈大笑吧…",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "一起写圣诞贺卡真的太怀念了，分班之后再也没有写过了😭，我现在还留着满满一抽屉",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "那个时候还为了假扮圣诞老人凌晨五点起来摸黑到其他寝室里送贺卡和糖 结果把所有人都吵醒了",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-097",
+   "section": "story",
+   "origin": "docx",
+   "floor": 97,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:39:00+08:00",
+   "text": "那个雪天堵在大哥浴室门口是我这辈子笑得最开心的时刻",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "那确实笑得很开心了",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-098",
+   "section": "story",
+   "origin": "docx",
+   "floor": 98,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:40:00+08:00",
+   "text": "这里竟然还有大哥hhh",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-099",
+   "section": "story",
+   "origin": "docx",
+   "floor": 99,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:41:00+08:00",
+   "text": "记得分流考前吧好像有一天下午雨下的特别大，整个天都是黑的云就像浪一样压下来，风刮的爬山虎在起起伏伏，雨像瀑布一样拍在窗户上整个外面都像在海底，而一扇窗户之内是57办公室里温柔的亮着的两盏灯，到现在依然是在杭外最有安全感的地方",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "我太懂了。我一直在哭。保送考有一天的晚霞很漂亮 我也在1306。",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-100",
+   "section": "story",
+   "origin": "docx",
+   "floor": 100,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:42:00+08:00",
+   "text": "好想念高中三班…最抽象最武德充沛最先天不足之地，好想念我的皇帝，好想念天天喊大便的日子，好想念学考前的晚自习我们偷偷摸摸画成语你画我猜猜出来的神秘暗语…",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "断子绝孙belike",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "孙➡zymt是孙子（对不起",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我觉得录个屏裊裊主函数巴鸟才是真神...这集好像涉黄了吧没有吧你太性感了💅🏻",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "唯一真神煞笔找活鸟鸟就活",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我也想你们。你们都什么时候放寒假我们再办一场班级派对吧🎉",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我们来办一场派对吧😭🤚再来颁一点很猎奇的奖吧！",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "同意🙆‍♀️",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-101",
+   "section": "story",
+   "origin": "docx",
+   "floor": 101,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:43:00+08:00",
+   "text": "我好像回到上政治历史课天天靠看东野圭吾小说和经验集度日的日子，当时还盼着东野圭吾先生能一直出书的😭",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-102",
+   "section": "story",
+   "origin": "docx",
+   "floor": 102,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:44:00+08:00",
+   "text": "没有人懂在zm的历史课最后一排吃仙草丸子、鸡脚筋和鸡翅尖的吗🤓",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "其实感觉在zm的课上干啥都行咳咳，而且干啥都别有一番风味",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "咳咳……牛板筋……但我是第一排（我的胆子就是肥嘟嘟）。",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我想吃鸡脚筋了",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "zm的历史课每次都能让我补觉，而且睡眠质量特别好，倒头就是睡",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "仙草丸子君来了",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "好想念敏的历史课，我一生中睡眠质量最好的时候。",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-103",
+   "section": "story",
+   "origin": "docx",
+   "floor": 103,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:45:00+08:00",
+   "text": "考务办公室的大屏幕，还有时常会卡的鼠标和键盘。。。janissary's tower; arena of janissary; 打泥泥的互动视频; 以及发现的国家一等奖朗诵之蜀道难……以及晚上八点准时的夜宵。作业是不做的，物竞是不搞的，每天结束是会忏悔的……怀念高一高二时的每个晚上！！！",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "一眼xjy",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-104",
+   "section": "story",
+   "origin": "docx",
+   "floor": 104,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:46:00+08:00",
+   "text": "可以再给我一次回hw打雪仗的机会吗 😭😭😭",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "可以再给我一次回hw打雪仗的机会吗（复读",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-105",
+   "section": "story",
+   "origin": "docx",
+   "floor": 105,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:47:00+08:00",
+   "text": "为什么没有人提到DN啊啊啊啊，我真的真的真的想回到每年的DN，不论在戏剧教室热火朝天地排练，还是安安静静的在DN当天晚上做一个安静的看客。",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-106",
+   "section": "story",
+   "origin": "docx",
+   "floor": 106,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:48:00+08:00",
+   "text": "cfa我想你了 这是我真的白月光（其实前两天又看了一遍Hamilton）",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "还真是……",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-107",
+   "section": "story",
+   "origin": "docx",
+   "floor": 107,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:49:00+08:00",
+   "text": "还想和你们一起去小卖铺ktv唱歌（还记得yzh",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-108",
+   "section": "story",
+   "origin": "docx",
+   "floor": 108,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:50:00+08:00",
+   "text": "的《红日》、牢大的《青藏高原》吗，cxz什么的 最精了，拉着去又不唱），还有一起偷偷上机（五 排被抓有感觉吗）······╥﹏╥",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-109",
+   "section": "story",
+   "origin": "docx",
+   "floor": 109,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:51:00+08:00",
+   "text": "想回信息课看小说，想回晨会赶作业……（这是可 以说的吗",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-110",
+   "section": "story",
+   "origin": "docx",
+   "floor": 110,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:52:00+08:00",
+   "text": "想念和翰飞和瑞克取的一堆代号",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "你身份证掉出来了捡一下",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-111",
+   "section": "story",
+   "origin": "docx",
+   "floor": 111,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:53:00+08:00",
+   "text": "想起来我们这届是好多老师的第一届学生。hwl，xxy，wsy，pks，57，还有刚来到hw的cwf……老师们我们会成为你们的白月光么🥺",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "思雅姐姐最后给每个人写了小卡片🥺🥺",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-112",
+   "section": "story",
+   "origin": "docx",
+   "floor": 112,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:54:00+08:00",
+   "text": "永记难如看的hatchet和the giver。永远不会忘记口语考试前速通斧子哥和事多哥的大纲然后叽里咕噜一顿瞎编",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "hatchet实在逆天但giver很美味啊！",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "hatchet实在难评",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-113",
+   "section": "story",
+   "origin": "docx",
+   "floor": 113,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:55:00+08:00",
+   "text": "哦哦，还有英语课文呀。现在一看到Amazon就会想到jungle survival。哭了呀大学零个人懂雨林求生😭",
+   "images": [
+    {
+     "src": "assets/img/hw-42.jpg",
+     "thumb": "assets/img/thumbs/hw-42.jpg",
+     "w": 1200,
+     "h": 1600
+    },
+    {
+     "src": "assets/img/hw-43.jpg",
+     "thumb": "assets/img/thumbs/hw-43.jpg",
+     "w": 1200,
+     "h": 1600
+    },
+    {
+     "src": "assets/img/hw-44.jpg",
+     "thumb": "assets/img/thumbs/hw-44.jpg",
+     "w": 1200,
+     "h": 1600
+    }
+   ],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "可惜没有校史馆时期前的图书馆的照片，先放一张这个",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-114",
+   "section": "story",
+   "origin": "docx",
+   "floor": 114,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:56:00+08:00",
+   "text": "",
+   "images": [
+    {
+     "src": "assets/img/hw-45.jpg",
+     "thumb": "assets/img/thumbs/hw-45.jpg",
+     "w": 1600,
+     "h": 1200
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-115",
+   "section": "story",
+   "origin": "docx",
+   "floor": 115,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:57:00+08:00",
+   "text": "还有一班的朋友们记得这张图吗",
+   "images": [
+    {
+     "src": "assets/img/hw-46.jpg",
+     "thumb": "assets/img/thumbs/hw-46.jpg",
+     "w": 1600,
+     "h": 1200
+    }
+   ],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "我要牛泪了……致敬最好最好的一班",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "杰克好诗",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-116",
+   "section": "story",
+   "origin": "docx",
+   "floor": 116,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:58:00+08:00",
+   "text": "",
+   "images": [
+    {
+     "src": "assets/img/hw-47.jpg",
+     "thumb": "assets/img/thumbs/hw-47.jpg",
+     "w": 1200,
+     "h": 1600
+    },
+    {
+     "src": "assets/img/hw-48.jpg",
+     "thumb": "assets/img/thumbs/hw-48.jpg",
+     "w": 1080,
+     "h": 1176
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-117",
+   "section": "story",
+   "origin": "docx",
+   "floor": 117,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T20:59:00+08:00",
+   "text": "招生宣讲会排期表和报名，以及一些被拉去凑人头的人",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-118",
+   "section": "food",
+   "origin": "docx",
+   "floor": 118,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:00:00+08:00",
+   "text": "",
+   "images": [
+    {
+     "src": "assets/img/hw-49.jpg",
+     "thumb": "assets/img/thumbs/hw-49.jpg",
+     "w": 1600,
+     "h": 1200
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-119",
+   "section": "food",
+   "origin": "docx",
+   "floor": 119,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:01:00+08:00",
+   "text": "有点想泡泡鸡了",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "我也想念三楼的泡泡鸡了",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-120",
+   "section": "food",
+   "origin": "docx",
+   "floor": 120,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:02:00+08:00",
+   "text": "教职工食堂现在变得好高级啊。。和酒店自助餐一样🧐",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "依旧偏我来时不逢春",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "偏我来时不逢春……",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "人言食堂饭菜好，偏我来时不逢春",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-121",
+   "section": "food",
+   "origin": "docx",
+   "floor": 121,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:03:00+08:00",
+   "text": "3.我的烤肉饭！",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-122",
+   "section": "food",
+   "origin": "docx",
+   "floor": 122,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:04:00+08:00",
+   "text": "4.云南瓦香鸡回来了吗？（我不行了谢谢楼下）",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-123",
+   "section": "food",
+   "origin": "docx",
+   "floor": 123,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:05:00+08:00",
+   "text": "5.还在怀念我的鱿鱼饭，瓦香鸡回来了吧（思考）",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-124",
+   "section": "food",
+   "origin": "docx",
+   "floor": 124,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:06:00+08:00",
+   "text": "6.一楼最初的梅干菜饼真的很好吃（忘了哪一年开始变得难吃了。。。）",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-125",
+   "section": "food",
+   "origin": "docx",
+   "floor": 125,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:07:00+08:00",
+   "text": "⬆️啊啊啊我记得。。，",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-126",
+   "section": "food",
+   "origin": "docx",
+   "floor": 126,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:08:00+08:00",
+   "text": "我是泡泡鸡脑残粉",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "我也是",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "+1",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "➕1",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-127",
+   "section": "food",
+   "origin": "docx",
+   "floor": 127,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:09:00+08:00",
+   "text": "",
+   "images": [
+    {
+     "src": "assets/img/hw-50.jpg",
+     "thumb": "assets/img/thumbs/hw-50.jpg",
+     "w": 1200,
+     "h": 1600
+    }
+   ],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "woq还有朝鲜美食。我也想吃汤饭",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-128",
+   "section": "food",
+   "origin": "docx",
+   "floor": 128,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:10:00+08:00",
+   "text": "二楼那个什么饭一开始很好吃后面像抹布的，我来支持了，还是好吃的，离开hw发现全世界都在下雨",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-129",
+   "section": "food",
+   "origin": "docx",
+   "floor": 129,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:11:00+08:00",
+   "text": "肉是臭的",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "她__________~",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-130",
+   "section": "food",
+   "origin": "docx",
+   "floor": 130,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:12:00+08:00",
+   "text": "铁板饭好吃，初二有两周限量铁板米线天天跑去吃...",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "想念铁板饭……",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-131",
+   "section": "food",
+   "origin": "docx",
+   "floor": 131,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:13:00+08:00",
+   "text": "好想吃牛排我饥肠辘辘…",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-132",
+   "section": "food",
+   "origin": "docx",
+   "floor": 132,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:14:00+08:00",
+   "text": "我好想吃泡泡坤...",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "看到泡泡坤我破崩了",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-133",
+   "section": "food",
+   "origin": "docx",
+   "floor": 133,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:15:00+08:00",
+   "text": "提醒我了我也想吃牛排了，报复性撒满通心粉警告！",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-134",
+   "section": "food",
+   "origin": "docx",
+   "floor": 134,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:16:00+08:00",
+   "text": "泡泡坤我也想你了",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-135",
+   "section": "food",
+   "origin": "docx",
+   "floor": 135,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:17:00+08:00",
+   "text": "麻辣烫😭😭😭",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "天呐我现在学校食堂麻辣烫面饼竟然要10块钱。。。",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-136",
+   "section": "food",
+   "origin": "docx",
+   "floor": 136,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:18:00+08:00",
+   "text": "三楼以前烧烤窗口的年糕谁还记得 特别好吃（啊啊啊真的好吃好想念..）",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "记得里面的丸子和鸡翅中配上那个酱料别有风味……完全吃不到替代品🥲破防了。",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我甚至喜欢搞一碗米饭，配那个娃娃菜，娃娃菜超级吸酱😋",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我好想念那个娃娃菜呜呜呜呜后来在没吃过这么好吃的娃娃菜。。。虽然每次都裹很多酱吃到最后嘴都甜麻了但是QWQ真的很想念",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "啊啊啊啊我也想念烧烤啊啊啊呜呜呜那个香菇加上酱汁真的惊为天人，那个贡丸也超级好吃啊啊啊呜呜呜，再也没吃到过这个味道的烧烤了呜呜呜呜",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-137",
+   "section": "food",
+   "origin": "docx",
+   "floor": 137,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:19:00+08:00",
+   "text": "粿条...",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-138",
+   "section": "food",
+   "origin": "docx",
+   "floor": 138,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:20:00+08:00",
+   "text": "想念hw的牛排了...根本没有这么便宜又好吃的牛排！！！",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-139",
+   "section": "food",
+   "origin": "docx",
+   "floor": 139,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:21:00+08:00",
+   "text": "我们回到在hw上完课去食堂吃肥牛米线 在英语课偷吃小零食然后回宿舍之前去小超市买夜宵的日子吧 我的人生里最幸福的日子",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-140",
+   "section": "food",
+   "origin": "docx",
+   "floor": 140,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:22:00+08:00",
+   "text": "我爱仙草丸子 ← 同意同意",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-141",
+   "section": "food",
+   "origin": "docx",
+   "floor": 141,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:23:00+08:00",
+   "text": "↑↑ lcy我发现你了⬅666",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-142",
+   "section": "food",
+   "origin": "docx",
+   "floor": 142,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:24:00+08:00",
+   "text": "谁是仙草丸子",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-143",
+   "section": "food",
+   "origin": "docx",
+   "floor": 143,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:25:00+08:00",
+   "text": "我想念二楼刚开始的烧饼。谁懂wql让我们课上可以趁热吃烧饼的魅力。",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-144",
+   "section": "food",
+   "origin": "docx",
+   "floor": 144,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:26:00+08:00",
+   "text": "↑我的妈呀😭😭😭",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-145",
+   "section": "food",
+   "origin": "docx",
+   "floor": 145,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:27:00+08:00",
+   "text": "甚至开始怀念味同嚼蜡般的夜宵香肠。射射",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-146",
+   "section": "food",
+   "origin": "docx",
+   "floor": 146,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:28:00+08:00",
+   "text": "我要吃拌面",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-147",
+   "section": "food",
+   "origin": "docx",
+   "floor": 147,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:29:00+08:00",
+   "text": "re 我要吃拌面",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-148",
+   "section": "food",
+   "origin": "docx",
+   "floor": 148,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:30:00+08:00",
+   "text": "re 我要吃拌面",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-149",
+   "section": "food",
+   "origin": "docx",
+   "floor": 149,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:31:00+08:00",
+   "text": "我要吃拌面加番茄炒蛋我要吃拌面加番茄炒蛋我好想哭。。。can't agree more",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "我也想吃我也想吃😭🤲🏻",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-150",
+   "section": "food",
+   "origin": "docx",
+   "floor": 150,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:32:00+08:00",
+   "text": "我好想吃hw拌面啊啊啊啊啊啊啊啊，给孩子馋了，一想到这辈子可能都吃不上了就破防了，我还好想吃牛排啊，大学根本没有这么便宜又好吃的牛排！我好想吃麻辣烫啊，怀念每个自习课提前溜出去抢麻辣烫的时候",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-151",
+   "section": "food",
+   "origin": "docx",
+   "floor": 151,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:33:00+08:00",
+   "text": "怀念食堂二楼早上那个拌面啊啊啊啊😭😭我怀疑天津根本没有拌面，以及煎饼果子好难吃纯纯碳水夹碳水，谁来救救我😭😭←一秒解码我服了。🧐🤓 ←讨厌你啊喂！😡喵。",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-152",
+   "section": "food",
+   "origin": "docx",
+   "floor": 152,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:34:00+08:00",
+   "text": "你把我句号弄到下面怎么意思啊！",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-153",
+   "section": "food",
+   "origin": "docx",
+   "floor": 153,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:35:00+08:00",
+   "text": "（还是实时的笑死我了，因为要打字，这个旁边很难点，我错了给你补一个🤗）",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-154",
+   "section": "food",
+   "origin": "docx",
+   "floor": 154,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:36:00+08:00",
+   "text": "哦天哪我现每天都不吃早饭因为根本没有和我胃口的早饭。。。而且早饭巨贵无比（一个饭团20块有人懂吗）我要吃三楼的番茄炒蛋拌面 我要吃牛肉泡饭 我要吃豆腐脑 我要吃鸡蛋饼",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "抱抱你",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "啊啊啊牛肉泡饭，我想吃牛肉泡饭，呜呜呜我要吃牛肉泡饭啊啊啊",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "牛肉泡饭那个汤沾油条真的很好吃啊啊啊啊啊",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-155",
+   "section": "food",
+   "origin": "docx",
+   "floor": 155,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:37:00+08:00",
+   "text": "天呐好想念学校的拌面和三楼的拉面...大学的面条 根本不好～吃😑",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "我真想每天早上都吃hw的拌面😭😭😭",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-156",
+   "section": "food",
+   "origin": "docx",
+   "floor": 156,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:38:00+08:00",
+   "text": "好想念二楼食堂的拌面😭因为几乎每天都会去吃，负责拌面那个叔叔已经认得我了，每次看到我来都不会忘记不给我放葱，dn结束第二天我告诉他我要毕业了以后吃不到了，他说早知道带饭卡来请我吃了😭好想念杭外好想念大家😭",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-157",
+   "section": "food",
+   "origin": "docx",
+   "floor": 157,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:39:00+08:00",
+   "text": "在外面也可以吃到杭外食堂同款美食——二楼的那个（忘了叫啥）但是还是杭外的好吃，因为可以自己加东西（贪吃鬼来咯）",
+   "images": [
+    {
+     "src": "assets/img/hw-51.jpg",
+     "thumb": "assets/img/thumbs/hw-51.jpg",
+     "w": 810,
+     "h": 1440
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-158",
+   "section": "food",
+   "origin": "docx",
+   "floor": 158,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:40:00+08:00",
+   "text": "离了杭外哪个食堂放学还有夜宵吃😭 每天晚上在寝室啃饼干",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-159",
+   "section": "food",
+   "origin": "docx",
+   "floor": 159,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:41:00+08:00",
+   "text": "初一的时候小卖部有六块钱四个的包子，超级好吃",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-160",
+   "section": "food",
+   "origin": "docx",
+   "floor": 160,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:42:00+08:00",
+   "text": "某一天吃早餐的时候突然有只蚊子掉碗里了遂拍照记录",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "严肃打卡！",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-161",
+   "section": "food",
+   "origin": "docx",
+   "floor": 161,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:43:00+08:00",
+   "text": "",
+   "images": [
+    {
+     "src": "assets/img/hw-52.jpg",
+     "thumb": "assets/img/thumbs/hw-52.jpg",
+     "w": 1600,
+     "h": 1200
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-162",
+   "section": "food",
+   "origin": "docx",
+   "floor": 162,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:44:00+08:00",
+   "text": "教工食堂是薛定谔的美味",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-163",
+   "section": "food",
+   "origin": "docx",
+   "floor": 163,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:45:00+08:00",
+   "text": "泡泡鸡，粿条，麻辣烫，瓦香鸡，酸菜鸡，葱油拌面我想你们😭",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-164",
+   "section": "food",
+   "origin": "docx",
+   "floor": 164,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:46:00+08:00",
+   "text": "在呕粥只能每天烧点糊弄饭，洋人作息完全不像人类每天下午才能吃上又贵又难吃的饭，我好想泡泡坤啊一年多没吃泡泡坤了 牛排瓦香饭鱿鱼饭拌面盖浇饭你们都给我果奶。。😭🤲🏻",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "β我认出你了",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "贝老师我也想吃泡泡坤😭我还想吃盖浇饭（酱鸭鸡腿包菜）还想吃三楼的番茄鸡蛋拌面 铁板饭",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-165",
+   "section": "food",
+   "origin": "docx",
+   "floor": 165,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:47:00+08:00",
+   "text": "想念二楼的拌面了，那个小面一煮，小酱一浇，小油一淋，小蛋一放，啧啧啧",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-166",
+   "section": "food",
+   "origin": "docx",
+   "floor": 166,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:48:00+08:00",
+   "text": "在满是二楼拌面的帖子下面，一楼早餐的西红柿鸡蛋面也值得拥有姓名🥹🥹🥹🥹🥹真的很好吃！ 现在这破学校食堂的早餐简直难以下咽啊。。。。",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "一楼西红柿炒蛋的汤面也是巨无敌好吃啊，每次吃完都感觉全身暖暖的",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-167",
+   "section": "food",
+   "origin": "docx",
+   "floor": 167,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:49:00+08:00",
+   "text": "想念hw食堂的原因之一是北京全是香菜😡讨厌香菜",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "支持香菜灭绝😡😡😡😡😡😡😡😡😡",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "全世界最讨厌香菜之人😠😠😠😠😠",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "香菜实在 咳咳",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "不行不行！等我有钱了我一定要在全世界种满香菜！😋😋😋",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "不允许！！！！！",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "那你有钱了就把香菜拔光，然后我重新种",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "？",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-168",
+   "section": "food",
+   "origin": "docx",
+   "floor": 168,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:50:00+08:00",
+   "text": "我再也不要吃烧腊饭了。。。我要吃杭外三食堂的盖浇饭和铁板饭。。。",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-169",
+   "section": "food",
+   "origin": "docx",
+   "floor": 169,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:51:00+08:00",
+   "text": "我甚至想过大早上跑到杭外去吃拌面 可惜的是我刷脸进不去了。受不了了为什么要删我人脸识别！！校友不能刷脸进吗？😡😡😡😡😡",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-170",
+   "section": "food",
+   "origin": "docx",
+   "floor": 170,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:52:00+08:00",
+   "text": "想吃葛春烧的菜了",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "葛春还是太权威了",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-171",
+   "section": "food",
+   "origin": "docx",
+   "floor": 171,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:53:00+08:00",
+   "text": "哦哦，想念hw免费汤了呀。。。想喝紫菜蛋花汤番茄蛋花汤包菜豆腐汤。大学里根本没有这样的免费汤！我已急哭😭",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-172",
+   "section": "food",
+   "origin": "docx",
+   "floor": 172,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:54:00+08:00",
+   "text": "好想吃二楼之前那个铁板鱼豆腐…怎么后来就没有了。！",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-173",
+   "section": "food",
+   "origin": "docx",
+   "floor": 173,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:55:00+08:00",
+   "text": "谁懂三食堂葱油拌面加一勺西红柿炒蛋。。。再也吃不到的美味。",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-174",
+   "section": "food",
+   "origin": "docx",
+   "floor": 174,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:56:00+08:00",
+   "text": "只有我还在回忆3楼的白月光炒冷面，谁懂还没吃几次就下架的悲伤🥹",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-175",
+   "section": "food",
+   "origin": "docx",
+   "floor": 175,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:57:00+08:00",
+   "text": "还在回忆2楼的白月光日本豆腐锅...我将一直想念",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-176",
+   "section": "food",
+   "origin": "docx",
+   "floor": 176,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:58:00+08:00",
+   "text": "我好想吃二楼牛肉丼饭😭（话说我真的花了好长时间才搞明白它叫什么）",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-177",
+   "section": "food",
+   "origin": "docx",
+   "floor": 177,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T21:59:00+08:00",
+   "text": "我真的真的好怀念食堂1楼中午的筒骨面❤️‍🔥瓦香鸡❤️‍🔥鳗鱼饭❤️‍🔥还有三楼的烧烤窗😢😭以及2楼后来推出烤串之后我才这辈子第1次认识到蜂蜜芥末酱有多么美味百搭😭😭",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-178",
+   "section": "food",
+   "origin": "docx",
+   "floor": 178,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:00:00+08:00",
+   "text": "我爱高人拉面🍜双仔每日海苔🧃️挑吃兔狼牙土豆🥔卫龙溏心蛋🍳汤老鸭香辣味和黑鸭味鸭心🦆梅饴馆蜂蜜老梅干🍯谷粒多燕麦牛奶🥛甜心日记鲜奶布丁🍮",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "鲜奶布丁，我们喜欢你",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-179",
+   "section": "food",
+   "origin": "docx",
+   "floor": 179,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:01:00+08:00",
+   "text": "天呐还有人记得二食堂的薯塔吗啊啊啊，英语课四五连堂每次都第四节课下课跑过去买一个薯塔挤满番茄酱和芥末蜂蜜酱带回小教室食用",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-180",
+   "section": "love",
+   "origin": "docx",
+   "floor": 180,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:02:00+08:00",
+   "text": "这一切太美丽了，亲爱的。腐烂着，灿烂着，然后永恒。原谅我才疏学浅说不出太多，我爱每一个在此地流经我生命的人，我爱每一个曾与我在此地同时抬头看天空的人。我想回到樱花树下，我想回到大槐树下，我想回到教学楼的中庭，我想回到钢琴前：好久不见，但我们来日方长。祝所有曾造访这个文档的同学，诸事顺遂，万事胜意。",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-181",
+   "section": "love",
+   "origin": "docx",
+   "floor": 181,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:03:00+08:00",
+   "text": "我喜欢hyy！喵喵喵喵喵我给她拍出了人生照片",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-182",
+   "section": "love",
+   "origin": "docx",
+   "floor": 182,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:04:00+08:00",
+   "text": "（其实hyy向我求婚了5次但都被我拒绝了😎😎)",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-183",
+   "section": "love",
+   "origin": "docx",
+   "floor": 183,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:05:00+08:00",
+   "text": "就是这样，我要表白初一8班胡译允😍",
+   "images": [
+    {
+     "src": "assets/img/hw-53.jpg",
+     "thumb": "assets/img/thumbs/hw-53.jpg",
+     "w": 1200,
+     "h": 1600
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-184",
+   "section": "love",
+   "origin": "docx",
+   "floor": 184,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:06:00+08:00",
+   "text": "xjy还爱zyk～forever",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-185",
+   "section": "love",
+   "origin": "docx",
+   "floor": 185,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:07:00+08:00",
+   "text": "加强2.6速猪！削弱家驹！",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-186",
+   "section": "love",
+   "origin": "docx",
+   "floor": 186,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:08:00+08:00",
+   "text": "别削尚博勒☜必须削，桂成啥了",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-187",
+   "section": "love",
+   "origin": "docx",
+   "floor": 187,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:09:00+08:00",
+   "text": "皇室战争国服hw部落标签 #QQJUPQ8U",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-188",
+   "section": "love",
+   "origin": "docx",
+   "floor": 188,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:10:00+08:00",
+   "text": "咪咪咪咪咪咪",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-189",
+   "section": "love",
+   "origin": "docx",
+   "floor": 189,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:11:00+08:00",
+   "text": "cxz别删了，删评论的是gay",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-190",
+   "section": "love",
+   "origin": "docx",
+   "floor": 190,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:12:00+08:00",
+   "text": "cxz别潜水了",
+   "images": [
+    {
+     "src": "assets/img/hw-54.jpg",
+     "thumb": "assets/img/thumbs/hw-54.jpg",
+     "w": 387,
+     "h": 367
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-191",
+   "section": "love",
+   "origin": "docx",
+   "floor": 191,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:13:00+08:00",
+   "text": "哈哈哈哈哈哈哈哈哈😂",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-192",
+   "section": "love",
+   "origin": "docx",
+   "floor": 192,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:14:00+08:00",
+   "text": "绷绷炸弹来了",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-193",
+   "section": "love",
+   "origin": "docx",
+   "floor": 193,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:15:00+08:00",
+   "text": "cxz乱摸肚子，带坏良家妇女",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-194",
+   "section": "love",
+   "origin": "docx",
+   "floor": 194,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:16:00+08:00",
+   "text": "表白cxz腹肌",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-195",
+   "section": "love",
+   "origin": "docx",
+   "floor": 195,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:17:00+08:00",
+   "text": "cxz摸摸肚子",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-196",
+   "section": "love",
+   "origin": "docx",
+   "floor": 196,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:18:00+08:00",
+   "text": "xz太bt了",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-197",
+   "section": "love",
+   "origin": "docx",
+   "floor": 197,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:19:00+08:00",
+   "text": "兄弟们我要开始准备考研了",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-198",
+   "section": "love",
+   "origin": "docx",
+   "floor": 198,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:20:00+08:00",
+   "text": "喵喵喵喵喵喵喵喵喵喵",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-199",
+   "section": "love",
+   "origin": "docx",
+   "floor": 199,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:21:00+08:00",
+   "text": "为什么这么多人喜欢cxz🤔此文的含熊量好高",
+   "images": [
+    {
+     "src": "assets/img/hw-55.jpg",
+     "thumb": "assets/img/thumbs/hw-55.jpg",
+     "w": 450,
+     "h": 600
+    }
+   ],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "根本就没有这样的幼年cxz！🤯🤯🤯",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-200",
+   "section": "love",
+   "origin": "docx",
+   "floor": 200,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:22:00+08:00",
+   "text": "",
+   "images": [
+    {
+     "src": "assets/img/hw-56.jpg",
+     "thumb": "assets/img/thumbs/hw-56.jpg",
+     "w": 450,
+     "h": 411
+    },
+    {
+     "src": "assets/img/hw-57.jpg",
+     "thumb": "assets/img/thumbs/hw-57.jpg",
+     "w": 450,
+     "h": 600
+    },
+    {
+     "src": "assets/img/hw-58.jpg",
+     "thumb": "assets/img/thumbs/hw-58.jpg",
+     "w": 1080,
+     "h": 1440
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-201",
+   "section": "love",
+   "origin": "docx",
+   "floor": 201,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:23:00+08:00",
+   "text": "铁窗泪",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "99",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "99",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "99",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-202",
+   "section": "love",
+   "origin": "docx",
+   "floor": 202,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:24:00+08:00",
+   "text": "99 💕",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-203",
+   "section": "love",
+   "origin": "docx",
+   "floor": 203,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:25:00+08:00",
+   "text": "99",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-204",
+   "section": "love",
+   "origin": "docx",
+   "floor": 204,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:26:00+08:00",
+   "text": "99",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-205",
+   "section": "love",
+   "origin": "docx",
+   "floor": 205,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:27:00+08:00",
+   "text": "99",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-206",
+   "section": "love",
+   "origin": "docx",
+   "floor": 206,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:28:00+08:00",
+   "text": "99",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-207",
+   "section": "love",
+   "origin": "docx",
+   "floor": 207,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:29:00+08:00",
+   "text": "99",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-208",
+   "section": "love",
+   "origin": "docx",
+   "floor": 208,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:30:00+08:00",
+   "text": "99",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-209",
+   "section": "love",
+   "origin": "docx",
+   "floor": 209,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:31:00+08:00",
+   "text": "有点暖味了",
+   "images": [
+    {
+     "src": "assets/img/hw-59.jpg",
+     "thumb": "assets/img/thumbs/hw-59.jpg",
+     "w": 1080,
+     "h": 1440
+    },
+    {
+     "src": "assets/img/hw-60.jpg",
+     "thumb": "assets/img/thumbs/hw-60.jpg",
+     "w": 1600,
+     "h": 1200
+    },
+    {
+     "src": "assets/img/hw-61.jpg",
+     "thumb": "assets/img/thumbs/hw-61.jpg",
+     "w": 1200,
+     "h": 1600
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-210",
+   "section": "love",
+   "origin": "docx",
+   "floor": 210,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:32:00+08:00",
+   "text": "↑↑ 拍毕业照那天大家一起打球有感觉吗",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-211",
+   "section": "love",
+   "origin": "docx",
+   "floor": 211,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:33:00+08:00",
+   "text": "一只俊俊的pj",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-212",
+   "section": "love",
+   "origin": "docx",
+   "floor": 212,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:34:00+08:00",
+   "text": "（谁的贴图，似乎加载不出来，排版乱了我就删掉了🙉）",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-213",
+   "section": "love",
+   "origin": "docx",
+   "floor": 213,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:35:00+08:00",
+   "text": "我来扔照片了嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-214",
+   "section": "love",
+   "origin": "docx",
+   "floor": 214,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:36:00+08:00",
+   "text": "突然发现之前拍的好多照片，都是很青涩的大家呢😋",
+   "images": [
+    {
+     "src": "assets/img/hw-62.jpg",
+     "thumb": "assets/img/thumbs/hw-62.jpg",
+     "w": 1024,
+     "h": 1182
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-215",
+   "section": "love",
+   "origin": "docx",
+   "floor": 215,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:37:00+08:00",
+   "text": "pj肘击！（开玩笑的开玩笑的，pj在展示肌肉教育我们要好好锻炼！）",
+   "images": [
+    {
+     "src": "assets/img/hw-63.jpg",
+     "thumb": "assets/img/thumbs/hw-63.jpg",
+     "w": 1600,
+     "h": 1198
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-216",
+   "section": "love",
+   "origin": "docx",
+   "floor": 216,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:38:00+08:00",
+   "text": "初三1班时期的神奇班旗",
+   "images": [
+    {
+     "src": "assets/img/hw-64.jpg",
+     "thumb": "assets/img/thumbs/hw-64.jpg",
+     "w": 1197,
+     "h": 1600
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-217",
+   "section": "love",
+   "origin": "docx",
+   "floor": 217,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:39:00+08:00",
+   "text": "高一6班时期的秋游版班旗",
+   "images": [
+    {
+     "src": "assets/img/hw-65.jpg",
+     "thumb": "assets/img/thumbs/hw-65.jpg",
+     "w": 1197,
+     "h": 1600
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-218",
+   "section": "love",
+   "origin": "docx",
+   "floor": 218,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:40:00+08:00",
+   "text": "亲爱的lf和xxy老师（高一时期开家长会）",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "好沧桑的选修一",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-219",
+   "section": "love",
+   "origin": "docx",
+   "floor": 219,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:41:00+08:00",
+   "text": "",
+   "images": [
+    {
+     "src": "assets/img/hw-66.jpg",
+     "thumb": "assets/img/thumbs/hw-66.jpg",
+     "w": 1600,
+     "h": 1197
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-220",
+   "section": "love",
+   "origin": "docx",
+   "floor": 220,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:42:00+08:00",
+   "text": "青涩的小胡老师（依旧家长会）",
+   "images": [
+    {
+     "src": "assets/img/hw-67.jpg",
+     "thumb": "assets/img/thumbs/hw-67.jpg",
+     "w": 1600,
+     "h": 1197
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-221",
+   "section": "love",
+   "origin": "docx",
+   "floor": 221,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:43:00+08:00",
+   "text": "wyf老师（依旧家长会），我们喜欢你呀emma",
+   "images": [
+    {
+     "src": "assets/img/hw-68.jpg",
+     "thumb": "assets/img/thumbs/hw-68.jpg",
+     "w": 1600,
+     "h": 1197
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-222",
+   "section": "love",
+   "origin": "docx",
+   "floor": 222,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:44:00+08:00",
+   "text": "mjf老师（依旧家长会）帅气小光头",
+   "images": [
+    {
+     "src": "assets/img/hw-69.jpg",
+     "thumb": "assets/img/thumbs/hw-69.jpg",
+     "w": 1600,
+     "h": 1200
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-223",
+   "section": "love",
+   "origin": "docx",
+   "floor": 223,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:45:00+08:00",
+   "text": "高一运动会版的帅气mjf！我最满意的一张照片！！！！！！！！",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-224",
+   "section": "love",
+   "origin": "docx",
+   "floor": 224,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:46:00+08:00",
+   "text": "有一说一这个确实拍的好😋",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-225",
+   "section": "love",
+   "origin": "docx",
+   "floor": 225,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:47:00+08:00",
+   "text": "拍摄者本人非常之满意的一张（来自骄傲的作者）",
+   "images": [
+    {
+     "src": "assets/img/hw-70.jpg",
+     "thumb": "assets/img/thumbs/hw-70.jpg",
+     "w": 1600,
+     "h": 1197
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-226",
+   "section": "love",
+   "origin": "docx",
+   "floor": 226,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:48:00+08:00",
+   "text": "亲爱的zsl老师，我在大学习概课很想你🥺",
+   "images": [
+    {
+     "src": "assets/img/hw-71.jpg",
+     "thumb": "assets/img/thumbs/hw-71.jpg",
+     "w": 1600,
+     "h": 1197
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-227",
+   "section": "love",
+   "origin": "docx",
+   "floor": 227,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:49:00+08:00",
+   "text": "57！新婚快乐！图片有小彩蛋哦😋",
+   "images": [
+    {
+     "src": "assets/img/hw-72.jpg",
+     "thumb": "assets/img/thumbs/hw-72.jpg",
+     "w": 1600,
+     "h": 1197
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-228",
+   "section": "love",
+   "origin": "docx",
+   "floor": 228,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:50:00+08:00",
+   "text": "想你了pj，最好的数学老师🥺大学数学好难。。。我需要pj的帮助。。。快来。。。",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "削弱概率论",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-229",
+   "section": "love",
+   "origin": "docx",
+   "floor": 229,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:51:00+08:00",
+   "text": "",
+   "images": [
+    {
+     "src": "assets/img/hw-73.jpg",
+     "thumb": "assets/img/thumbs/hw-73.jpg",
+     "w": 1600,
+     "h": 1197
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-230",
+   "section": "love",
+   "origin": "docx",
+   "floor": 230,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:52:00+08:00",
+   "text": "cwf老师吃晚饭了吗？最具淡淡的幽默感的老师，最喜欢物理场之人",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-231",
+   "section": "love",
+   "origin": "docx",
+   "floor": 231,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:53:00+08:00",
+   "text": "原谅我破绷了",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-232",
+   "section": "love",
+   "origin": "docx",
+   "floor": 232,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:54:00+08:00",
+   "text": "这波真的绷不住",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-233",
+   "section": "love",
+   "origin": "docx",
+   "floor": 233,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:55:00+08:00",
+   "text": "吃饭了吗",
+   "images": [
+    {
+     "src": "assets/img/hw-74.jpg",
+     "thumb": "assets/img/thumbs/hw-74.jpg",
+     "w": 1197,
+     "h": 1600
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-234",
+   "section": "love",
+   "origin": "docx",
+   "floor": 234,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:56:00+08:00",
+   "text": "附赠一张高一秋游时期的hdl老师呀。虽然不教我但是我真的很想要何老师的小礼物🥺",
+   "images": [
+    {
+     "src": "assets/img/hw-75.jpg",
+     "thumb": "assets/img/thumbs/hw-75.jpg",
+     "w": 1600,
+     "h": 1200
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-235",
+   "section": "love",
+   "origin": "docx",
+   "floor": 235,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:57:00+08:00",
+   "text": "毕业典礼的李老师。其实能在高中时期有一个倾听者是一件很幸运的事情🥺",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-236",
+   "section": "love",
+   "origin": "docx",
+   "floor": 236,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:58:00+08:00",
+   "text": "感谢杭外六年能遇到你们这样的老师（txljcz留）",
+   "images": [
+    {
+     "src": "assets/img/hw-76.jpg",
+     "thumb": "assets/img/thumbs/hw-76.jpg",
+     "w": 1080,
+     "h": 718
+    },
+    {
+     "src": "assets/img/hw-77.jpg",
+     "thumb": "assets/img/thumbs/hw-77.jpg",
+     "w": 448,
+     "h": 439
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-237",
+   "section": "love",
+   "origin": "docx",
+   "floor": 237,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T22:59:00+08:00",
+   "text": "最喜欢许老师了🥺真的是我高中时期的天使呀",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "完全是因为她我的生物才好的 我本来上dl的课真的痛不欲生😣谢谢xxy",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "还记得一次月考生物在最后的晚上于是xxy请我们吃了蛋糕，她还经常投喂我们零食的说🥺好想她...",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "谁懂考完生物收到一束向日葵的救赎感呜呜呜呜呜🥹",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "想你了xxy😭。",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-238",
+   "section": "love",
+   "origin": "docx",
+   "floor": 238,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:00:00+08:00",
+   "text": "",
+   "images": [
+    {
+     "src": "assets/img/hw-78.jpg",
+     "thumb": "assets/img/thumbs/hw-78.jpg",
+     "w": 1600,
+     "h": 900
+    },
+    {
+     "src": "assets/img/hw-79.jpg",
+     "thumb": "assets/img/thumbs/hw-79.jpg",
+     "w": 1067,
+     "h": 1600
+    },
+    {
+     "src": "assets/img/hw-80.jpg",
+     "thumb": "assets/img/thumbs/hw-80.jpg",
+     "w": 1197,
+     "h": 1600
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-239",
+   "section": "love",
+   "origin": "docx",
+   "floor": 239,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:01:00+08:00",
+   "text": "初三时期的xjy，很美味呢😋",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "这不是我男神吗这么帅✌🏿",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-240",
+   "section": "love",
+   "origin": "docx",
+   "floor": 240,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:02:00+08:00",
+   "text": "",
+   "images": [
+    {
+     "src": "assets/img/hw-81.jpg",
+     "thumb": "assets/img/thumbs/hw-81.jpg",
+     "w": 1600,
+     "h": 1197
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-241",
+   "section": "love",
+   "origin": "docx",
+   "floor": 241,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:03:00+08:00",
+   "text": "初三时期的zxa，请品鉴",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "谁把我家男神放上来了",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-242",
+   "section": "love",
+   "origin": "docx",
+   "floor": 242,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:04:00+08:00",
+   "text": "",
+   "images": [
+    {
+     "src": "assets/img/hw-82.jpg",
+     "thumb": "assets/img/thumbs/hw-82.jpg",
+     "w": 1181,
+     "h": 1600
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-243",
+   "section": "love",
+   "origin": "docx",
+   "floor": 243,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:05:00+08:00",
+   "text": "表白syc",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "这位又是谁家男神",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-244",
+   "section": "love",
+   "origin": "docx",
+   "floor": 244,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:06:00+08:00",
+   "text": "",
+   "images": [
+    {
+     "src": "assets/img/hw-83.jpg",
+     "thumb": "assets/img/thumbs/hw-83.jpg",
+     "w": 1200,
+     "h": 1600
+    },
+    {
+     "src": "assets/img/hw-84.jpg",
+     "thumb": "assets/img/thumbs/hw-84.jpg",
+     "w": 1600,
+     "h": 1200
+    },
+    {
+     "src": "assets/img/hw-85.jpg",
+     "thumb": "assets/img/thumbs/hw-85.jpg",
+     "w": 1600,
+     "h": 1066
+    },
+    {
+     "src": "assets/img/hw-86.jpg",
+     "thumb": "assets/img/thumbs/hw-86.jpg",
+     "w": 1600,
+     "h": 1200
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-245",
+   "section": "love",
+   "origin": "docx",
+   "floor": 245,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:07:00+08:00",
+   "text": "三年一冠一亚一季，大概也只有我们会在高考一百天还愿意踢海超杯吧（笑）",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-246",
+   "section": "love",
+   "origin": "docx",
+   "floor": 246,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:08:00+08:00",
+   "text": "～～～",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-247",
+   "section": "love",
+   "origin": "docx",
+   "floor": 247,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:09:00+08:00",
+   "text": "好多人啊（",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-248",
+   "section": "love",
+   "origin": "docx",
+   "floor": 248,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:10:00+08:00",
+   "text": "晚上好！",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-249",
+   "section": "love",
+   "origin": "docx",
+   "floor": 249,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:11:00+08:00",
+   "text": "真是全年级人最齐的一集",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-250",
+   "section": "love",
+   "origin": "docx",
+   "floor": 250,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:12:00+08:00",
+   "text": "都给我来玩口牙！欢迎大家在大分类下自由发挥！",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-251",
+   "section": "love",
+   "origin": "docx",
+   "floor": 251,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:13:00+08:00",
+   "text": "好的",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-252",
+   "section": "love",
+   "origin": "docx",
+   "floor": 252,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:14:00+08:00",
+   "text": "没有人写吗……那我要写了",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-253",
+   "section": "love",
+   "origin": "docx",
+   "floor": 253,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:15:00+08:00",
+   "text": "好想念坑外，大学e er念得我好苦😭",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-254",
+   "section": "love",
+   "origin": "docx",
+   "floor": 254,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:16:00+08:00",
+   "text": "我好想回杭外呀...",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-255",
+   "section": "love",
+   "origin": "docx",
+   "floor": 255,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:17:00+08:00",
+   "text": "今年冬天能不能回一次坑外呀",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-256",
+   "section": "love",
+   "origin": "docx",
+   "floor": 256,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:18:00+08:00",
+   "text": "这里是一个巨大的匿名群聊",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-257",
+   "section": "love",
+   "origin": "docx",
+   "floor": 257,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:19:00+08:00",
+   "text": "想听李芳上水课",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-258",
+   "section": "love",
+   "origin": "docx",
+   "floor": 258,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:20:00+08:00",
+   "text": "想听李芳上水课。。。",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-259",
+   "section": "love",
+   "origin": "docx",
+   "floor": 259,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:21:00+08:00",
+   "text": "想听李芳上水课……",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-260",
+   "section": "love",
+   "origin": "docx",
+   "floor": 260,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:22:00+08:00",
+   "text": "想你了lf。",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-261",
+   "section": "love",
+   "origin": "docx",
+   "floor": 261,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:23:00+08:00",
+   "text": "想ywm了😭",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "想ywm了 好想回老头办公室和他聊天...",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-262",
+   "section": "love",
+   "origin": "docx",
+   "floor": 262,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:24:00+08:00",
+   "text": "我好想那三个学号和我连在一起的女孩 我去你别搞我了我真要哭了 我们什么时候才能团聚啊我不想每天流眼泪了 我们回到学校后面的出租屋不要被命运找到 我想回到初三上下雪天我们一起出校门在车上吃炸鸡的日子你们还记得不。我记得🥹🥹好多kfc炸鸡",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-263",
+   "section": "love",
+   "origin": "docx",
+   "floor": 263,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:25:00+08:00",
+   "text": "发现在hw上过学是我最拿的出手的履历😭。 +1 +10086",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-264",
+   "section": "love",
+   "origin": "docx",
+   "floor": 264,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:26:00+08:00",
+   "text": "好想生日和我连一起的俩女孩，好想和我同年同月同日生的女孩😭好想全体在我列表和曾经在我列表的杭外人（？这啥。性感了）",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-265",
+   "section": "love",
+   "origin": "docx",
+   "floor": 265,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:27:00+08:00",
+   "text": "想念和我一起翘自习课去吃饭的女孩😭",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-266",
+   "section": "love",
+   "origin": "docx",
+   "floor": 266,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:28:00+08:00",
+   "text": "你在我心中的烙印太深，深到我时常讶异于自己竟变成了你的样子。我们约定各自奔向诗和远方，可如今我仍会蓦然回首，对着我们没来得及分开的影子静静出神。",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "好伤心💔",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-267",
+   "section": "love",
+   "origin": "docx",
+   "floor": 267,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:29:00+08:00",
+   "text": "我超我好想念周五在lf语文补习的课上睡觉看书唱生日快乐歌骚扰美丽同桌的日子 一边说自己要死了一边看着专项卷发呆",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-268",
+   "section": "love",
+   "origin": "docx",
+   "floor": 268,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:30:00+08:00",
+   "text": "什么时候我们全年级可以再那样乱哄哄聚在一起！就像首考英语之类的时候一样",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "复议",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-269",
+   "section": "love",
+   "origin": "docx",
+   "floor": 269,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:31:00+08:00",
+   "text": "我要美美放图",
+   "images": [
+    {
+     "src": "assets/img/hw-87.jpg",
+     "thumb": "assets/img/thumbs/hw-87.jpg",
+     "w": 1200,
+     "h": 1600
+    },
+    {
+     "src": "assets/img/hw-88.jpg",
+     "thumb": "assets/img/thumbs/hw-88.jpg",
+     "w": 1600,
+     "h": 1200
+    }
+   ],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "楼上一起✌🏻",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-270",
+   "section": "love",
+   "origin": "docx",
+   "floor": 270,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:32:00+08:00",
+   "text": "",
+   "images": [
+    {
+     "src": "assets/img/hw-89.jpg",
+     "thumb": "assets/img/thumbs/hw-89.jpg",
+     "w": 900,
+     "h": 1600
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-271",
+   "section": "love",
+   "origin": "docx",
+   "floor": 271,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:33:00+08:00",
+   "text": "图片里的四位我爱你们别打我（高一春游时期拍摄）（我去。我都没印象了😅",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-272",
+   "section": "love",
+   "origin": "docx",
+   "floor": 272,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:34:00+08:00",
+   "text": "👆图片里到底是4个人还是5个人我去🤯",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-273",
+   "section": "love",
+   "origin": "docx",
+   "floor": 273,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:35:00+08:00",
+   "text": "👆五个",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-274",
+   "section": "love",
+   "origin": "docx",
+   "floor": 274,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:36:00+08:00",
+   "text": "👆还有一个人的头呢，我去🤯谁和杰克合体了",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-275",
+   "section": "love",
+   "origin": "docx",
+   "floor": 275,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:37:00+08:00",
+   "text": "⬆️但是这个是为了做春游任务拉的过路人，楼主忘了是谁了因为我不认识",
+   "images": [
+    {
+     "src": "assets/img/hw-90.jpg",
+     "thumb": "assets/img/thumbs/hw-90.jpg",
+     "w": 420,
+     "h": 218
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-276",
+   "section": "love",
+   "origin": "docx",
+   "floor": 276,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:38:00+08:00",
+   "text": "O杰克啊杰克 你是多么美丽",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-277",
+   "section": "love",
+   "origin": "docx",
+   "floor": 277,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:39:00+08:00",
+   "text": "禁止秀恩爱...",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-278",
+   "section": "love",
+   "origin": "docx",
+   "floor": 278,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:40:00+08:00",
+   "text": "jack怎么还有深情唯粉",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-279",
+   "section": "love",
+   "origin": "docx",
+   "floor": 279,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:41:00+08:00",
+   "text": "雷子好可爱",
+   "images": [
+    {
+     "src": "assets/img/hw-91.jpg",
+     "thumb": "assets/img/thumbs/hw-91.jpg",
+     "w": 180,
+     "h": 178
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-280",
+   "section": "love",
+   "origin": "docx",
+   "floor": 280,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:42:00+08:00",
+   "text": "可爱捏",
+   "images": [
+    {
+     "src": "assets/img/hw-92.jpg",
+     "thumb": "assets/img/thumbs/hw-92.jpg",
+     "w": 900,
+     "h": 1600
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-281",
+   "section": "love",
+   "origin": "docx",
+   "floor": 281,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:43:00+08:00",
+   "text": "比心😘爱你们各位",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-282",
+   "section": "love",
+   "origin": "docx",
+   "floor": 282,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:44:00+08:00",
+   "text": "致我期盼过、犹疑过、莽撞过、奋斗过的六年青春",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "我看完这句话掉小珍珠了",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-283",
+   "section": "love",
+   "origin": "docx",
+   "floor": 283,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:45:00+08:00",
+   "text": "",
+   "images": [
+    {
+     "src": "assets/img/hw-93.jpg",
+     "thumb": "assets/img/thumbs/hw-93.jpg",
+     "w": 1200,
+     "h": 1600
+    },
+    {
+     "src": "assets/img/hw-94.jpg",
+     "thumb": "assets/img/thumbs/hw-94.jpg",
+     "w": 1200,
+     "h": 1600
+    },
+    {
+     "src": "assets/img/hw-95.jpg",
+     "thumb": "assets/img/thumbs/hw-95.jpg",
+     "w": 1600,
+     "h": 1200
+    }
+   ],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "是镜子还是双胞胎",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "三胞胎",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "tfboys来了",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-284",
+   "section": "love",
+   "origin": "docx",
+   "floor": 284,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:46:00+08:00",
+   "text": "",
+   "images": [
+    {
+     "src": "assets/img/hw-96.jpg",
+     "thumb": "assets/img/thumbs/hw-96.jpg",
+     "w": 1200,
+     "h": 1600
+    }
+   ],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "谁家czk快领走",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "czk来我家😍😍😍",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-285",
+   "section": "love",
+   "origin": "docx",
+   "floor": 285,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:47:00+08:00",
+   "text": "",
+   "images": [
+    {
+     "src": "assets/img/hw-97.jpg",
+     "thumb": "assets/img/thumbs/hw-97.jpg",
+     "w": 1600,
+     "h": 1067
+    },
+    {
+     "src": "assets/img/hw-98.jpg",
+     "thumb": "assets/img/thumbs/hw-98.jpg",
+     "w": 600,
+     "h": 450
+    },
+    {
+     "src": "assets/img/hw-99.jpg",
+     "thumb": "assets/img/thumbs/hw-99.jpg",
+     "w": 800,
+     "h": 556
+    }
+   ],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "zqz在干嘛",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "zqz在展示自己的可爱😍",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "胆子真是肥嘟嘟的、",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "配色正确",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "惊鸿一瞥.jpg",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-286",
+   "section": "love",
+   "origin": "docx",
+   "floor": 286,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:48:00+08:00",
+   "text": "",
+   "images": [
+    {
+     "src": "assets/img/hw-100.jpg",
+     "thumb": "assets/img/thumbs/hw-100.jpg",
+     "w": 1600,
+     "h": 1200
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-287",
+   "section": "love",
+   "origin": "docx",
+   "floor": 287,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:49:00+08:00",
+   "text": "保送生开学路过高考班拍的👆",
+   "images": [
+    {
+     "src": "assets/img/hw-101.jpg",
+     "thumb": "assets/img/thumbs/hw-101.jpg",
+     "w": 1600,
+     "h": 1200
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-288",
+   "section": "love",
+   "origin": "docx",
+   "floor": 288,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:50:00+08:00",
+   "text": "主播要来贴图了 虽然我根本没上过hwl的课但是我一直保存着这张神图 太神圣了",
+   "images": [
+    {
+     "src": "assets/img/hw-102.jpg",
+     "thumb": "assets/img/thumbs/hw-102.jpg",
+     "w": 1200,
+     "h": 1600
+    }
+   ],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "友情附赠一张",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-289",
+   "section": "love",
+   "origin": "docx",
+   "floor": 289,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:51:00+08:00",
+   "text": "",
+   "images": [
+    {
+     "src": "assets/img/hw-103.jpg",
+     "thumb": "assets/img/thumbs/hw-103.jpg",
+     "w": 1197,
+     "h": 1600
+    },
+    {
+     "src": "assets/img/hw-104.jpg",
+     "thumb": "assets/img/thumbs/hw-104.jpg",
+     "w": 1080,
+     "h": 608
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-290",
+   "section": "love",
+   "origin": "docx",
+   "floor": 290,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:52:00+08:00",
+   "text": "谁能告诉我wq啥时候新婚了（",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "就不告诉你",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-291",
+   "section": "love",
+   "origin": "docx",
+   "floor": 291,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:53:00+08:00",
+   "text": "我不行了我微信表情包限额1000个中有好几百个都是hfls同学和老师。。。我甚至还为了方便查找把表情包按名字音序排列LoL",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "怎么楼上改颜色搞特殊🌝想看表情包",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我要表情包！",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-292",
+   "section": "love",
+   "origin": "docx",
+   "floor": 292,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:54:00+08:00",
+   "text": "好。。。的。。。给你们。。。预览。。。↓↓↓",
+   "images": [
+    {
+     "src": "assets/img/hw-105.jpg",
+     "thumb": "assets/img/thumbs/hw-105.jpg",
+     "w": 1027,
+     "h": 2200
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-293",
+   "section": "love",
+   "origin": "docx",
+   "floor": 293,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:55:00+08:00",
+   "text": "我要单独放一行cxz",
+   "images": [
+    {
+     "src": "assets/img/hw-106.jpg",
+     "thumb": "assets/img/thumbs/hw-106.jpg",
+     "w": 1260,
+     "h": 258
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-294",
+   "section": "love",
+   "origin": "docx",
+   "floor": 294,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:56:00+08:00",
+   "text": "很多同学和老师一点都不熟 表情也永远用不上，但就是从各种地方一个一个添加了好多......",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-295",
+   "section": "love",
+   "origin": "docx",
+   "floor": 295,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:57:00+08:00",
+   "text": "除了cxz之外随机出镜的这些同学们对不起，介意请留言，不介意也可以留言",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "想念亨利的不知道多少个第一天🥲",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "亨利！！！！！😭😭",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "亨利的台普还有人记得吗啊啊啊",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "“除了cxz之外”何意味",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "哟本人来了",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "因为cxz是特意放上去的",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "哪里能看到这个表情包全集我真的很好奇啊啊啊",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我怎么会上电视😦",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-296",
+   "section": "love",
+   "origin": "docx",
+   "floor": 296,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:58:00+08:00",
+   "text": "想你们了，，",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-297",
+   "section": "love",
+   "origin": "docx",
+   "floor": 297,
+   "author": "匿名同学",
+   "createdAt": "2026-10-23T23:59:00+08:00",
+   "text": "lz。。。来放。。。第2弹。。。表情包了。。。",
+   "images": [
+    {
+     "src": "assets/img/hw-107.jpg",
+     "thumb": "assets/img/thumbs/hw-107.jpg",
+     "w": 784,
+     "h": 2200
+    },
+    {
+     "src": "assets/img/hw-108.jpg",
+     "thumb": "assets/img/thumbs/hw-108.jpg",
+     "w": 1600,
+     "h": 1064
+    },
+    {
+     "src": "assets/img/hw-109.jpg",
+     "thumb": "assets/img/thumbs/hw-109.jpg",
+     "w": 1063,
+     "h": 1600
+    }
+   ],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "事已至此，再祝hfls生日快乐吧（）",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "全世界最诡异的开幕式🤓",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "小蛋糕怎么会来😈",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "想你了瑞克😭",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-298",
+   "section": "love",
+   "origin": "docx",
+   "floor": 298,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:00:00+08:00",
+   "text": "",
+   "images": [
+    {
+     "src": "assets/img/hw-110.jpg",
+     "thumb": "assets/img/thumbs/hw-110.jpg",
+     "w": 1080,
+     "h": 720
+    }
+   ],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "天哪跳高真的是我最爱看的项目之一，就那样一群人拥在那儿欢呼。",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-299",
+   "section": "love",
+   "origin": "docx",
+   "floor": 299,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:01:00+08:00",
+   "text": "",
+   "images": [
+    {
+     "src": "assets/img/hw-111.jpg",
+     "thumb": "assets/img/thumbs/hw-111.jpg",
+     "w": 1600,
+     "h": 1064
+    }
+   ],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "捉一只裘老师",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-300",
+   "section": "love",
+   "origin": "docx",
+   "floor": 300,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:02:00+08:00",
+   "text": "",
+   "images": [
+    {
+     "src": "assets/img/hw-112.jpg",
+     "thumb": "assets/img/thumbs/hw-112.jpg",
+     "w": 1064,
+     "h": 1600
+    },
+    {
+     "src": "assets/img/hw-113.jpg",
+     "thumb": "assets/img/thumbs/hw-113.jpg",
+     "w": 357,
+     "h": 372
+    }
+   ],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "根本就没有这样的幼年qym和fyy！",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "可爱捏",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-301",
+   "section": "love",
+   "origin": "docx",
+   "floor": 301,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:03:00+08:00",
+   "text": "",
+   "images": [
+    {
+     "src": "assets/img/hw-114.jpg",
+     "thumb": "assets/img/thumbs/hw-114.jpg",
+     "w": 1201,
+     "h": 1600
+    }
+   ],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "长大的qym也可爱捏",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "宋城春游真的怪好玩的。。一堆人买雷霆皮卡丘头套、雷霆大充气锤子、还有雷霆大墨镜和小学生一起招摇过市😇😇",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-302",
+   "section": "love",
+   "origin": "docx",
+   "floor": 302,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:04:00+08:00",
+   "text": "我去那个皮卡丘头套太雷霆了。",
+   "images": [
+    {
+     "src": "assets/img/hw-115.jpg",
+     "thumb": "assets/img/thumbs/hw-115.jpg",
+     "w": 732,
+     "h": 486
+    }
+   ],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "要使垃圾变成宝，分类回收不可少。",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "8班8班一条心，奋勇拼搏必能行。",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-303",
+   "section": "love",
+   "origin": "docx",
+   "floor": 303,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:05:00+08:00",
+   "text": "",
+   "images": [
+    {
+     "src": "assets/img/hw-116.jpg",
+     "thumb": "assets/img/thumbs/hw-116.jpg",
+     "w": 700,
+     "h": 466
+    },
+    {
+     "src": "assets/img/hw-117.jpg",
+     "thumb": "assets/img/thumbs/hw-117.jpg",
+     "w": 700,
+     "h": 466
+    },
+    {
+     "src": "assets/img/hw-118.jpg",
+     "thumb": "assets/img/thumbs/hw-118.jpg",
+     "w": 700,
+     "h": 466
+    },
+    {
+     "src": "assets/img/hw-119.jpg",
+     "thumb": "assets/img/thumbs/hw-119.jpg",
+     "w": 700,
+     "h": 466
+    }
+   ],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "爱—— 我三班 兴—— 我三班（张敏口气）",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-304",
+   "section": "love",
+   "origin": "docx",
+   "floor": 304,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:06:00+08:00",
+   "text": "依然记得那次运动会口号是高二三班先天不足先进班级我们来了把敏气死了结果第二天依旧这么喊🤗",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "那必须",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-305",
+   "section": "love",
+   "origin": "docx",
+   "floor": 305,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:07:00+08:00",
+   "text": "还有人记得老八班喊排练入场式的时候喊：运动没有意义 躺平才是真谛 把dj气晕了吗",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "wow还有老友军",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-306",
+   "section": "love",
+   "origin": "docx",
+   "floor": 306,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:08:00+08:00",
+   "text": "pov：做我老师有福了ovo",
+   "images": [
+    {
+     "src": "assets/img/hw-120.jpg",
+     "thumb": "assets/img/thumbs/hw-120.jpg",
+     "w": 1600,
+     "h": 900
+    },
+    {
+     "src": "assets/img/hw-121.jpg",
+     "thumb": "assets/img/thumbs/hw-121.jpg",
+     "w": 1600,
+     "h": 900
+    },
+    {
+     "src": "assets/img/hw-122.jpg",
+     "thumb": "assets/img/thumbs/hw-122.jpg",
+     "w": 1600,
+     "h": 900
+    },
+    {
+     "src": "assets/img/hw-123.jpg",
+     "thumb": "assets/img/thumbs/hw-123.jpg",
+     "w": 1600,
+     "h": 900
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-307",
+   "section": "love",
+   "origin": "docx",
+   "floor": 307,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:09:00+08:00",
+   "text": "张力！",
+   "images": [
+    {
+     "src": "assets/img/hw-124.jpg",
+     "thumb": "assets/img/thumbs/hw-124.jpg",
+     "w": 1600,
+     "h": 900
+    },
+    {
+     "src": "assets/img/hw-125.jpg",
+     "thumb": "assets/img/thumbs/hw-125.jpg",
+     "w": 1600,
+     "h": 900
+    },
+    {
+     "src": "assets/img/hw-126.jpg",
+     "thumb": "assets/img/thumbs/hw-126.jpg",
+     "w": 1600,
+     "h": 900
+    },
+    {
+     "src": "assets/img/hw-127.jpg",
+     "thumb": "assets/img/thumbs/hw-127.jpg",
+     "w": 1600,
+     "h": 900
+    },
+    {
+     "src": "assets/img/hw-128.jpg",
+     "thumb": "assets/img/thumbs/hw-128.jpg",
+     "w": 1600,
+     "h": 900
+    },
+    {
+     "src": "assets/img/hw-129.jpg",
+     "thumb": "assets/img/thumbs/hw-129.jpg",
+     "w": 1600,
+     "h": 900
+    }
+   ],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "肚肚逼人.jpg",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-308",
+   "section": "love",
+   "origin": "docx",
+   "floor": 308,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:10:00+08:00",
+   "text": "",
+   "images": [
+    {
+     "src": "assets/img/hw-130.jpg",
+     "thumb": "assets/img/thumbs/hw-130.jpg",
+     "w": 1600,
+     "h": 900
+    },
+    {
+     "src": "assets/img/hw-131.jpg",
+     "thumb": "assets/img/thumbs/hw-131.jpg",
+     "w": 1600,
+     "h": 900
+    },
+    {
+     "src": "assets/img/hw-132.jpg",
+     "thumb": "assets/img/thumbs/hw-132.jpg",
+     "w": 1600,
+     "h": 900
+    },
+    {
+     "src": "assets/img/hw-133.jpg",
+     "thumb": "assets/img/thumbs/hw-133.jpg",
+     "w": 1600,
+     "h": 1200
+    },
+    {
+     "src": "assets/img/hw-134.jpg",
+     "thumb": "assets/img/thumbs/hw-134.jpg",
+     "w": 1600,
+     "h": 1200
+    },
+    {
+     "src": "assets/img/hw-135.jpg",
+     "thumb": "assets/img/thumbs/hw-135.jpg",
+     "w": 1600,
+     "h": 1200
+    },
+    {
+     "src": "assets/img/hw-136.jpg",
+     "thumb": "assets/img/thumbs/hw-136.jpg",
+     "w": 1600,
+     "h": 1200
+    },
+    {
+     "src": "assets/img/hw-137.jpg",
+     "thumb": "assets/img/thumbs/hw-137.jpg",
+     "w": 1600,
+     "h": 1200
+    },
+    {
+     "src": "assets/img/hw-138.jpg",
+     "thumb": "assets/img/thumbs/hw-138.jpg",
+     "w": 1600,
+     "h": 900
+    },
+    {
+     "src": "assets/img/hw-139.jpg",
+     "thumb": "assets/img/thumbs/hw-139.jpg",
+     "w": 1600,
+     "h": 900
+    },
+    {
+     "src": "assets/img/hw-140.jpg",
+     "thumb": "assets/img/thumbs/hw-140.jpg",
+     "w": 1600,
+     "h": 1200
+    },
+    {
+     "src": "assets/img/hw-141.jpg",
+     "thumb": "assets/img/thumbs/hw-141.jpg",
+     "w": 1600,
+     "h": 900
+    },
+    {
+     "src": "assets/img/hw-142.jpg",
+     "thumb": "assets/img/thumbs/hw-142.jpg",
+     "w": 1600,
+     "h": 900
+    },
+    {
+     "src": "assets/img/hw-143.jpg",
+     "thumb": "assets/img/thumbs/hw-143.jpg",
+     "w": 1600,
+     "h": 900
+    },
+    {
+     "src": "assets/img/hw-144.jpg",
+     "thumb": "assets/img/thumbs/hw-144.jpg",
+     "w": 1600,
+     "h": 900
+    },
+    {
+     "src": "assets/img/hw-145.jpg",
+     "thumb": "assets/img/thumbs/hw-145.jpg",
+     "w": 1600,
+     "h": 900
+    },
+    {
+     "src": "assets/img/hw-146.jpg",
+     "thumb": "assets/img/thumbs/hw-146.jpg",
+     "w": 1600,
+     "h": 900
+    },
+    {
+     "src": "assets/img/hw-147.jpg",
+     "thumb": "assets/img/thumbs/hw-147.jpg",
+     "w": 1600,
+     "h": 900
+    },
+    {
+     "src": "assets/img/hw-148.jpg",
+     "thumb": "assets/img/thumbs/hw-148.jpg",
+     "w": 1600,
+     "h": 900
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-309",
+   "section": "love",
+   "origin": "docx",
+   "floor": 309,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:11:00+08:00",
+   "text": "照片扔到这里啦，小胡老师我爱你",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-310",
+   "section": "love",
+   "origin": "docx",
+   "floor": 310,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:12:00+08:00",
+   "text": "补充：当时拍照片的时候想的就是能有一份东西证明这份回忆，现在果真派上用场了kkk",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-311",
+   "section": "love",
+   "origin": "docx",
+   "floor": 311,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:13:00+08:00",
+   "text": "（呼叫好心人帮我排下版，我懒得排了）",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-312",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 312,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:14:00+08:00",
+   "text": "不要来香港上学 会变得不幸<---对的对的 哈哈哈哈😂",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-313",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 313,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:15:00+08:00",
+   "text": "世界上的的确确存在着比杭州更潮湿更阴晴不定的地方，那就是成都😭🤚谁懂连续一个月每个一天下一次雨的爽感，我衣服从来没干过。",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "推荐买一个便携烘干机 那个好用",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-314",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 314,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:16:00+08:00",
+   "text": "不要来武汉读书。这天气神了，以及开学一个月学校里已经出了几十起交通事故了，我在省外很想念杭州交通。。",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "来武汉两个月已经养成了逆行的好习惯，还有无数次和机动车擦着过去",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-315",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 315,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:17:00+08:00",
+   "text": "不要学英文版文科课，会累死的。😵",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-316",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 316,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:18:00+08:00",
+   "text": "我要回杭州。。。我不想读大学了赶紧毕业！！！！！！！！！！！我也是！！！！！！！！！！！！！！！！！！！！！ 你快来找我玩呀。收到！ ：赶紧毕业然后我直接肥奶找你玩鸭 你们毕业必须跟我一起回杭州 我真的会回杭州的你们必须陪我nice给到 那肯定的 我一直在哭呜呜呜我去我也是北京好冷啊。我们这里也是九度了我们今天十六度我这里下周最低零下了。。。谁想呆在这里啊 逆天零下啊啊啊啊",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-317",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 317,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:19:00+08:00",
+   "text": "天津太冷了……人已被冻死。还有80km校园跑南开你想杀人可以直说😭我想念杭外11月还温温和和的天气了",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-318",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 318,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:20:00+08:00",
+   "text": "牛津哥考牛津不提醒我能报名我记仇一辈子😡😡😡",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-319",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 319,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:21:00+08:00",
+   "text": "港大哥考港大不提醒我能报名我记仇一辈子🙄🙄🙄",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-320",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 320,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:22:00+08:00",
+   "text": "卓院使人痛苦。。满课的概念就是上午下午连打，下午上完课点肯德基然后直奔后门再提着外卖袋一路狂奔极限穿梭压线进教室（我是废物）",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-321",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 321,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:23:00+08:00",
+   "text": "避雷南开小语种+……一个学期40学分我已被日程安排暴揍，比高中还忙，人来天津没多久已经生了两次病了",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-322",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 322,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:24:00+08:00",
+   "text": "同楼上，被卓院弄死了快。",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-323",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 323,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:25:00+08:00",
+   "text": "北京气候对我一点都不好。",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-324",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 324,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:26:00+08:00",
+   "text": "在北京被黄胡蜂蛰咬了。",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-325",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 325,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:27:00+08:00",
+   "text": "我想回家 伦敦一直在下雨 👈🏻我在浙江想你啊🥹 🐹我在北京也好想你们我真的好想哭呀这波完全性感了我在这里也想老bobo了 我一直在哭 我只是想回到过去啊 不要去伦敦了和我一起回杭州吧 🐹这波我也是性情了 我要现在就飞回来",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-326",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 326,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:28:00+08:00",
+   "text": "我想hw了",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-327",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 327,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:29:00+08:00",
+   "text": "好想急头白脸地回hw三楼食堂吃一顿然后在楼下草丛蹲守猫学姐",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-328",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 328,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:30:00+08:00",
+   "text": "北京好冷呀！",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-329",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 329,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:31:00+08:00",
+   "text": "北京又冷风又大排水还巨差一下雨路全淹了",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-330",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 330,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:32:00+08:00",
+   "text": "自古逢秋悲寂寥，幸好在北京我们过完夏天就是冬天",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-331",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 331,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:33:00+08:00",
+   "text": "没有谁能活过十月份就要穿羽绒服的北京 我们也要穿羽绒服了我被冻成猪头肉了",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-332",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 332,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:34:00+08:00",
+   "text": "回杭州加一，我感觉我在杭外上了六年大学，现在在补高中的课😭",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "还真是",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-333",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 333,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:35:00+08:00",
+   "text": "在杭州读书的也好想逃😭😭这个大学没有社交没有娱乐没有发疯没有操场散步 上得我好烧心😳",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "完全烧心 这个杭州周末也没什么地方可以玩...",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-334",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 334,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:36:00+08:00",
+   "text": "完全的",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-335",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 335,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:37:00+08:00",
+   "text": "我好想回杭外啊，感受每个和朋友看的晚霞，在寝室打的牌，在k歌室k的歌......",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-336",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 336,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:38:00+08:00",
+   "text": "听不懂德国佬上课怎么办",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-337",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 337,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:39:00+08:00",
+   "text": "想念杭州秋天的桂花香",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-338",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 338,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:40:00+08:00",
+   "text": "上海的桂花开了，一点也不香，想念从hw图书馆出来就被桂花香一拳打在鼻子上的爽感！",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-339",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 339,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:41:00+08:00",
+   "text": "上法语上的我爱国情怀都出来了",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-340",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 340,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:42:00+08:00",
+   "text": "不要靠近英语版的物理数学化学计算机会变得不幸。😭",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "英语版微积分线代叠一起会变成：我度过了幸福的一生（？-2026）……",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "已经历....完全不想再见到它们...",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "学生物和医学的留子表示这两个沾上英语会更可怕。。。",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-341",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 341,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:43:00+08:00",
+   "text": "想住一辈子杭外寝室，湖南把我流放监狱了，什么叫校区面积是hw的1/4？什么叫砂石田径场？",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "抱抱",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-342",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 342,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:44:00+08:00",
+   "text": "啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "如此高质量发言啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-343",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 343,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:45:00+08:00",
+   "text": "hw英语课我想你。。。理工科的英语通识课好坐牢 我去正确的，是谁发明了工科英语这种东西",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-344",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 344,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:46:00+08:00",
+   "text": "我爆笑了啊发语害人实录我可以写一整晚（哦不没这么少。 。）p.s.我们应当想象西西弗斯是幸福的 p.p.s学法语学得最起劲但骂得最凶的便是在下",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-345",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 345,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:47:00+08:00",
+   "text": "我要洋人死",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "洋人死！",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "洋人死！",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-346",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 346,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:48:00+08:00",
+   "text": "拒绝复习四级❌",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-347",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 347,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:49:00+08:00",
+   "text": "直接裸考😋",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "其实我也是嘻嘻（来自楼上）",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-348",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 348,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:50:00+08:00",
+   "text": "hw英语课我向你表白，没想到我这口语菜菜竟然能成为顶尖选手了",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "还真是，我专业还有很多没有听力的省份的",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "河南好像就不太管听力",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "河南确实不太管，老师的口音给听亖了快🥵🥵🥵",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "老师口语没有同学好",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "完全同意以上。",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "非常想念hw英语课😭🤲🏻再也没有上过课堂氛围这么好的课了",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "同楼上，非常想念hw英语课😭活人好多每天都在哈哈大笑",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我真的想念每一个乱七八糟的小组作业",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-349",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 349,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:51:00+08:00",
+   "text": "这边风水有问题啊😭我一直在不舒服😠😠天杀的上海😡😡我不得劲😭我要回杭外✋😭✋我真的是被人咒了呀。😅👿👿",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "上海其实是海上。",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "也是被我成功解码了😎，有一说一，要照顾好自己呀🥺🥺",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-350",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 350,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:52:00+08:00",
+   "text": "提到风水，建议来hku感受棺材教学楼，hku每栋楼都有一个鬼。。。",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "啊hk不是最重视风水吗",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "建议搜索一下庄月明文娱中心为什么只有上行的扶梯",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-351",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 351,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:53:00+08:00",
+   "text": "",
+   "images": [
+    {
+     "src": "assets/img/hw-149.jpg",
+     "thumb": "assets/img/thumbs/hw-149.jpg",
+     "w": 1358,
+     "h": 524
+    }
+   ],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-352",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 352,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:54:00+08:00",
+   "text": "之前学考的时候，通校在外面复习，就想着以后离开了，会去到什么地方，然后觉得不管去什么地方，都不会有hw好，所以就暗暗决定珍惜在海弗拉斯的每一天，高考完了，果然怅然若失，不知道自己还要多久才能接受自己不在hw了。",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-353",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 353,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:55:00+08:00",
+   "text": "谁来救救我，寝室门口天天出现野猪🐗",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "好像解码学校了（？",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "很难不解码学校，野猪学长可不是吹的",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-354",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 354,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:56:00+08:00",
+   "text": "在伦敦唯一的盼头就是等着圣诞回家，我要回家呜呜呜",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "已严肃购买回国机票😋",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我也！",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-355",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 355,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:57:00+08:00",
+   "text": "好想念杭州的天气😭虽然小和山冬天又湿又冷，但是有机会刷新到下雪天呀。不像休斯顿快十一月了还能穿短袖，感觉被困在了无尽的夏天里",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-356",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 356,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:58:00+08:00",
+   "text": "另：大学超市拉完了，还没有杭外小超市大🙄🙄🙄",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-357",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 357,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T00:59:00+08:00",
+   "text": "我在牢法很想hw",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "我在牢法很想hw",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-358",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 358,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:00:00+08:00",
+   "text": "midterm我给你跪了",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "+1",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "➕1",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "+10086",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "+10086",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-359",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 359,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:01:00+08:00",
+   "text": "现在知道杭外的好了😭",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-360",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 360,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:02:00+08:00",
+   "text": "刚考完midterm坐在图书馆里看到这个贴子，感动的要哭了😭",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "我真的哭了 为什么大学midterm这么可怕",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我还有四门…",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "下周mid但是教授讲课速度愈发起飞完全来不及复习啊（悲）",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-361",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 361,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:03:00+08:00",
+   "text": "好想念hw食堂😭😭😭😭",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-362",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 362,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:04:00+08:00",
+   "text": "不要在uiuc上学-->高中没体验过的全科月考在大学体验到了，谁家好人考试分成midterm1 midterm2 midterm3和final啊... plus,小组作业会变得不幸。i人地狱",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "加油加油会好的，玉米地会有奇迹的",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "听懂的人都哭了😭",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-363",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 363,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:05:00+08:00",
+   "text": "这个Python课的老师真的神了。pkx！我在脚痛很想你🥹🥹🥹🥹",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "支持pks回母校再就业。回外院教python吧🥺🥺",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-364",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 364,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:06:00+08:00",
+   "text": "我在多伦多很想你们…（虽然我不觉得多伦多不好，不诋毁）人总是有恋旧的时候的。",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-365",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 365,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:07:00+08:00",
+   "text": "南京的空气对我的鼻子很差🤧🤧🤧",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-366",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 366,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:08:00+08:00",
+   "text": "😤😡😡我已经被这个抽课系统害得好几个月没摸篮球了！！！我不想继续冒着和男生抱在一起跳这个雷霆华尔兹的风险了！！！😡😡😡",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-367",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 367,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:09:00+08:00",
+   "text": "🏀🏀🏀🏀🏀🏀🏀🏀🏀✅",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-368",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 368,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:10:00+08:00",
+   "text": "💃💃💃💃💃💃💃💃💃❎",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "根本没有排球课这个选项😡到底是谁抢走了我的排球课😡😡😡😡😡",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "🏐回家！祝🏐降临你校",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "有没有人愿意这个寒假回杭外一起打排球！",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我 🙋🏻‍♀️🙋🏻‍♀️🙋🏻‍♀️🙋🏻‍♀️🙋🏻‍♀️🙋🏻‍♀️🙋🏻‍♀️🙋🏻‍♀️",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我！",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我！！",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我！！！",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-369",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 369,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:11:00+08:00",
+   "text": "说到排球谁还记得孙苏彤 加我免费领内裤😘😘😘",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "我肚肚我想起来了。",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我是孙苏彤的干妈。",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "其实孙苏彤的生父至今没有参与过一次孙苏彤有关的所有活动 笑吐了 这个不负责任的爹😂",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "失踪的爸，什么东亚原生家庭。允许孙苏彤抱怨自己的原生家庭。",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "想你们了想和你们打球 我在这里上排球课被老师天天拉着跳二百舞玩老鹰捉小鸡",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我想你们了。离了你们还有谁会和我旷一下午的自习课去打排球🏐",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-370",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 370,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:12:00+08:00",
+   "text": "好想回家。讨厌时差。",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-371",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 371,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:13:00+08:00",
+   "text": "为什么21岁才能喝酒😭",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-372",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 372,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:14:00+08:00",
+   "text": "迄今没有找到我们学校图书馆的藏书在哪里🤔想念hw的图书馆和自习室了，那本书在哪里我都快背出来了",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-373",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 373,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:15:00+08:00",
+   "text": "圣诞只有十几天。根本没有这样的学校 我要回杭州。",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-374",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 374,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:16:00+08:00",
+   "text": "我真的受不了这个雷霆浴室了 你hw的宿舍还是权威我说白了我白说了。。。某校浴室只有一层有我都不说啥了每天排队谁绷住了😅",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "好像知道是哪个学校了",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我去？不会是某海上旧宿舍吧",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-375",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 375,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:17:00+08:00",
+   "text": "歪个楼 老三班的同学都什么时候放寒假 再来一个派对谁同意谁反对👀",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "我来",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我来！",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-376",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 376,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:18:00+08:00",
+   "text": "我要回hw宿舍住😭坑上淋浴把我害惨了",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "救命什么是坑上淋浴",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "lz可能在💩里洗澡吧",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-377",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 377,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:19:00+08:00",
+   "text": "北京我恨你。。十月天气逼近零下我真的要哭了。。还有这菜怎么这么难吃怎么全是香菜。。😭北京你把我养的很差",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "北京菜怎么这么爱放蒜和蒜苔和大葱...我真不中了...",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-378",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 378,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:20:00+08:00",
+   "text": "削弱概率论！！！削弱ODE！！！",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-379",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 379,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:21:00+08:00",
+   "text": "为什么你西周六还要上半天？为什么习题课没有学分？",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-380",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 380,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:22:00+08:00",
+   "text": "下辈子我要高考，要当英专生",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "我也要当英专生……现在完全是高四早苗来的",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-381",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 381,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:23:00+08:00",
+   "text": "我有些时候会在上完晚课回寝室的路上想起来考完物理首考的早上，我记得天冷得发白，雾蒙蒙的，我在操场上走，心里想自己未来该怎么办，想物理考成这样要怎么办，走到看台上对着空空荡荡的操场喊说我真的受够了我想上大学 很多时候想不起来当时所谓的“大学”究竟意味着什么，自由还是新生活。我会想起在五楼楼梯间看化学书的晚自习，冷得手指都打颤，冷得一直流眼泪，什么都看不进去就和姐妹聊高考完要干什么，不过现在想起来好想一直在说的都是高考完而非大学里 所以一直在逃离的地方才是乌托邦吗",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "抱抱你",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "摸摸摸摸🫳🏻🫳🏻",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "🥺🥺🥺🥺",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-382",
+   "section": "rant",
+   "origin": "docx",
+   "floor": 382,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:24:00+08:00",
+   "text": "原来我们真的再也回不去了吗。刚上大学的那两周一想到这件事就想哭，然后开始怨恨自己为什么不多写一点日记多拍一点照片，好像这样就能永远留在那里。暑假有时会梦到自己在hw参加某个选拔，dn或者别的什么，醒过来才发现自己已经毕业了，校园里不会再有由我书写的新的故事了。要是人生是一个可以一直存档读档的游戏就好了。",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "看哭了😭💔",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-383",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 383,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:25:00+08:00",
+   "text": "建楼建楼！😆",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-384",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 384,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:26:00+08:00",
+   "text": "许奕",
+   "images": [],
+   "audio": [
+    {
+     "src": "assets/audio/sports-song.wav",
+     "title": "运动会神曲 · 许奕老师的歌"
+    }
+   ],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "歌王来的",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "mp3录音见真神",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "必须联系学妹学弟把传统发扬光大",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "这边建议把这首歌变成运动会固定曲目 放了三四年了吧感谢当时的偷偷一录神之一手让经典咏流传",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "致敬🫡",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "哭了😭😭😭😭😭",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "许奕真的是很好的老师。。。简直像一个题库一样，问什么科学题目甚至高中化学题反应都超级快，讲得也好清楚",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-385",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 385,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:27:00+08:00",
+   "text": "尤宁有人懂吗，每天乐呵呵的",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "还是认为zymt是yn的翻版",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "都说了yn是小zymt",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "居然忘记了yn神图这波必须狠狠贴上 谁的一辈子😙",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-386",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 386,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:28:00+08:00",
+   "text": "",
+   "images": [
+    {
+     "src": "assets/img/hw-150.jpg",
+     "thumb": "assets/img/thumbs/hw-150.jpg",
+     "w": 1600,
+     "h": 1200
+    }
+   ],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "开心开心！",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "开开心心玩，认认真真学！",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "这种开心也咧嘴笑 生气也咧嘴笑的老师最精了😇😇",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-387",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 387,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:29:00+08:00",
+   "text": "潘俊是数学神！",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "+1",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "pj我很想你",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "不想上这个大学数学了。😭好想回去上pj的课。😭😭",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "太想念pj的数学课了🥹",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "潘老师我想你了！！我真的好想再上你的数学课，这个微积分和线代我真的上不下去一点啊啊啊😭",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "真的没有人发现潘老师每个早读都会依次把每个班的窗户打开通风吗🥺",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-388",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 388,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:30:00+08:00",
+   "text": "在大学思政课上想念张松玲的第n天",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "+1思政不是给人上的🥶🥶",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "+1 每次经过松林包子铺都会想起松玲QAQ",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我服了松林包子铺哈哈哈哈哈",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "习概课简直折磨人",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "听了三年松玲根本听不进习概",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-389",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 389,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:31:00+08:00",
+   "text": "哦我想听张敏侃大山了。我怀念在历史课上打游戏的日子。还有这个老头偶尔讲的一些趣味故事 还有抱着吉他唱歌。。。。其实我一开始觉得好心酸这个老头要办吉他社结果就五个人报了建不起来……哭泣老头乐队就这么解散了😭😭😭😭",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "不要啊我的哭泣老头乐队…",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "毛概听得我想死，我真的好想张敏，我能回去再当他课代表吗？（虽然我这个课代表有一点点有辱门楣了）",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "懂你…毛概不像是人能听的。",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我已急哭我们老师一直在自由搏击",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "什么叫自由搏击😨",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "致敬全宇宙最不爱借题发挥/最能讲清知识点的老师（纯反话，我想张敏）",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "敏我想你了。。。敏来我们吉协指导吧。。。",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "总说敏的课水，到了大学才发现大学历史课比敏水多了",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-390",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 390,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:32:00+08:00",
+   "text": "谁懂可以和芳芳聊各种事情的快乐，你甚至可以和她聊最近玩的游戏的剧情和文案（以及我居然一直没发现边上办公室ysy是Eva厨（雾",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "还是很好奇mh穿西装和lf聊了些啥",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "据说是追忆似水年华？",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "李芳老师太好了吼吼快吃饭的时候去办公室经常给我塞吃的",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "其实饭点甚至可能直接请你吃教工食堂的番茄鸡蛋面（以及吃了这个过后就再也没有吃过三楼的番茄鸡蛋面了",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "好想念花花的荡开一笔",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "www我从初中开始就是李花花的粉丝啊啊😭😭😭升高中的暑假我听说我们年级有lf，高兴得蹦蹦跳跳！",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-391",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 391,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:33:00+08:00",
+   "text": "结果发现她教五六班🥲不过最后也是保送分班后终于听上李花花的课并美美当上她的课代表了！！！！！！！",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-392",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 392,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:34:00+08:00",
+   "text": "😋😋",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-393",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 393,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:35:00+08:00",
+   "text": "这个我必须点名xry好吧 我来这个大学这体育课是个啥啊🙄网球课要求我们模仿王阳明格网球格了二十分钟有病吧 想念杭外羽毛球课的每一天。。",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-394",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 394,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:36:00+08:00",
+   "text": "补充之：这个xry会在高一我们上完音乐课的时候给我分她带来的缙云烧饼。好美味哦依稀斯巴拉西得死哟！！",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "总比排球课跳二百舞好？机",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-395",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 395,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:37:00+08:00",
+   "text": "开",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-396",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 396,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:38:00+08:00",
+   "text": "焊",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-397",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 397,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:39:00+08:00",
+   "text": "不要抢",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-398",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 398,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:40:00+08:00",
+   "text": "我格子",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-399",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 399,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:41:00+08:00",
+   "text": "几开喊是啥子🤓",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-400",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 400,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:42:00+08:00",
+   "text": "纪小叶的奇妙排球课。",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "大学破系统还我羽毛球。我也想xry啊啊啊",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "xry我真的好想你！！！！",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "偷偷在xry的课早走去吃饭甚至是一件被默许的事情咳咳",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我也想上xry的课",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-401",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 401,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:43:00+08:00",
+   "text": "真的好想念蕾丽的地理课（还有“杀掉杀掉”",
+   "images": [],
+   "audio": [
+    {
+     "src": "assets/audio/leige.m4a",
+     "title": "蕾歌 · 蕾丽老师"
+    }
+   ],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "硅铝层：lgp在海里没法抽烟吗，应该在lgp办公室门口种一排夹竹桃因为夹竹桃可以吸附烟尘吗。",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我要看神秘园。坠好的zll老师其实我希望 你可以再多教几年呀 不过赶快退休享福也是一件好事🫣老师你要平安顺遂万事如意身体健康啊㊗️退休工资🆙🆙🆙",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "呀！作业都不写",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "蕾丽要平安健康幸福！又是怀念蕾丽的一天",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "想念蕾丽，我现在出门看到啥都想问她😭",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "好想回hw再缠着蕾丽跟她说我喜欢你你喜欢我吗🥺",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "蕾丽真的是很好很好的人🥺夹竹桃嘿嘿嘿😈离了蕾丽谁还宠我这种地理废柴desu……",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "想听蕾丽唱达坂城的姑娘……",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "想念蕾丽+10086",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "还想听地理课😭😭我要哭了",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "好想蕾丽呀...现在专业课每次讲到索马里我就会想起索马里海盗和蕾丽的地理课...",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我知道你们在等什么的，来欣赏！！！掌声都响起来🎉",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "如听仙乐耳暂明。",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "Lily（对朱伟杰老师说）：诶，他们叫你小蘑菇啊？",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "哈哈哈哈哈哈哈哈啊哈哈哈哈哈啊哈我笑的好崩溃",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-402",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 402,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:44:00+08:00",
+   "text": "Sylvia真的带来很多欢乐啊，babila babidu神秘小咒语还有人记得吗，还有高一上课不论什么都说abstract导致abstract直接被ban，还有上课上着上着大家就都莫名其妙笑的前仰后合。",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "想念呀",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "一直是王老师的“小粉丝”😭",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "虽然当了班主任之后死感略重 [手动狗头]",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "反对！你是谁！",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "不能是sylvia本人来了吧",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "看列表里没有啊",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-403",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 403,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:45:00+08:00",
+   "text": "",
+   "images": [
+    {
+     "src": "assets/img/hw-151.jpg",
+     "thumb": "assets/img/thumbs/hw-151.jpg",
+     "w": 736,
+     "h": 358
+    }
+   ],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "昨天晚上被抓到了",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "现在没有，许愿她再出现一下",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "想念西尔维亚姑妈😭",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "sylvia我想你了...",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "还是记得那个笑话考雅思前应该去拜一拜sylvia因为名字倒过来写是雅思王",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "还给我们写了小贺卡🥹",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "哼，雅思王这个笑话明明是我想出来的🤪",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "想念姑妈，不知道姑妈会不会接受aunt tshirt",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-404",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 404,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:46:00+08:00",
+   "text": "黄琼也是很好很好的班主任呀！批假随便写理由都给过，她说就要真实😭 。虽然课水水的但是人好好的，好想念hw的语文课，在这里可能学不到什么应试技巧但是语文学习真的很丰富",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "我说真的谁不想和黄琼还有三两同学酣畅淋漓聊一中午散文小说哲学然后写下独属于我们的读书笔记，谁不想写了小说就急头白脸拿去给黄老师看——抬头就是无比空旷的穹宇……哎呀我应该是lz同班。",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "喜欢琼姐...在她那里可以随机获得不少夸夸和小零食...😭😭想她了 lz同班加一",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我也好喜欢……感觉无论是不高兴的事情还是学习上的困惑都可以找她……完全超级好超级好的老师",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "又想起了在语文课上自由搏击（划掉）辩论的日子，lz同班加一",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "琼姐真的可以交心啊，好多困难的时候都是跟琼姐聊着聊着过来的",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我到现在都没有加上hq微信，遗憾离场",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "谁有hq微信！",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我有我有",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "求！（法国小说大孝女留。）",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-405",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 405,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:47:00+08:00",
+   "text": "好想Ms Lu啊😭😭😭离开Ms Lu还有哪个老师能让我交心😭😭😭",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "Ms Lu真的超级好超级包容会特意让你回答某个特定的问题来增加自信",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "离了Ms Lu谁还会知道我老是静不下来之后专门盯着我晚自习不要乱跑TT",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "Ms Lu我好想你😭😭来当我的年级组长好吗",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "大学不会再有老师在我保送考前英语模拟考砸了，在食堂掉小珍珠时过来安慰我了😭",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-406",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 406,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:48:00+08:00",
+   "text": "pj我好想你 pj我好想你 pj我好想你 全世界最好的数学老师呜呜呜呜离开pj还有谁考试前把你拉过去分小零食让你别紧张我超呜呜呜呜呜现在很后悔没有认真听任何一节周五补习QWQ不过当时也确实有点累得听不懂了🥹🥹🥹我想回去急头白脸再上一节数学课",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-407",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 407,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:49:00+08:00",
+   "text": "有人记得高考班的政史地专用（bushi）教室吗，还有3. 5班自动更新从来没落下的黑板报",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "3.5班是何班",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "楼上你太low了这都不知道",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "这个教室是我的家",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "坏了这东西真的好像是我全程维护更新的",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-408",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 408,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:50:00+08:00",
+   "text": "好想ywm……好想急头白脸写一篇作文接龙交给老头",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-409",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 409,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:51:00+08:00",
+   "text": "好想骚扰老头",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-410",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 410,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:52:00+08:00",
+   "text": "↑我看见你了我的作文接龙固排....好想老头...",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "我真的好想老头...我想和老头聊天了...这个大学上的我有点相似...",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "人生中收到的第一首诗是老羊写的这根本就是白月光无法替代好吧",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-411",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 411,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:53:00+08:00",
+   "text": "谁不想心情不好就拉上一群人去老头办公室发 疯...上了大学根本没有这么好的老师...",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-412",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 412,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:54:00+08:00",
+   "text": "谁不想去老头办公室发疯…",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-413",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 413,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:55:00+08:00",
+   "text": "没有沈捷？？？？？sj的高徒呢？😡",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "她的毒奶我至今犹记…",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "sj完全毒奶大师来的",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "sj亲儿子都在哪里",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "来点亲儿子亲女儿👀",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "怎么把这位神请出来了",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-414",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 414,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:56:00+08:00",
+   "text": "怎么没有人提Ms.He？受了何老师不少照顾呢， 每次去找她聊天都很开心，现在想起来真给我说通透了吧",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "所有英语老师都很可爱！虽然没有上过Ms.He的课还是觉得她很好，耐心。另外留一则没几个人听过的笑话，你们知道为什么Grace的姓是'terry'吗？",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "求解析",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "是真的！",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "我爱何老师！高中压力好大老去办公室骚扰她🤤和何老师聊天真的特别放松，帮我解决了很多学业、人际上的焦虑与困惑，也给我讲过很多好玩的经历和故事，而且会随机掉落好吃的好玩的。何老师的工位特别漂亮，装饰满了色彩斑斓的卡片和花草，是特别热爱生活的何老师呀🫶而且每个期末都有年终奖哈哈哈哈我真的好想再上一次何老师的课啊🥺",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-415",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 415,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:57:00+08:00",
+   "text": "小胡老师我还记得你～",
+   "images": [
+    {
+     "src": "assets/img/hw-153.jpg",
+     "thumb": "assets/img/thumbs/hw-153.jpg",
+     "w": 320,
+     "h": 495
+    }
+   ],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "全抄等于没抄",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-416",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 416,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:58:00+08:00",
+   "text": "有没有人记得徐洁超级厚的粉底。。。",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "有的有的（老三班集合）",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-417",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 417,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T01:59:00+08:00",
+   "text": "不对啊怎么没有人提到孔黎娜，完全语文组白月光来的啊，听她的语文课没有走神的可能😭 还有她的戏剧选修课真的特别好玩😭😭😭",
+   "images": [],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "附议。谁不想急头白脸回去坐在那个舞台上和一群人吵吵嚷嚷愉快玩耍。",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "还记得有一节课解放天性大家都变成动物在教室里乱蹦",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "附议，孔老师我想你了",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-418",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 418,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T02:00:00+08:00",
+   "text": "怎么没有人说东东呀 想上东东的数学课了",
+   "images": [
+    {
+     "src": "assets/img/hw-154.jpg",
+     "thumb": "assets/img/thumbs/hw-154.jpg",
+     "w": 1600,
+     "h": 901
+    }
+   ],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "肖东 is watching u",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "想看东东和捷克的中门对狙了",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "楼上解码了",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "很难不解码",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "肖东我想你了😭",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "到底谁来关注肖东超话",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "肖东超话到底是什么！！！",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "请去大眼搜索“zxd”",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-419",
+   "section": "teacher",
+   "origin": "docx",
+   "floor": 419,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T02:01:00+08:00",
+   "text": "",
+   "images": [
+    {
+     "src": "assets/img/hw-155.jpg",
+     "thumb": "assets/img/thumbs/hw-155.jpg",
+     "w": 1067,
+     "h": 1600
+    },
+    {
+     "src": "assets/img/hw-156.jpg",
+     "thumb": "assets/img/thumbs/hw-156.jpg",
+     "w": 1600,
+     "h": 1192
+    },
+    {
+     "src": "assets/img/hw-157.jpg",
+     "thumb": "assets/img/thumbs/hw-157.jpg",
+     "w": 1600,
+     "h": 1211
+    }
+   ],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "我突然想起来初一的时候有一次看到zqz和yzh两个人在学校里被两个大概小学三年级的小男孩“追杀”，后来他俩躲起来了，小孩找不到了准备放弃，结果我给两个小孩善良地指了一下这两个人逃的方向😎",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-420",
+   "section": "classmate",
+   "origin": "docx",
+   "floor": 420,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T02:02:00+08:00",
+   "text": "接着盖楼🥰",
+   "images": [],
+   "audio": [],
+   "comments": []
+  },
+  {
+   "id": "doc-421",
+   "section": "classmate",
+   "origin": "docx",
+   "floor": 421,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T02:03:00+08:00",
+   "text": "傻狗也太可爱了吧，谁懂西班牙人的浪漫？",
+   "images": [
+    {
+     "src": "assets/img/hw-158.jpg",
+     "thumb": "assets/img/thumbs/hw-158.jpg",
+     "w": 1600,
+     "h": 1200
+    }
+   ],
+   "audio": [],
+   "comments": [
+    {
+     "author": "匿名回复",
+     "text": "好萌",
+     "depth": 0
+    },
+    {
+     "author": "匿名回复",
+     "text": "这就是我们呕粥的门面好吧",
+     "depth": 0
+    }
+   ]
+  },
+  {
+   "id": "doc-422",
+   "section": "classmate",
+   "origin": "docx",
+   "floor": 422,
+   "author": "匿名同学",
+   "createdAt": "2026-10-24T02:04:00+08:00",
+   "text": "表白wyt 杭外万人迷",
+   "images": [],
+   "audio": [],
+   "comments": []
+  }
+ ],
+ "stats": {
+  "posts": 422,
+  "comments": 352,
+  "images": 157,
+  "audio": 3,
+  "bySection": {
+   "prelude": 1,
+   "scene": 12,
+   "story": 104,
+   "food": 62,
+   "love": 132,
+   "rant": 71,
+   "teacher": 37,
+   "classmate": 3
+  }
+ }
+}

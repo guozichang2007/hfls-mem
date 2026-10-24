@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="杭州外国语学校 2026 届毕业回忆录 · 同学们自由发帖、图片与评论的开放留言墙。">
+<meta name="theme-color" content="#faf7f2">
+<title>海弗拉斯26届回忆录 · hw 也有回忆录😋</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%B8%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">跳到正文</a>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <button class="icon-btn menu-btn" id="menuBtn" aria-label="打开板块菜单" aria-expanded="false">
+      <span class="bars"></span>
+    </button>
+    <a class="brand" href="#/">
+      <span class="brand-mark">hw</span>
+      <span class="brand-text">
+        <strong id="siteTitle">海弗拉斯26届回忆录</strong>
+        <small id="siteTagline">hw 也有回忆录😋</small>
+      </span>
+    </a>
+
+    <div class="search">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="searchInput" type="search" placeholder="搜索回忆：拌面 / 1306 / 蕾丽 / 天台…" autocomplete="off" aria-label="搜索帖子">
+      <kbd>/</kbd>
+    </div>
+
+    <div class="topbar-actions">
+      <button class="icon-btn" id="themeBtn" aria-label="切换深浅色" title="切换深浅色">🌗</button>
+      <button class="btn-primary" id="composeBtn" data-act="compose">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        <span>发帖</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" id="sidebar" aria-label="板块导航">
+    <div class="sidebar-inner">
+      <p class="sidebar-label">板块</p>
+      <nav id="sectionNav" class="section-nav"></nav>
+      <p class="sidebar-label">站内</p>
+      <nav class="section-nav small">
+        <a href="#/" data-nav="home"><span>🏠</span>全部帖子</a>
+        <a href="#/mine" data-nav="mine"><span>🖊️</span>我的发帖</a>
+        <a href="#/about" data-nav="about"><span>ℹ️</span>关于 / 怎么发帖</a>
+      </nav>
+      <div class="sidebar-card" id="sidebarStatus"></div>
+      <p class="sidebar-foot">把这里当作我们的第二间 1306。<br>想说什么都可以。</p>
+    </div>
+  </aside>
+
+  <main id="main" class="main" tabindex="-1">
+    <div class="loading" id="loading">
+      <div class="spinner"></div>
+      <p>正在翻开回忆录…</p>
+    </div>
+  </main>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p id="footerNote">杭州外国语学校 2026 届 · 同学们的回忆墙</p>
+    <p class="footer-links">
+      <a href="#/about">关于本站</a>
+      <span>·</span>
+      <a href="#/mine">我的发帖</a>
+    </p>
+  </div>
+</footer>
+
+<div class="scrim" id="scrim" hidden></div>
+<div class="modal-root" id="modalRoot" hidden></div>
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb-close" data-lb="close" aria-label="关闭">✕</button>
+  <button class="lb-nav lb-prev" data-lb="prev" aria-label="上一张">‹</button>
+  <figure class="lb-figure">
+    <img id="lbImg" alt="">
+    <figcaption id="lbCap"></figcaption>
+  </figure>
+  <button class="lb-nav lb-next" data-lb="next" aria-label="下一张">›</button>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/js/app.js" defer></script>
+</body>
+</html>
