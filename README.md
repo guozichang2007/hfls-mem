@@ -117,7 +117,8 @@ git remote set-url origin https://github.com/<账号>/<仓库名>.git
 
 - `.github/workflows/sync-issues.yml`：新建/编辑/关闭 Issue、增删改评论、手动触发、
   以及每 10 分钟兜底跑一次；有变化才提交，并在同一个工作流里重新部署 Pages
-  （用 `GITHUB_TOKEN` 推的 commit 不会再触发 `pages.yml`，不自己部署的话站点读到的还是旧 JSON）
+  （用 `GITHUB_TOKEN` 推的 commit 不会再触发 `pages.yml`，不自己部署的话站点读到的还是旧 JSON；
+  部署任务会按**本次刚推上去的 sha** 检出，默认用触发事件的 sha 会漏掉这次提交）
 - `scripts/sync_issues.py`：只用标准库（压缩图片才需要 Pillow）、分页拉全部 Issue + 评论，
   映射规则和前端 `mapIssue()` 一致；内容没变化就不写文件（提交记录不会刷屏）
 - 前端读取顺序：`data/gh-posts.json` → 直连 `api.github.com`（重试 2 次，成功就顺手写
@@ -147,6 +148,24 @@ URL 预填有长度上限，正文也有 65536 字符的限制。所以公共帖
 python scripts/sync_issues.py --repo guozichang2007/hfls-mem
 python scripts/sync_issues.py --repo guozichang2007/hfls-mem --check   # 只比对不写盘
 ```
+
+### 评论与楼中楼
+
+GitHub 的 Issue 评论本身是**平铺**的（不像论坛有嵌套层级），站内用隐藏标记把它还原成楼中楼：
+
+```
+点「回复」→ 正文带一句 `> @某人：原文摘要`
+          + 隐藏标记 <!-- hfls:{"name":"…","reply":"ghc-6381398557"} -->
+  → 同步脚本把 reply 读成 replyTo → 前端按 replyTo 缩进挂在父评论下面
+```
+
+- 详情页每条评论右下角有「回复」，点完输入框上方会出现「正在回复 @某人」，可取消；
+  最多缩进两级，再深的回复并到第二级（窄屏不会挤成一条）
+- 在 GitHub 网页上直接用「Quote reply」也一样能显示：`>` 开头的行会渲染成引用块
+- 父评论被删 / 标记里的 id 找不到时，按普通评论显示，不会丢内容
+- 详情页评论右上角有「🔄 刷新」；进入详情页也会自动拉一次（60 秒内不重复请求），
+  墙内拿不到就继续用烘焙 JSON 里的评论
+- 评论正文（含 `>` 引用）里只会出现纯文本，不会被当成脚本执行
 
 
 ## 数据与备份

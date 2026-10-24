@@ -397,6 +397,44 @@ html[data-theme="dark"] .badge.gh { background: #1e2c34; color: #9dc3d6; }
 .comment-form .btn { flex: none; }
 .comment-form .comments-note { flex: 1 1 100%; margin: 0; padding: 0; }
 
+/* 楼中楼：回复挂在父评论下面，左边一条竖线；最多缩进两级 */
+.comment-thread { padding: 1px 0; }
+.comment-children {
+  margin: 2px 0 6px 34px; padding-left: 10px;
+  border-left: 2px solid var(--line);
+}
+.comment-children .comment-children { margin-left: 8px; padding-left: 8px; }
+.comment-quote {
+  margin: 3px 0 5px; padding: 3px 0 3px 10px;
+  border-left: 3px solid var(--line); color: var(--ink-3); font-size: 13px;
+}
+.comment-quote a { color: var(--ink-3); }
+.comment-foot { margin-top: 2px; }
+.comment-reply {
+  background: none; border: 0; padding: 0; cursor: pointer;
+  font-size: 12px; color: var(--ink-3);
+}
+.comment-reply:hover { color: var(--accent-ink); text-decoration: underline; }
+.comment-src { color: var(--ink-3); font-size: 11px; text-decoration: none; }
+.comment-src:hover { color: var(--accent-ink); text-decoration: underline; }
+.comments-head {
+  display: flex; align-items: center; justify-content: space-between;
+  font-size: 12px; color: var(--ink-3); padding: 0 0 2px;
+}
+.comments-refresh { background: none; border: 0; cursor: pointer; font-size: 12px; color: var(--ink-3); }
+.comments-refresh:hover { color: var(--accent-ink); text-decoration: underline; }
+.reply-bar {
+  flex: 1 1 100%; display: flex; align-items: center; gap: 8px;
+  font-size: 12px; color: var(--ink-3); padding: 0 2px;
+}
+.reply-bar[hidden] { display: none; }
+.reply-bar b { color: var(--accent-ink); font-weight: 600; }
+.reply-cancel {
+  background: none; border: 0; padding: 0; cursor: pointer;
+  font-size: 12px; color: var(--ink-3); text-decoration: underline;
+}
+.reply-cancel:hover { color: var(--accent-ink); }
+
 /* --------------------------------------------------------- 弹层 / 表单 */
 .scrim {
   position: fixed; inset: 0; z-index: 60; background: rgba(24, 17, 12, .42);
@@ -558,6 +596,9 @@ input[type="file"]::file-selector-button:hover { border-color: var(--accent); co
   .section-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
   .stat { flex: 1 1 calc(50% - 6px); }
   .post-section-tag { display: none; }
+  /* 窄屏别再往右缩，不然回复只剩几个字宽 */
+  .comment-children { margin-left: 12px; padding-left: 8px; }
+  .comment-children .comment-children { margin-left: 4px; padding-left: 6px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

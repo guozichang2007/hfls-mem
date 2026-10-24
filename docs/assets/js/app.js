@@ -384,7 +384,8 @@
     if (raw.id) post.id = String(raw.id).indexOf('gh-') === 0 ? String(raw.id) : post.id;
     if (!post.number) post.number = Number(String(post.id).replace(/^gh-/, '')) || 0;
     if (raw.ghComments) post.ghComments = raw.ghComments;
-    else if (bakedComments.length || raw.comments) post.ghComments = bakedComments.slice();
+    // 烘焙的评论为空时别占位：留空才会去直连 API 补最新评论
+    else if (bakedComments.length) post.ghComments = bakedComments.slice();
     return post;
   }
 
@@ -557,7 +558,9 @@
           author: parts.meta.name || (c.user && c.user.login) || '同学',
           text: parts.text,
           createdAt: c.created_at,
-          origin: 'github'
+          origin: 'github',
+          url: c.html_url || '',
+          replyTo: String(parts.meta.reply || '')
         };
       });
     });
@@ -771,17 +774,128 @@
     return bits.filter(Boolean).join(' · ');
   }
 
+  // 评论正文：保留换行；`> 原文` 渲染成引用块（GitHub 的「Quote reply」就是这种写法）
+  function commentHtml(text) {
+    var lines = String(text || '').split(/\r?\n/);
+    var segs = [];
+    var buf = [];
+    var quote = [];
+
+    function flushText() {
+      if (buf.length) { segs.push({ q: false, v: buf.join('<br>') }); buf = []; }
+    }
+    function flushQuote() {
+      if (quote.length) { segs.push({ q: true, v: quote.join('<br>') }); quote = []; }
+    }
+
+    lines.forEach(function (line) {
+      if (/^\s*>/.test(line)) {
+        flushText();
+        quote.push(linkify(esc(line.replace(/^\s*>\s?/, ''))));
+        return;
+      }
+      flushQuote();
+      buf.push(linkify(esc(line)));
+    });
+    flushText();
+    flushQuote();
+
+    return segs.map(function (s) {
+      return s.q ? '<blockquote class="comment-quote">' + s.v + '</blockquote>' : s.v;
+    }).join('<br>');
+  }
+
+  function commentDomId(id) { return 'c-' + String(id || '').replace(/[^\w-]/g, ''); }
+
+  function commentItem(post, c, depth, canReply) {
+    var id = String(c.id || '');
+    var replyBtn = (canReply && id)
+      ? '<button class="comment-reply" type="button" data-act="reply" data-cid="' + esc(id) +
+        '" data-author="' + esc(c.author || '') + '">回复</button>'
+      : '';
+    var srcLink = c.url
+      ? '<a class="comment-src" href="' + esc(c.url) + '" target="_blank" rel="noopener noreferrer">在 GitHub 看 ↗</a>'
+      : '';
+    return '<div class="comment' + (depth ? ' is-reply' : '') + '"' +
+      (id ? ' id="' + esc(commentDomId(id)) + '"' : '') + '>' +
+      avatarOf(c.author, c.origin === 'docx' ? 'docx' : '') +
+      '<div class="comment-body"><div class="comment-meta"><b>' + esc(c.author) + '</b>' +
+      (c.createdAt ? '<span>' + esc(timeAgo(c.createdAt)) + '</span>' : '<span>原文回复</span>') +
+      srcLink + '</div>' +
+      '<div class="comment-text">' + commentHtml(c.text) + '</div>' +
+      (replyBtn ? '<div class="comment-foot">' + replyBtn + '</div>' : '') +
+      '</div></div>';
+  }
+
   function commentRows(post, comments, max) {
-    var seedCount = (post.origin === 'docx' && post.comments) ? post.comments.length : 0;
-    var shown = typeof max === 'number' ? comments.slice(0, max) : comments;
-    return shown.map(function (c) {
-      return '<div class="comment">' + avatarOf(c.author, c.origin === 'docx' ? 'docx' : '') +
-        '<div class="comment-body"><div class="comment-meta"><b>' + esc(c.author) + '</b>' +
-        (c.createdAt ? '<span>' + esc(timeAgo(c.createdAt)) + '</span>' : '<span>原文回复</span>') + '</div>' +
-        '<div class="comment-text">' + linkify(esc(c.text)) + '</div></div></div>';
-    }).join('') + (seedCount > shown.length && typeof max === 'number'
-      ? '<button class="comments-more" data-act="detail" data-id="' + post.id + '">查看全部 ' + comments.length + ' 条评论 →</button>'
-      : '');
+    // 卡片预览：直接取前几条，不做树（列表里没有回复框）
+    if (typeof max === 'number') {
+      var shown = comments.slice(0, max);
+      return shown.map(function (c) { return commentItem(post, c, 0, false); }).join('') +
+        (comments.length > shown.length
+          ? '<button class="comments-more" data-act="detail" data-id="' + post.id + '">查看全部 ' + comments.length + ' 条评论 →</button>'
+          : '');
+    }
+
+    // 详情页：按 replyTo 拼成楼中楼（最多缩进两级，再深就并到第二级）
+    var byId = {};
+    comments.forEach(function (c) { if (c.id) byId[c.id] = c; });
+    var kids = {};
+    var roots = [];
+    comments.forEach(function (c) {
+      var parent = c.replyTo ? byId[c.replyTo] : null;
+      if (parent && parent !== c) {
+        (kids[parent.id] = kids[parent.id] || []).push(c);
+      } else {
+        roots.push(c);
+      }
+    });
+
+    var seen = {};
+    function thread(c, depth) {
+      if (c.id && seen[c.id]) return '';
+      if (c.id) seen[c.id] = 1;
+      var list = (c.id && kids[c.id]) || [];
+      var inner = depth >= 2 ? '' : list.map(function (k) { return thread(k, depth + 1); }).join('');
+      return '<div class="comment-thread">' + commentItem(post, c, depth, true) +
+        (inner ? '<div class="comment-children">' + inner + '</div>' : '') +
+        '</div>';
+    }
+
+    var html = roots.map(function (c) { return thread(c, 0); }).join('');
+    // 兜底：父评论被删了、或者互相回复成环，剩下的直接画在末尾
+    var orphans = comments.filter(function (c) { return !c.id || !seen[c.id]; });
+    if (orphans.length) html += orphans.map(function (c) { return thread(c, 0); }).join('');
+    return html;
+  }
+
+  function findComment(post, id) {
+    if (!post || !id) return null;
+    var list = allCommentsOf(post);
+    for (var i = 0; i < list.length; i++) if (String(list[i].id) === String(id)) return list[i];
+    return null;
+  }
+
+  // 直连拿到的评论 ∪ 烘焙/本地已有的：按 id 去重，按时间排序
+  function mergeComments(oldList, liveList) {
+    var out = [];
+    var byId = {};
+    (liveList || []).forEach(function (c) {
+      var key = c.id || ('k' + out.length);
+      if (byId[key]) return;
+      byId[key] = 1;
+      out.push(c);
+    });
+    (oldList || []).forEach(function (c) {
+      if (c.id && byId[c.id]) return;
+      if (!c.id && out.some(function (o) { return o.text === c.text && o.author === c.author; })) return;
+      if (c.id) byId[c.id] = 1;
+      out.push(c);
+    });
+    out.sort(function (a, b) {
+      return (new Date(a.createdAt || 0).getTime() || 0) - (new Date(b.createdAt || 0).getTime() || 0);
+    });
+    return out;
   }
 
   function bodyHtml(post) {
@@ -830,8 +944,19 @@
   function postDetail(post) {
     var html = postCard(post, { detail: true });
     var comments = allCommentsOf(post);
-    var needFetch = post.origin === 'github' && !post.ghComments && ghEnabled();
+    var canFetch = post.origin === 'github' && ghEnabled();
+    // 只有「一条都没有 + 还没试过拉取」才显示骨架屏；有烘焙评论就先渲染出来
+    var needFetch = canFetch && !comments.length && !post.ghFetchTried;
+    var head = (comments.length || canFetch)
+      ? '<div class="comments-head"><span>评论' + (comments.length ? ' · ' + comments.length : '') + '</span>' +
+        (canFetch
+          ? '<button class="comments-refresh" type="button" data-act="refresh-comments" data-id="' +
+            esc(post.id) + '">🔄 刷新</button>'
+          : '') +
+        '</div>'
+      : '';
     html += '<section class="comments-box" id="comments-' + esc(post.id) + '">' +
+      head +
       '<div class="comments" style="border-top:0;padding-top:0">' +
       (needFetch
         ? '<div class="loading" style="padding:30px 0"><div class="spinner"></div><p>正在读取评论…</p></div>'
@@ -850,11 +975,31 @@
       : (post.origin === 'pending'
         ? '这条还在等同步：评论先存在本机，同步完成后会一起并到 GitHub 那条下面。'
         : '评论保存在本机浏览器（会立刻显示，但别人看不到）。');
-    return '<form class="comment-form" data-form="comment" data-id="' + esc(post.id) + '">' +
+    return '<form class="comment-form" data-form="comment" data-id="' + esc(post.id) + '" data-reply="">' +
+      '<div class="reply-bar" hidden><span>正在回复 <b class="reply-who"></b></span>' +
+      '<button class="reply-cancel" type="button" data-act="reply-cancel">取消</button></div>' +
       '<textarea name="text" rows="1" placeholder="说点什么…（Ctrl / ⌘ + Enter 发送）" aria-label="评论内容"></textarea>' +
       '<button class="btn sm solid" type="submit">评论</button>' +
       '<p class="comments-note" style="flex-basis:100%">' + esc(modeTip) + '</p>' +
       '</form>';
+  }
+
+  // 点「回复」：把表单切到回复态（不重渲染，避免丢掉已经打了一半的字）
+  function startReply(commentId, author) {
+    var form = $('form[data-form="comment"]');
+    if (!form) return;
+    form.setAttribute('data-reply', commentId || '');
+    var bar = form.querySelector('.reply-bar');
+    if (bar) {
+      bar.hidden = !commentId;
+      var who = bar.querySelector('.reply-who');
+      if (who) who.textContent = '@' + (author || '');
+    }
+    var ta = form.querySelector('textarea');
+    if (ta) {
+      ta.focus();
+      if (ta.scrollIntoView) ta.scrollIntoView({ block: 'nearest' });
+    }
   }
 
 
@@ -1118,14 +1263,25 @@
     return base + ' · hw 也有回忆录😋';
   }
 
-  function loadPostComments(id) {
+  function loadPostComments(id, force) {
     var post = state.byId[id];
-    if (!post || post.origin !== 'github' || post.ghComments || !ghEnabled()) return;
+    if (!post || post.origin !== 'github' || !ghEnabled() || post.ghFetching) return;
+    var now = Date.now();
+    // 60 秒内不重复拉；烘焙评论可能是旧的，所以有评论也要并一次最新的
+    if (!force && post.ghFetchedAt && now - post.ghFetchedAt < 60000) return;
+    post.ghFetching = true;
+    post.ghFetchedAt = now;
     ghComments(post.id).then(function (list) {
-      post.ghComments = list;
+      post.ghFetching = false;
+      post.ghFetchTried = true;
+      var merged = mergeComments(post.ghComments || [], list);
+      post.ghComments = merged;
+      post.commentCount = Math.max(post.commentCount || 0, merged.length);
+      writeGhCache();
       if (state.route.name === 'post' && state.route.id === id) render();
     }).catch(function (err) {
-      post.ghComments = post.ghComments || [];
+      post.ghFetching = false;
+      post.ghFetchTried = true;
       // 没令牌的访客连不上 GitHub 是常态，安静降级，不要弹红字
       if (state.token) toast('评论读取失败：' + err.message);
       if (state.route.name === 'post' && state.route.id === id) render();
@@ -1375,10 +1531,11 @@
     navigate('#/p/' + post.id);
   }
 
-  function issueBody(name, text, images, section) {
+  function issueBody(name, text, images, section, extra) {
     // 板块也写进隐藏标记：非协作者发帖时 GitHub 会忽略新建 Issue 的 labels 参数
     var meta = { name: name };
     if (section) meta.section = section;
+    if (extra && extra.reply) meta.reply = extra.reply;
     var body = '<!-- hfls:' + JSON.stringify(meta) + ' -->\n\n' + (text || '') + '\n';
     (images || []).forEach(function (im) {
       body += '\n![图片](' + im.src + ')\n';
@@ -1534,40 +1691,57 @@
 
 
   /* ------------------------------------------------------- 评论 / 点赞 / 分享 */
-  function submitComment(postId, text) {
+  function submitComment(postId, text, replyTo) {
     var post = state.byId[postId];
     if (!post) return;
     var body = String(text || '').trim();
     if (!body) { toast('说点什么吧'); return; }
     var name = state.profile.name || '匿名同学';
 
+    // 回复：正文里带一句引用（GitHub 上也能看出在回谁），隐藏标记里记 replyTo 供站内缩进
+    var parent = replyTo ? findComment(post, replyTo) : null;
+    var quoted = parent
+      ? '> ' + (parent.author ? '@' + parent.author + '：' : '') +
+        String(parent.text || '').replace(/\s+/g, ' ').slice(0, 80) + '\n\n'
+      : '';
+    var full = quoted + body;
+    var replyMeta = replyTo ? { reply: replyTo } : null;
+
     if (post.origin === 'github' && ghEnabled()) {
       if (!state.token) {
-        copyText(body);
+        copyText(full);
         if (post.url) window.open(post.url, '_blank', 'noopener');
         toast('内容已复制；登录 GitHub 后在 Issue 下粘贴评论');
         return;
       }
       ghSend('POST', 'https://api.github.com/repos/' + state.config.repo + '/issues/' +
-        post.number + '/comments', { body: issueBody(name, body, []) })
+        post.number + '/comments', { body: issueBody(name, full, [], '', replyMeta) })
         .then(function (c) {
           post.ghComments = (post.ghComments || []).concat([{
             id: 'ghc-' + c.id,
             author: name,
-            text: body,
+            text: full,
             createdAt: c.created_at,
-            origin: 'github'
+            origin: 'github',
+            url: c.html_url || '',
+            replyTo: replyTo || ''
           }]);
           post.commentCount = (post.commentCount || 0) + 1;
           render();
-          toast('评论已发到 GitHub');
+          toast(replyTo ? '回复已发到 GitHub' : '评论已发到 GitHub');
         })
         .catch(function (err) { toast('评论失败：' + err.message); });
       return;
     }
 
     var list = state.localComments[postId] || (state.localComments[postId] = []);
-    list.push({ author: name, text: body, createdAt: new Date().toISOString() });
+    list.push({
+      id: 'lc-' + Date.now().toString(36) + Math.random().toString(36).slice(2, 5),
+      author: name,
+      text: full,
+      replyTo: replyTo || '',
+      createdAt: new Date().toISOString()
+    });
     saveLocalComments();
     render();
     toast(post.origin === 'pending'
@@ -1774,6 +1948,16 @@
         return;
       }
       if (act === 'more') { state.limit += 20; render(); return; }
+      if (act === 'reply') {
+        startReply(target.getAttribute('data-cid'), target.getAttribute('data-author'));
+        return;
+      }
+      if (act === 'reply-cancel') { startReply('', ''); return; }
+      if (act === 'refresh-comments') {
+        loadPostComments(target.getAttribute('data-id'), true);
+        toast('正在刷新评论…');
+        return;
+      }
       if (act === 'export') { exportData(); return; }
       if (act === 'import') { importData(); return; }
       if (act === 'wipe') { wipeLocal(); return; }
@@ -1814,8 +1998,12 @@
     if (form.getAttribute('data-form') === 'comment') {
       e.preventDefault();
       var ta = form.querySelector('textarea[name="text"]');
-      submitComment(form.getAttribute('data-id'), ta ? ta.value : '');
-      if (ta) ta.value = '';
+      var text = ta ? ta.value : '';
+      submitComment(form.getAttribute('data-id'), text, form.getAttribute('data-reply') || '');
+      if (ta && String(text || '').trim()) {
+        ta.value = '';
+        startReply('', '');
+      }
     }
   }
 

@@ -395,6 +395,9 @@ def section_of(labels, default_section):
 def to_comment(raw):
     meta, text = split_meta(raw.get("body") or "")
     login = (raw.get("user") or {}).get("login") or ""
+    # 楼中楼：回复别人时前端会在隐藏标记里写 {"reply":"ghc-123"}，
+    # Issue 评论本身是平的，靠这个字段在站内还原成缩进的回复链
+    reply = re.sub(r"[^\w.-]", "", str(meta.get("reply") or ""))[:40]
     return {
         "id": "ghc-%s" % raw.get("id"),
         "author": meta.get("name") or login or "同学",
@@ -402,6 +405,7 @@ def to_comment(raw):
         "createdAt": raw.get("created_at"),
         "origin": "github",
         "url": raw.get("html_url") or "",
+        "replyTo": reply,
     }
 
 
