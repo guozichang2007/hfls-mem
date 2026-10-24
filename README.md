@@ -6,7 +6,10 @@
 - 纯静态（HTML + CSS + 原生 JS），可以直接挂在 GitHub Pages
 - 默认 **本地模式**：发帖 / 评论存浏览器 localStorage，本机立刻可见
 - 填一个 GitHub 仓库后切换 **共享模式**：帖子 = Issues，评论 = Issue comments，所有人可见
-- 有 GitHub 令牌时直接调 API 写入；没有令牌时自动复制内容并打开「新建 Issue」页面，登录粘贴即可
+- **读**公共帖走 GitHub Action 烘焙的同源静态文件（`docs/data/gh-posts.json`），
+  墙内打不开 `api.github.com` 也能看到大家的帖子；**写**才需要访问 GitHub
+- 有 GitHub 令牌时直接调 API 写入；没有令牌时自动复制内容并打开「新建 Issue」页面，
+  登录粘贴提交后，这条会先在本页显示成「同步中」，约 1 分钟后变成公共帖
 
 ## 目录
 
@@ -19,9 +22,12 @@ docs/                       ← 部署目录（GitHub Pages 直接发布这个�
   assets/audio/…            ← 原文 2 段录音
   data/posts.json           ← 原文数据（脚本生成，勿手改）
   data/config.json          ← 站点配置（GitHub 仓库、公告等）
+  data/gh-posts.json        ← Issues 烘焙出来的公共帖（Actions 生成，勿手改）
 scripts/build_site_data.py  ← docx → posts.json + 图片/音频
 scripts/docx_dump.py        ← docx 纯文本/图片 dump（调试用）
+scripts/sync_issues.py      ← Issues → docs/data/gh-posts.json
 .github/workflows/pages.yml ← 推送 main 自动部署 docs/
+.github/workflows/sync-issues.yml ← 有 Issue / 评论变动或每 10 分钟同步一次公共帖
 ```
 
 ## 本地预览
@@ -78,23 +84,54 @@ git remote set-url origin https://github.com/<账号>/<仓库名>.git
    }
    ```
 
-3. 在仓库 **Issues → Labels** 里建 9 个 label：`post`，加上每个板块一个
+3. 在仓库 **Issues → Labels** 里建 8 个板块 label（可选）：
    `sec-prelude` / `sec-scene` / `sec-story` / `sec-food` / `sec-love` / `sec-rant`
    / `sec-teacher` / `sec-classmate`。
-   （不建也能读，只是新帖会落到「同学」板块。）
+   （不建也能用：没有 `sec-*` 的帖子会落到「同学」板块。`post` 标签现在**不再是必需的**，
+   而且 GitHub 对非协作者会忽略新建 Issue 时的 label 参数，所以站点读取时也不再依赖它。）
 4. 想在网页里直接发帖（而不是跳转 GitHub）：点右上角「🖐 设置 / 昵称」，填一个
    fine-grained token，权限只要 **Issues: Read and write**。令牌只存在本机 localStorage。
+5. 仓库 **Settings → Actions → General → Workflow permissions** 选
+   **Read and write permissions**，否则同步工作流没法把 `docs/data/gh-posts.json` 提交回去。
 
-> 仓库还没建好、标签还没加、或者 GitHub 接口被限流（未登录每小时 60 次）时，
-> 访客端会**自动降级成本地模式**继续浏览原文，不会白屏也不弹报错；
-> 只有自己填了令牌的人才会看到失败提示。
+> 访客端连不上 GitHub 接口也不会白屏：公共帖优先读同源静态文件，读不到就显示本机缓存，
+> 再不行才降级成本地模式继续浏览原文，并在侧栏给一个「🔄 重试」按钮；
+> 只有自己填了令牌的人才会看到具体的失败原因。
 
 站点也可以临时覆盖仓库：设置面板里填的仓库会写进 `localStorage`（优先级高于
 `config.json`），清空输入框即恢复默认。
 
+## 同步机制（墙内也能看到公共帖）
+
+浏览器的 `fetch` 在国内经常连不上 `api.github.com`（`TypeError: Failed to fetch`），
+所以「直接读 Issues」这条路过不去，访客会看不到别人发的帖子。解决办法是把 Issue
+先转成**同源静态 JSON**：
+
+```
+你发帖 → GitHub Issue ──(Actions)──> docs/data/gh-posts.json ──(Pages CDN)──> 访客浏览器
+```
+
+- `.github/workflows/sync-issues.yml`：新建/编辑/关闭 Issue、增删改评论、手动触发、
+  以及每 10 分钟兜底跑一次；有变化才提交，并在同一个工作流里重新部署 Pages
+  （用 `GITHUB_TOKEN` 推的 commit 不会再触发 `pages.yml`，不自己部署的话站点读到的还是旧 JSON）
+- `scripts/sync_issues.py`：只用标准库，分页拉全部 Issue + 评论，映射规则和前端
+  `mapIssue()` 一致；内容没变化就不写文件（提交记录不会刷屏）
+- 前端读取顺序：`data/gh-posts.json` → 直连 `api.github.com`（重试 2 次，成功就顺手写
+  `localStorage` 缓存）→ `localStorage` 缓存
+- 同步有 30 秒 ~ 1 分钟延迟（cron 兜底 10 分钟），换来的是任何网络环境都能看到帖子
+
+本地手动同步（匿名也能跑，限流 60 次/时；有 `GITHUB_TOKEN` 则是 5000 次/时）：
+
+```bash
+python scripts/sync_issues.py --repo guozichang2007/hfls-mem
+python scripts/sync_issues.py --repo guozichang2007/hfls-mem --check   # 只比对不写盘
+```
+
+
 ## 数据与备份
 
-- 本机帖子 / 评论 / 点赞 / 昵称都存在 `localStorage`（键名以 `hfls.` 开头）
+- 本机帖子 / 评论 / 点赞 / 昵称都存在 `localStorage`（键名以 `hfls.` 开头）；
+  `hfls.pending.v1` 存「已提交 GitHub、等同步」的帖子，`hfls.ghcache.v1` 是公共帖缓存
 - 「我的发帖」页可以**导出 / 导入备份**（JSON），或一键清空本地数据
 - 图片在浏览器里压缩到长边 1280px、JPEG 0.72 后保存，单条最多 3 张；
   GitHub 模式下请改用图片直链（图床 / 仓库 raw 链接）

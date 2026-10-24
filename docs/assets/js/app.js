@@ -8,6 +8,12 @@
 
   var SEED_URL = 'data/posts.json';
   var CONFIG_URL = 'data/config.json';
+  // GitHub Action 烘焙出来的公共帖：同源静态文件，墙内也能读
+  var GH_BAKED_URL = 'data/gh-posts.json';
+
+  var GH_RETRIES = 2;          // 直连 API 失败重试次数
+  var GH_RETRY_DELAY = 1200;   // 重试间隔（ms）
+  var GH_CACHE_LIMIT = 500000; // localStorage 缓存上限（字符）
 
   var KEYS = {
     posts: 'hfls.posts.v1',
@@ -18,7 +24,9 @@
     repo: 'hfls.repo.v1',
     theme: 'hfls.theme.v1',
     seen: 'hfls.seen.v1',
-    lastVisit: 'hfls.lastvisit.v1'
+    lastVisit: 'hfls.lastvisit.v1',
+    pending: 'hfls.pending.v1',
+    ghCache: 'hfls.ghcache.v1'
   };
 
   var DEFAULT_CONFIG = {
@@ -38,13 +46,14 @@
     byId: {},
     localPosts: [],
     ghPosts: [],
+    pendingPosts: [],
     localComments: {},
     likes: {},
     profile: { name: '' },
     token: '',
     repoOverride: '',
     configFileRepo: '',
-    gh: { enabled: false, loading: false, error: '', loaded: false, broken: false },
+    gh: { enabled: false, loading: false, error: '', loaded: false, broken: false, source: '', syncedAt: '' },
     route: { name: 'home', section: '', id: '', q: '' },
     seen: {},
     lastVisit: 0,
@@ -53,6 +62,7 @@
   };
 
   var pendingImages = [];
+  var lastPendingId = '';
 
   /* ------------------------------------------------------- 小工具 */
   function $(sel, root) { return (root || document).querySelector(sel); }
@@ -129,6 +139,7 @@
 
   function loadLocal() {
     state.localPosts = lsGet(KEYS.posts, []) || [];
+    state.pendingPosts = lsGet(KEYS.pending, []) || [];
     state.localComments = lsGet(KEYS.comments, {}) || {};
     state.likes = lsGet(KEYS.likes, {}) || {};
     state.profile = lsGet(KEYS.profile, { name: '' }) || { name: '' };
@@ -142,6 +153,7 @@
   }
 
   function saveLocalPosts() { return lsSet(KEYS.posts, state.localPosts.slice(0, 400)); }
+  function savePending() { return lsSet(KEYS.pending, state.pendingPosts.slice(0, 40)); }
   function saveLocalComments() { return lsSet(KEYS.comments, state.localComments); }
   function saveLikes() { return lsSet(KEYS.likes, state.likes); }
 
@@ -201,9 +213,13 @@
   }
 
   /* ------------------------------------------------------- GitHub */
+  function hasRepo() {
+    return !!(state.config.repo && /^[\w.-]+\/[\w.-]+$/.test(state.config.repo));
+  }
+
   function ghEnabled() {
     if (state.gh.broken) return false;
-    return !!(state.config.repo && /^[\w.-]+\/[\w.-]+$/.test(state.config.repo));
+    return hasRepo();
   }
 
   function ghHeaders() {
@@ -300,32 +316,232 @@
     };
   }
 
+  /* -------- 公共帖读取：烘焙文件 → 直连 API → localStorage 缓存 -------- */
+
+  function ghApiBase() {
+    return 'https://api.github.com/repos/' + state.config.repo;
+  }
+
+  function delay(ms) {
+    return new Promise(function (resolve) { setTimeout(resolve, ms); });
+  }
+
+  // 网络抖动时重试，仍然失败才抛出（墙内直连 GitHub 失败是常态）
+  function ghGetRetry(url, tries) {
+    var left = typeof tries === 'number' ? tries : GH_RETRIES;
+    return ghGet(url).catch(function (err) {
+      if (left <= 1) throw err;
+      return delay(GH_RETRY_DELAY).then(function () { return ghGetRetry(url, left - 1); });
+    });
+  }
+
+  function ghIssuePages(page, acc) {
+    var p = page || 1;
+    var all = acc || [];
+    return ghGetRetry(ghApiBase() + '/issues?state=all&per_page=100&page=' + p)
+      .then(function (list) {
+        var raw = list || [];
+        raw.forEach(function (issue) { if (!issue.pull_request) all.push(issue); });
+        if (raw.length >= 100 && p < 5) return ghIssuePages(p + 1, all);
+        return all;
+      });
+  }
+
+  function normalizeSection(id) {
+    if (id && state.sections.some(function (s) { return s.id === id; })) return id;
+    if (state.sections.some(function (s) { return s.id === 'classmate'; })) return 'classmate';
+    return (state.sections[0] && state.sections[0].id) || 'classmate';
+  }
+
+  // 把烘焙 JSON / 直连 API 的结果统一成站点内部结构
+  function normalizeGhPost(raw) {
+    var bakedComments = (raw && raw.comments) || [];
+    var post = {
+      id: 'gh-' + (raw.number || String(raw.id || '').replace(/^gh-/, '')),
+      origin: 'github',
+      section: normalizeSection(raw.section),
+      author: raw.author || raw.login || '同学',
+      login: raw.login || '',
+      createdAt: raw.createdAt,
+      title: raw.title || '',
+      text: raw.text || '',
+      images: raw.images || [],
+      audio: [],
+      comments: [],
+      commentCount: raw.commentCount || 0,
+      likeCount: raw.likeCount || 0,
+      url: raw.url || '',
+      number: raw.number
+    };
+    if (raw.id) post.id = String(raw.id).indexOf('gh-') === 0 ? String(raw.id) : post.id;
+    if (!post.number) post.number = Number(String(post.id).replace(/^gh-/, '')) || 0;
+    if (raw.ghComments) post.ghComments = raw.ghComments;
+    else if (bakedComments.length || raw.comments) post.ghComments = bakedComments.slice();
+    return post;
+  }
+
+  function applyGhPosts(list, source, syncedAt) {
+    var prev = {};
+    state.ghPosts.forEach(function (p) { prev[p.id] = p; });
+    var posts = (list || []).map(normalizeGhPost).filter(function (p) { return p.number > 0; });
+    posts.forEach(function (p) {
+      var old = prev[p.id];
+      // 直连拿到的评论比烘焙的新，别被覆盖
+      if (old && old.ghComments && old.ghComments.length &&
+        (!p.ghComments || p.ghComments.length < old.ghComments.length)) {
+        p.ghComments = old.ghComments;
+        p.commentCount = Math.max(p.commentCount || 0, old.ghComments.length);
+      }
+    });
+    state.ghPosts = posts;
+    state.gh.source = source;
+    state.gh.syncedAt = syncedAt || '';
+    state.gh.loaded = true;
+    if (posts.length) { state.gh.broken = false; state.gh.error = ''; }
+    dropSyncedPending();
+  }
+
+  function readGhCache() {
+    try {
+      var raw = localStorage.getItem(KEYS.ghCache);
+      if (!raw) return null;
+      var data = JSON.parse(raw);
+      if (!data || !Array.isArray(data.posts) || !data.posts.length) return null;
+      return data;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function writeGhCache() {
+    try {
+      var slim = state.ghPosts.slice(0, 200).map(function (p) {
+        return {
+          id: p.id, number: p.number, section: p.section, author: p.author, login: p.login,
+          createdAt: p.createdAt, title: p.title, text: String(p.text || '').slice(0, 4000),
+          images: (p.images || []).slice(0, 9), likeCount: p.likeCount,
+          commentCount: p.commentCount, url: p.url,
+          comments: (p.ghComments || []).slice(0, 30)
+        };
+      });
+      var payload = JSON.stringify({ syncedAt: state.gh.syncedAt, posts: slim });
+      if (payload.length > GH_CACHE_LIMIT) return;
+      localStorage.setItem(KEYS.ghCache, payload);
+    } catch (e) { /* 配额满了就算了 */ }
+  }
+
+  function loadBakedPosts() {
+    return fetch(GH_BAKED_URL, { cache: 'no-cache' }).then(function (res) {
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      return res.json();
+    }).then(function (data) {
+      if (!data || !Array.isArray(data.posts)) throw new Error('格式不对');
+      return data;
+    }).catch(function () {
+      return null;  // 还没部署烘焙文件 / 文件坏了：不算错误
+    });
+  }
+
   function loadGitHub() {
     if (!ghEnabled()) { state.gh.enabled = false; return Promise.resolve(); }
     state.gh.enabled = true;
     state.gh.loading = true;
-    var label = state.config.postsLabel || 'post';
-    var url = 'https://api.github.com/repos/' + state.config.repo +
-      '/issues?state=all&per_page=100&labels=' + encodeURIComponent(label);
-    return ghGet(url).then(function (list) {
-      state.ghPosts = (list || []).filter(function (i) { return !i.pull_request; }).map(mapIssue);
-      state.gh.loaded = true;
-      state.gh.error = '';
-    }).catch(function (err) {
-      state.ghPosts = [];
-      state.gh.error = err.message || String(err);
-      // 没有令牌时（访客），仓库没建好 / 被限流都自动降级为本地模式，避免整页报错
-      if (!state.token) state.gh.broken = true;
+    state.gh.error = '';
+    renderStatus();
+
+    return loadBakedPosts().then(function (data) {
+      if (data) {
+        applyGhPosts(data.posts, 'baked', data.generatedAt || '');
+      } else if (!state.ghPosts.length) {
+        var cached = readGhCache();
+        if (cached) applyGhPosts(cached.posts, 'cache', cached.syncedAt || '');
+      }
+      rebuildIndex();
+      if (state.ghPosts.length) render();
+
+      // 再试一次直连（有令牌时能立刻看到自己刚发的帖；网络不通就算了）
+      return ghIssuePages().then(function (list) {
+        applyGhPosts(list.map(mapIssue), 'live', new Date().toISOString());
+        writeGhCache();
+      }).catch(function (err) {
+        if (!state.ghPosts.length) {
+          state.gh.error = err.message || String(err);
+          if (!state.token) state.gh.broken = true;
+        }
+      });
     }).then(function () {
       state.gh.loading = false;
       rebuildIndex();
+      return state.ghPosts;
     });
+  }
+
+  function refreshGitHub() {
+    state.gh.broken = false;
+    state.gh.error = '';
+    toast('正在重新读取公共帖…');
+    return loadGitHub().then(function () {
+      render();
+      toast(state.ghPosts.length
+        ? '公共帖已更新：' + state.ghPosts.length + ' 条'
+        : '还是读不到公共帖，先看原文和本地内容吧');
+    });
+  }
+
+
+  /* -------- 等同步的帖子（没令牌时先本地显示，同步完成后自动转正） -------- */
+
+  function postSig(author, text) {
+    return String(author || '').trim().toLowerCase() + '|' +
+      String(text || '').replace(/\s+/g, ' ').trim().toLowerCase().slice(0, 200);
+  }
+
+  function addPendingPost(payload, title) {
+    var post = {
+      id: 'pend-' + Date.now().toString(36),
+      origin: 'pending',
+      section: normalizeSection(payload.section),
+      author: payload.name || '匿名同学',
+      createdAt: new Date().toISOString(),
+      title: title || '',
+      text: payload.text || '',
+      images: payload.images || [],
+      audio: [],
+      comments: [],
+      commentCount: 0,
+      likeCount: 0
+    };
+    state.pendingPosts.unshift(post);
+    savePending();
+    return post;
+  }
+
+  // 烘焙/直连数据里出现了同一条帖子，就把「等同步」的那份撤掉，评论迁过去
+  function dropSyncedPending() {
+    if (!state.pendingPosts.length) return;
+    var known = {};
+    state.ghPosts.forEach(function (p) { known[postSig(p.author, p.text)] = p; });
+    var keep = [];
+    state.pendingPosts.forEach(function (pend) {
+      var matched = known[postSig(pend.author, pend.text)];
+      if (!matched) { keep.push(pend); return; }
+      var mine = state.localComments[pend.id];
+      if (mine && mine.length) {
+        state.localComments[matched.id] = (state.localComments[matched.id] || []).concat(mine);
+        delete state.localComments[pend.id];
+        saveLocalComments();
+      }
+    });
+    if (keep.length !== state.pendingPosts.length) {
+      state.pendingPosts = keep;
+      savePending();
+    }
   }
 
   function ghComments(postId) {
     var num = String(postId).replace(/^gh-/, '');
-    var url = 'https://api.github.com/repos/' + state.config.repo + '/issues/' + num + '/comments?per_page=100';
-    return ghGet(url).then(function (list) {
+    var url = ghApiBase() + '/issues/' + num + '/comments?per_page=100';
+    return ghGetRetry(url).then(function (list) {
       return (list || []).map(function (c) {
         var parts = splitMeta(c.body || '');
         return {
@@ -338,10 +554,11 @@
       });
     });
   }
+
   /* ------------------------------------------------------- 索引 / 数据装配 */
   function rebuildIndex() {
     var seedPosts = (state.seed && state.seed.posts) || [];
-    state.posts = state.ghPosts.concat(state.localPosts, seedPosts);
+    state.posts = state.ghPosts.concat(state.pendingPosts, state.localPosts, seedPosts);
     state.byId = {};
     state.posts.forEach(function (p) { state.byId[p.id] = p; });
     renderNav();
@@ -372,7 +589,10 @@
   }
 
   function myPosts() {
-    return state.localPosts.slice().sort(function (a, b) { return new Date(b.createdAt) - new Date(a.createdAt); });
+    // 「我的发帖」= 本机保存的 + 已提交 GitHub 还在等同步的
+    return state.pendingPosts.concat(state.localPosts).sort(function (a, b) {
+      return new Date(b.createdAt) - new Date(a.createdAt);
+    });
   }
 
   function localCommentsOf(post) {
@@ -459,22 +679,46 @@
   function renderStatus() {
     var box = $('#sidebarStatus');
     if (!box) return;
-    var mode = ghEnabled()
-      ? (state.token ? 'GitHub 共享模式（已连接令牌）' : 'GitHub 共享模式（未连接令牌）')
-      : '本地模式（只在这台设备可见）';
-    var dotCls = ghEnabled() && !state.gh.error ? '' : ' warn';
+    var configured = hasRepo();
+    var enabled = ghEnabled();
+    var total = state.ghPosts.length;
+    var mode = !configured
+      ? '本地模式（只在这台设备可见）'
+      : (state.gh.broken
+        ? '公共墙暂时连不上（先按本地模式浏览）'
+        : (state.token ? 'GitHub 共享模式（已连接令牌）' : 'GitHub 共享模式（未连接令牌）'));
+
+    // 数据来自哪里：烘焙文件是常态（墙内也能读），直连成功时更新
+    var srcLine = '';
+    if (configured && total) {
+      if (state.gh.source === 'live') {
+        srcLine = '已直连 GitHub，共 ' + total + ' 条公共帖。';
+      } else if (state.gh.source === 'cache') {
+        srcLine = '暂时读不到公共帖，显示本机缓存（' + total + ' 条）。';
+      } else {
+        srcLine = '公共帖已同步，共 ' + total + ' 条' +
+          (state.gh.syncedAt ? '（数据更新于 ' + timeAgo(state.gh.syncedAt) + '）' : '') + '。';
+      }
+    } else if (configured) {
+      srcLine = state.gh.loading ? '正在读取公共帖…' : '还没读到公共帖。';
+    }
+
     var extra = '';
     if (state.gh.error) {
       extra = '<br><span style="color:#b4692f">' +
         (state.token ? '接口提示：' + esc(state.gh.error)
           : '公共帖暂时读不到，先显示原文与本地内容，稍后刷新再试。') + '</span>';
     }
+    var dotCls = enabled && !state.gh.error ? '' : ' warn';
+    var retry = configured && (state.gh.error || !total)
+      ? '<button class="btn sm" data-act="retry-gh">🔄 重试</button>' : '';
+
     box.innerHTML =
       '<p style="margin:0"><span class="dot' + dotCls + '"></span><b>' + esc(mode) + '</b></p>' +
-      '<p style="margin:6px 0 0">' + (ghEnabled()
-        ? '帖子与评论会写进 <b>' + esc(state.config.repo) + '</b> 的 Issues，所有人可见。'
+      '<p style="margin:6px 0 0">' + (configured
+        ? esc(srcLine) + ' 帖子与评论会写进 <b>' + esc(state.config.repo) + '</b> 的 Issues，所有人可见。'
         : '发帖和评论保存在本机浏览器里；想让所有人看见，请在“设置”里填 GitHub 仓库。') + extra + '</p>' +
-      '<button class="btn sm" data-act="settings">⚙️ 设置 / 昵称</button>';
+      '<button class="btn sm" data-act="settings">⚙️ 设置 / 昵称</button>' + retry;
   }
 
   /* ------------------------------------------------------- 组件渲染 */
@@ -505,6 +749,7 @@
 
   function badgeOf(post) {
     if (post.origin === 'github') return '<span class="badge gh">GitHub</span>';
+    if (post.origin === 'pending') return '<span class="badge local">同步中</span>';
     if (post.origin === 'local') return '<span class="badge local">本机</span>';
     return '';
   }
@@ -513,6 +758,7 @@
     var bits = [];
     if (post.floor) bits.push('第 ' + post.floor + ' 楼');
     if (post.origin === 'docx') bits.push(post.createdAt ? fmtDate(post.createdAt).slice(0, 10) : '回忆录原文');
+    else if (post.origin === 'pending') bits.push(timeAgo(post.createdAt) + ' · 已提交 GitHub，等同步');
     else bits.push(timeAgo(post.createdAt));
     return bits.filter(Boolean).join(' · ');
   }
@@ -542,7 +788,8 @@
     var text = post.text || '';
     var canClamp = !detail && text.length > 320;
     var comments = allCommentsOf(post);
-    var preview = comments.slice(0, detail ? comments.length : 2);
+    // 详情页的评论由下面的 comments-box 统一渲染，卡片里不再重复一遍
+    var preview = detail ? [] : comments.slice(0, 2);
     var titleHtml = post.title && post.title !== text.trim()
       ? '<h2 class="post-title">' + esc(post.title) + '</h2>' : '';
 
@@ -592,7 +839,9 @@
   function commentForm(post) {
     var modeTip = post.origin === 'github'
       ? (state.token ? '评论会直接发到该 GitHub Issue。' : '未连接令牌：发送时会复制内容并打开 GitHub 页面，登录后粘贴即可。')
-      : '评论保存在本机浏览器（会立刻显示，但别人看不到）。';
+      : (post.origin === 'pending'
+        ? '这条还在等同步：评论先存在本机，同步完成后会一起并到 GitHub 那条下面。'
+        : '评论保存在本机浏览器（会立刻显示，但别人看不到）。');
     return '<form class="comment-form" data-form="comment" data-id="' + esc(post.id) + '">' +
       '<textarea name="text" rows="1" placeholder="说点什么…（Ctrl / ⌘ + Enter 发送）" aria-label="评论内容"></textarea>' +
       '<button class="btn sm solid" type="submit">评论</button>' +
@@ -727,7 +976,10 @@
     }).length;
     var html = '<section class="section-head"><p class="crumb"><a href="#/">全部帖子</a> / 我的发帖</p>' +
       '<h1><span class="sc-emoji">🖊️</span>我的发帖</h1>' +
-      '<p>这台浏览器里保存的帖子与评论。它们只存在本机，换设备或清缓存会消失。</p>' +
+      '<p>这台浏览器里保存的帖子与评论。它们只存在本机，换设备或清缓存会消失。' +
+      (state.pendingPosts.length
+        ? '<br>其中 <b>' + state.pendingPosts.length + '</b> 条已提交 GitHub、正在等同步，同步完成后会自动变成所有人可见的帖子。'
+        : '') + '</p>' +
       '<div class="meta"><span>昵称：' + esc(name) + '</span><span>' + mine.length + ' 条本地帖</span>' +
       '<span>' + commentThreads + ' 个帖子有本地评论</span></div></section>';
 
@@ -865,8 +1117,9 @@
       post.ghComments = list;
       if (state.route.name === 'post' && state.route.id === id) render();
     }).catch(function (err) {
-      post.ghComments = [];
-      toast('评论读取失败：' + err.message);
+      post.ghComments = post.ghComments || [];
+      // 没令牌的访客连不上 GitHub 是常态，安静降级，不要弹红字
+      if (state.token) toast('评论读取失败：' + err.message);
       if (state.route.name === 'post' && state.route.id === id) render();
     });
   }
@@ -966,7 +1219,8 @@
     box.innerHTML = mode === 'github'
       ? '<span>🌐</span><div>' + (state.token
         ? '会发布到 <b>' + esc(state.config.repo) + '</b> 的 Issues，所有打开这个页面的人都能看到。'
-        : '未连接令牌：点击发布后会<b>复制内容并打开 GitHub 新建 Issue 页面</b>，登录后粘贴即可。') +
+        : '未连接令牌：点击发布后会<b>复制内容并打开 GitHub 新建 Issue 页面</b>，登录后粘贴提交。' +
+          '<br>提交后这条会先在本页显示成「同步中」，约 1 分钟内变成所有人可见的公共帖。') +
         '<br>作者昵称会写在正文里的隐藏标记中。</div>'
       : '<span>💾</span><div>保存在<b>本机浏览器</b>，立刻显示在页面上；换设备或清缓存会消失。' +
         (ghEnabled() ? '<br>想让所有人看见，请在「设置」里连接 GitHub 令牌。' : '') + '</div>';
@@ -1061,7 +1315,15 @@
 
     if (target === 'github' && ghEnabled()) {
       publishToGitHub({ name: name, text: text, title: title, section: section, images: images })
-        .then(function (ok) { if (ok) { closeModal(); toast('已发到 GitHub Issues'); } })
+        .then(function (ok) {
+          if (!ok) return;
+          closeModal();
+          if (ok === 'pending') {
+            if (lastPendingId && state.byId[lastPendingId]) navigate('#/p/' + lastPendingId);
+            return;
+          }
+          toast('已发到 GitHub Issues');
+        })
         .catch(function (err) { toast('发布失败：' + err.message); reset(); });
       return;
     }
@@ -1111,9 +1373,13 @@
         encodeURIComponent(title) + '&body=' + encodeURIComponent(body) +
         '&labels=' + encodeURIComponent(labels.join(','));
       copyText(body);
+      // 先在本机显示成「同步中」，这样发完立刻能看见自己的帖子
+      var pend = addPendingPost(payload, title);
+      lastPendingId = pend.id;
+      rebuildIndex();
       window.open(url, '_blank', 'noopener');
-      toast('内容已复制，登录 GitHub 后粘贴到正文即可');
-      return Promise.resolve(true);
+      toast('内容已复制并打开 GitHub：登录后粘贴提交，约 1 分钟后这里会自动出现');
+      return Promise.resolve('pending');
     }
 
     return ghSend('POST', 'https://api.github.com/repos/' + state.config.repo + '/issues', {
@@ -1263,7 +1529,9 @@
     list.push({ author: name, text: body, createdAt: new Date().toISOString() });
     saveLocalComments();
     render();
-    toast('评论已保存在本机');
+    toast(post.origin === 'pending'
+      ? '评论先存在本机，同步完成后会并到公共帖下面'
+      : '评论已保存在本机');
   }
 
   function toggleLike(postId) {
@@ -1434,10 +1702,12 @@
 
   function wipeLocal() {
     if (!window.confirm('确定清空本机的帖子、评论、点赞和昵称吗？（GitHub 上的内容不受影响）')) return;
-    [KEYS.posts, KEYS.comments, KEYS.likes, KEYS.profile, KEYS.seen, KEYS.lastVisit].forEach(function (k) {
+    [KEYS.posts, KEYS.pending, KEYS.ghCache, KEYS.comments, KEYS.likes, KEYS.profile, KEYS.seen,
+      KEYS.lastVisit].forEach(function (k) {
       try { localStorage.removeItem(k); } catch (e) { /* ignore */ }
     });
     state.localPosts = [];
+    state.pendingPosts = [];
     state.localComments = {};
     state.likes = {};
     state.profile = { name: '' };
@@ -1467,6 +1737,7 @@
       if (act === 'import') { importData(); return; }
       if (act === 'wipe') { wipeLocal(); return; }
       if (act === 'test-gh') { testGitHub(); return; }
+      if (act === 'retry-gh') { refreshGitHub(); return; }
       if (act === 'clear-token') {
         try { localStorage.removeItem(KEYS.token); } catch (err) { /* ignore */ }
         state.token = '';
