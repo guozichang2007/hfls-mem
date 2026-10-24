@@ -61,7 +61,10 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs/data/gh-posts.json docs/assets/img/gh
           git commit -m "同步 Issues → docs/data/gh-posts.json（新增 ${new_imgs} 张图片）"
-          git push
+          git push || {
+            echo "::error::提交失败：请到仓库 Settings → Actions → General → Workflow permissions 选 Read and write permissions"
+            exit 1
+          }
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
   deploy:
