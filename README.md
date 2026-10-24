@@ -35,19 +35,20 @@ python -m http.server 8000 --directory docs
 
 ## 部署到 GitHub Pages
 
-站点已按 `guozichang2007/hfls26-memoir` 配好（`docs/data/config.json` 的 `repo` / `siteUrl`、
-`.git` 的 origin 都指向它）。这个仓库目前还在本机，只剩「在 GitHub 建空仓库 + 首次推送」：
+站点已按 **`guozichang2007/hfls-mem`** 配好（`docs/data/config.json` 的 `repo` / `siteUrl`、
+`.git` 的 origin 都指向它）。仓库已经在 GitHub 上建好（公开、空仓库、默认分支 `main`），
+只剩本机推送：
 
 ```bash
-# 1) 先在 GitHub 网页上新建空仓库 hfls26-memoir（不要勾选 README / .gitignore）
-# 2) 本机提交并推送（第一次会弹出登录窗口）
-git commit -m "回忆录留言墙"
-git push -u origin main
+git push -u origin main     # 第一次会弹出 GitHub 登录窗口
 ```
 
 然后仓库 **Settings → Pages → Build and deployment → Source** 选 **GitHub Actions**，
 工作流 `.github/workflows/pages.yml` 会自动把 `docs/` 发布到
-**https://guozichang2007.github.io/hfls26-memoir/** 。
+**https://guozichang2007.github.io/hfls-mem/** 。
+
+> 如果 `git push` 报 `schannel: failed to receive handshake`，说明本机配的代理没开，
+> 加 `-c http.proxy=` 绕过即可：`git -c http.proxy= push -u origin main`。
 
 想换仓库名 / 换账号，改三处即可：
 
@@ -63,16 +64,16 @@ git remote set-url origin https://github.com/<账号>/<仓库名>.git
 
 ## 打开「所有人一起写」
 
-1. 用一个公开仓库（建议就用站点这个 `guozichang2007/hfls26-memoir`），发帖会变成它的 Issue。
+1. 用一个公开仓库（就用站点这个 `guozichang2007/hfls-mem`），发帖会变成它的 Issue。
 2. `docs/data/config.json` 里的 `repo` 已经填好，不需要再改：
 
    ```json
    {
-     "repo": "guozichang2007/hfls26-memoir",
+     "repo": "guozichang2007/hfls-mem",
      "branch": "main",
      "postsLabel": "post",
      "sectionLabelPrefix": "sec-",
-     "siteUrl": "https://guozichang2007.github.io/hfls26-memoir/",
+     "siteUrl": "https://guozichang2007.github.io/hfls-mem/",
      "notice": "想补一句、想吐槽、想表白，直接点「写一条回忆」。"
    }
    ```
