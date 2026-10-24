@@ -1,6 +1,7 @@
 /* =========================================================
    海弗拉斯26届回忆录 · 样式表
-   暖白纸张 + 樱花红，阅读优先，移动端单列
+   暖白纸张 + 湖蓝，阅读优先，移动端单列
+   主题色只认下面几个变量：--accent / --accent-soft / --accent-ink / --on-accent
    ========================================================= */
 
 :root {
@@ -12,9 +13,12 @@
   --ink-3: #8a7f75;
   --line: #e7ded2;
   --line-strong: #d8ccbd;
-  --accent: #c2445b;
-  --accent-soft: #fbeaec;
-  --accent-ink: #a02f45;
+  --accent: #16788f;
+  --accent-soft: #e6f2f7;
+  --accent-ink: #0f5f76;
+  --on-accent: #ffffff;
+  /* 主题色＝湖蓝。想换成天蓝，把上面三行改成
+     --accent:#1a76b3; --accent-soft:#e8f1fb; --accent-ink:#17699e; 即可 */
   --sky: #5b7f95;
   --shadow: 0 1px 2px rgba(60, 40, 25, .05), 0 8px 24px -12px rgba(60, 40, 25, .18);
   --shadow-lg: 0 24px 60px -24px rgba(60, 40, 25, .35);
@@ -34,9 +38,10 @@ html[data-theme="dark"] {
   --ink-3: #9a8f83;
   --line: #332c25;
   --line-strong: #453b32;
-  --accent: #e2778b;
-  --accent-soft: #3a2027;
-  --accent-ink: #f0a1ae;
+  --accent: #5cb8d6;
+  --accent-soft: #12313c;
+  --accent-ink: #8fd4ea;
+  --on-accent: #0a2a36;
   --sky: #8fb3c6;
   --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 10px 30px -16px rgba(0, 0, 0, .8);
   --shadow-lg: 0 30px 70px -30px rgba(0, 0, 0, .9);
@@ -73,7 +78,7 @@ img { max-width: 100%; display: block; }
 
 .skip-link {
   position: fixed; left: 12px; top: -60px; z-index: 100;
-  background: var(--accent); color: #fff; padding: 8px 14px; border-radius: 8px;
+  background: var(--accent); color: var(--on-accent); padding: 8px 14px; border-radius: 8px;
   transition: top .2s;
 }
 .skip-link:focus { top: 12px; }
@@ -98,7 +103,7 @@ img { max-width: 100%; display: block; }
 .brand-mark {
   width: 34px; height: 34px; border-radius: 10px; flex: none;
   display: grid; place-items: center;
-  background: var(--accent); color: #fff;
+  background: var(--accent); color: var(--on-accent);
   font-weight: 700; font-size: 13px; letter-spacing: -.02em;
   box-shadow: 0 4px 12px -4px color-mix(in srgb, var(--accent) 60%, transparent);
 }
@@ -144,7 +149,7 @@ img { max-width: 100%; display: block; }
 .btn-primary {
   display: inline-flex; align-items: center; gap: 6px;
   height: 36px; padding: 0 14px; border: 0; border-radius: 10px;
-  background: var(--accent); color: #fff; font-weight: 600; font-size: 14px;
+  background: var(--accent); color: var(--on-accent); font-weight: 600; font-size: 14px;
   box-shadow: 0 6px 16px -8px color-mix(in srgb, var(--accent) 80%, transparent);
   transition: .18s;
 }
@@ -205,7 +210,7 @@ img { max-width: 100%; display: block; }
   box-shadow: var(--shadow);
 }
 .hero::after {
-  content: "🌸"; position: absolute; right: -10px; bottom: -34px; font-size: 150px;
+  content: "🌊"; position: absolute; right: -10px; bottom: -34px; font-size: 150px;
   opacity: .09; transform: rotate(-12deg); pointer-events: none;
 }
 .hero-eyebrow {
@@ -233,8 +238,8 @@ img { max-width: 100%; display: block; }
   font-size: 14px; font-weight: 500; transition: .18s;
 }
 .btn:hover { border-color: var(--accent); color: var(--accent-ink); }
-.btn.solid { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
-.btn.solid:hover { filter: brightness(1.06); color: #fff; }
+.btn.solid { background: var(--accent); border-color: var(--accent); color: var(--on-accent); font-weight: 600; }
+.btn.solid:hover { filter: brightness(1.06); color: var(--on-accent); }
 .btn.ghost { background: transparent; border-color: transparent; color: var(--ink-2); padding: 0 8px; }
 .btn.ghost:hover { background: var(--paper-2); color: var(--ink); }
 .btn.sm { height: 32px; padding: 0 12px; font-size: 13px; }
@@ -484,7 +489,7 @@ input[type="file"]::file-selector-button:hover { border-color: var(--accent); co
   padding: 6px 12px; font-size: 13px; color: var(--ink-2); transition: .15s;
 }
 .section-pill:hover { border-color: var(--line-strong); }
-.section-pill[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.section-pill[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--on-accent); font-weight: 600; }
 .mode-note {
   display: flex; gap: 10px; font-size: 12.5px; line-height: 1.65; color: var(--ink-2);
   background: var(--paper-2); border-radius: 10px; padding: 10px 12px; margin-bottom: 16px;

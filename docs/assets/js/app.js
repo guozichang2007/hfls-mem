@@ -104,7 +104,7 @@
     return fmtDate(iso).slice(0, 10);
   }
 
-  var PALETTE = ['#c2445b', '#5b7f95', '#7d6b9e', '#b9803c', '#4f8a72', '#9a5b6b'];
+  var PALETTE = ['#16788f', '#4f7fa8', '#6d6a9e', '#b9803c', '#4f8a72', '#8a6b7c'];
 
   function avatarOf(name, origin) {
     var n = String(name || '?').trim();
