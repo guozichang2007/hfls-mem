@@ -178,17 +178,34 @@ def fetch_comments(repo, number, token):
     return [to_comment(c) for c in gh_pages(path, token, max_pages=MAX_COMMENT_PAGES)]
 
 
-def to_post(repo, issue, token, default_section):
+def load_sections():
+    """从 docs/data/posts.json 读合法板块 id（读不到就返回空，不做校验）。"""
+    path = os.path.join(ROOT, "docs", "data", "posts.json")
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        return [s.get("id") for s in (data.get("sections") or []) if s.get("id")]
+    except (ValueError, OSError):
+        return []
+
+
+def to_post(repo, issue, token, default_section, sections=None):
     meta, text = split_meta(issue.get("body") or "")
     text, images = take_images(text)
     login = (issue.get("user") or {}).get("login") or ""
     labels = [lab.get("name") or "" for lab in (issue.get("labels") or [])]
     number = issue.get("number")
     comments = fetch_comments(repo, number, token) if issue.get("comments") else []
+    # 板块优先取隐藏标记里的（非协作者发帖时 labels 参数会被 GitHub 忽略），
+    # 标记里的值不认识就退回标签 / 默认板块
+    section = meta.get("section") or ""
+    if sections and section not in sections:
+        section = ""
+    section = section or section_of(labels, default_section)
     return {
         "id": "gh-%s" % number,
         "number": number,
-        "section": section_of(labels, default_section),
+        "section": section,
         "author": meta.get("name") or login or "同学",
         "login": login,
         "createdAt": issue.get("created_at"),
@@ -205,8 +222,11 @@ def to_post(repo, issue, token, default_section):
 
 def collect(repo, token, default_section):
     path = "/repos/%s/issues?state=all&per_page=%d&page={page}" % (repo, PER_PAGE)
+    sections = load_sections()
+    if sections and default_section not in sections:
+        default_section = "classmate" if "classmate" in sections else sections[0]
     issues = [i for i in gh_pages(path, token) if not i.get("pull_request")]
-    posts = [to_post(repo, i, token, default_section) for i in issues]
+    posts = [to_post(repo, i, token, default_section, sections) for i in issues]
     posts.sort(key=lambda p: p.get("createdAt") or "", reverse=True)
     return posts
 

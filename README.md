@@ -87,8 +87,8 @@ git remote set-url origin https://github.com/<账号>/<仓库名>.git
 3. 在仓库 **Issues → Labels** 里建 8 个板块 label（可选）：
    `sec-prelude` / `sec-scene` / `sec-story` / `sec-food` / `sec-love` / `sec-rant`
    / `sec-teacher` / `sec-classmate`。
-   （不建也能用：没有 `sec-*` 的帖子会落到「同学」板块。`post` 标签现在**不再是必需的**，
-   而且 GitHub 对非协作者会忽略新建 Issue 时的 label 参数，所以站点读取时也不再依赖它。）
+   （不建也能用：站点会把板块同时写进正文的隐藏标记，标签被忽略也不会丢板块；
+   手工在 GitHub 建的 Issue 没有 `sec-*` 标签时落到「同学」板块。`post` 标签**不再是必需的**。）
 4. 想在网页里直接发帖（而不是跳转 GitHub）：点右上角「🖐 设置 / 昵称」，填一个
    fine-grained token，权限只要 **Issues: Read and write**。令牌只存在本机 localStorage。
 5. 仓库 **Settings → Actions → General → Workflow permissions** 选

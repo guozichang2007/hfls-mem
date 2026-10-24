@@ -295,7 +295,9 @@
   function mapIssue(issue) {
     var parts = splitMeta(issue.body || '');
     var picked = extractImages(parts.text);
-    var sec = sectionFromLabels(issue.labels || []);
+    var sec = parts.meta.section && state.sections.some(function (s) { return s.id === parts.meta.section; })
+      ? parts.meta.section
+      : sectionFromLabels(issue.labels || []);
     if (!state.sections.some(function (s) { return s.id === sec; })) sec = 'classmate';
     return {
       id: 'gh-' + issue.number,
@@ -1348,8 +1350,11 @@
     navigate('#/p/' + post.id);
   }
 
-  function issueBody(name, text, images) {
-    var body = '<!-- hfls:' + JSON.stringify({ name: name }) + ' -->\n\n' + (text || '') + '\n';
+  function issueBody(name, text, images, section) {
+    // 板块也写进隐藏标记：非协作者发帖时 GitHub 会忽略新建 Issue 的 labels 参数
+    var meta = { name: name };
+    if (section) meta.section = section;
+    var body = '<!-- hfls:' + JSON.stringify(meta) + ' -->\n\n' + (text || '') + '\n';
     (images || []).forEach(function (im) {
       body += '\n![图片](' + im.src + ')\n';
     });
@@ -1363,7 +1368,7 @@
   }
 
   function publishToGitHub(payload) {
-    var body = issueBody(payload.name, payload.text, payload.images);
+    var body = issueBody(payload.name, payload.text, payload.images, payload.section);
     var title = issueTitle(payload.title, payload.text);
     var labels = [state.config.postsLabel || 'post',
       (state.config.sectionLabelPrefix || 'sec-') + payload.section];
